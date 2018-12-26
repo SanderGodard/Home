@@ -217,7 +217,7 @@ h1 {
 .Slides {
   transition: all 0.2s ease;
   display: inline-flex;
-  width: calc(100% - 300px - 1vw);
+  width: calc(100% - 301px - 1vw);
   align-content: center;
   align-items: center;
   margin: 0;
