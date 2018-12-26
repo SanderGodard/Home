@@ -28,11 +28,20 @@
     }
   </script>
   <script>
-    $(".menu-toggle").on('click', function() {
-      $(this).toggleClass("on");
-      $('.menu-section').toggleClass("on");
-      $(".MobileNav").toggleClass('hidden');
-    });
+    function MenuToggle() {
+      var x = document.getElementById("MobileNav");
+      if (x.style.height === "197px") {
+        x.style.height = "0px";
+      } else {
+        x.style.height = "197px";
+      }
+      var a = document.getElementById("MobileMenu");
+      if (a.innerHTML === "menu") {
+        a.innerHTML = "clear";
+      } else {
+        a.innerHTML = "menu";
+      }
+    }
   </script>
 </head>
 
@@ -48,16 +57,10 @@
       <a href="Pages/OmMeg.html" class="NavBtn">Om meg</a>
       <a href="Pages/Galleri.html" class="NavBtn">Galleri</a>
 
-      <a href="javascript:void(0)" onclick="MenuToggle" class="NavBtn Material" id="MobileMenu">
-        <div class="menu-toggle">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-        </div>
-      </a>
+      <a href="javascript:void(0)" onclick="MenuToggle()" class="NavBtn Material" id="MobileMenu">menu</a>
     </div>
   </nav>
-  <div class="MobileNav">
+  <div class="MobileNav" id="MobileNav">
     <a href="Pages/Galleri.html" class="Active">Galleri</a>
     <a href="Pages/OmMeg.html">Om meg</a>
     <a href="Pages/Kontakt.html">Kontakt</a>
