@@ -1,0 +1,356 @@
+// ======================================= Variables
+// ============ Colors
+
+$MainColor: #772121
+$SecondaryColor: #383838
+$ThirdColor: #7D7D7D
+$White: #FFF
+
+$Shadow: 0px 3px 6px rgba(0,0,0,0.2)
+
+// ============ Mobile
+$MobileS: "only screen and (max-width : 334px)"
+$MobileM: "only screen and (max-width : 376px)"
+$MobileXM: "only screen and (max-width : 395px)"
+$MobileL: "only screen and (max-width : 426px)"
+$MobileXL: "only screen and (max-width : 500px)"
+$MobileXXL: "only screen and (max-width : 575px)"
+
+
+// ============ Tablet
+$TabletS: "only screen and (max-width : 650px)"
+$TabletM: "only screen and (max-width : 700px)"
+$TabletL: "only screen and (max-width : 800px)"
+
+// ============ Laptop
+$Laptop: "only screen and (max-width : 1023px)"
+
+// ============ Desktop
+$Desktop: "only screen and (max-width : 1222px)"
+
+
+// ============================================= CSS
+html
+  transition: all 1s ease
+  scroll-behavior: smooth
+  -moz-scroll-behavior: smooth
+  -webkit-font-smoothing: antialiased
+  -webkit-locale: "nb" !important
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+
+body
+  transition: all 1s ease
+  background-color: $White
+  font-family: 'Roboto', sans-serif
+  min-width: 310px !important
+  line-height: 1.25
+  width: 100% !important
+  overflow-y: auto
+  overflow-x: hidden !important
+  font-size: 20px
+
+  @media #{$MobileXXL}
+    font-size: 18px
+
+  @media #{$MobileXM}
+    font-size: 16px
+
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  /*border: 1px solid blue*/
+  border-collapse: collapse
+
+
+a
+  text-decoration: none
+
+
+::-moz-selection
+  background: $MainColor
+  opacity: 0.7
+  color: $White
+
+
+::selection
+  background: $MainColor
+  color: $White
+  opacity: 0.7
+
+
+::-webkit-scrollbar
+  width: 5px
+  margin: 2px 2px 2px -7px
+  right: 0
+  border-radius: 2.5px
+
+
+::-webkit-scrollbar-thumb
+  transition: all 0.3s ease-in-out
+  background: #999
+  border-radius: 2.5px
+
+
+::-webkit-scrollbar-thumb:hover
+  transition: all 0.3s ease-in-out
+  background: #666
+
+
+nav
+  background-color: $White
+  vertical-align: middle
+  display: block
+  height: 70px
+  width: 100%
+  box-shadow: $Shadow
+  top: 0
+  z-index: 9999999
+
+  .Body
+    width: calc(90% + 2vw)
+
+    @media #{$MobileXXL}
+      width: calc(100% - 4vw)
+
+
+footer
+  width: 100%
+  display: block
+  z-index: 2
+
+
+.Body
+  margin: auto
+  width: 90%
+
+  @media #{$MobileXXL}
+    width: calc(100% - 4vw)
+
+.NavBtn
+  padding: 0 1vw
+  display: flex
+  align-items: center
+  float: right
+  height: 70px
+  color: $MainColor
+  text-decoration: none
+  font-size: 1.5em
+
+  @media #{$TabletL}
+    display: none
+
+#Navn
+  float: left
+
+  @media #{$TabletL}
+    display: flex
+
+#MobileMenu
+  display: none
+  width: calc(40px + 2vw)
+
+  @media #{$TabletL}
+    display: flex
+
+.MobileNav
+  transition: all .3s ease
+  display: block
+  width: 100%
+  height: auto
+  box-shadow: $Shadow
+  background-color: $ThirdColor
+  overflow: hidden
+
+  a
+    transition: all .3s ease
+    height: 65px
+    color: $MainColor
+    width: 100%
+    display: block
+    background-color: $White
+    font-size: 1.5em
+    text-align: center
+    padding: 20px 0 0
+    margin: 0 0 .5px
+
+  .Active
+    border-bottom: 1px solid $MainColor
+
+
+.hidden
+  transition: all .3s ease
+  height: 0px !important
+
+
+.one, .two, .three
+  transition: all .3s ease
+  width: 100%
+  height: 5px
+  background: $MainColor
+  margin: 6px auto
+  backface-visibility: hidden
+
+
+.menu-toggle
+  width: 40px
+  height: 30px
+  position: absolute
+  top: 15px
+  right: 5vw
+
+  &.on
+    .one
+      transform: rotate(45deg) translate(7px, 7px)
+    .two
+      opacity: 0
+
+    .three
+      transform: rotate(-45deg) translate(8px, -10px)
+
+.GalleriPart
+  width: 100%
+  display: block
+  margin: 5vh auto
+  vertical-align: top
+
+  .Body
+    @media #{$MobileXXL}
+      width: 100%
+
+h1
+  font-size: 2.5em
+  padding-left: calc(150px + 1vw)
+  font-weight: 400
+
+  @media #{$TabletM}
+    padding-left: calc(100px + 1vw)
+
+  @media #{$MobileXXL}
+    text-align: center
+    padding-left: 0
+    margin: 0 0 2vh
+
+  a
+    color: black
+    text-decoration: none
+    text-align: center
+    width: 100%
+
+    @media #{$MobileXXL}
+      text-align: center
+      padding: 4px 10vw
+      background-color: #E4E4E4
+      border-radius: 26.5px
+
+
+.Material
+  font-family: 'Material Icons', sans-serif
+  font-size: 1.1em
+
+.SideArrow
+  font-weight: 100
+  font-size: 150px
+  color: $MainColor
+  transform: translate(0, -150%)
+  display: inline
+
+  &:hover
+    cursor: pointer
+
+  @media #{$TabletM}
+    font-size: 100px
+
+  @media #{$MobileXXL}
+    font-size: 80px
+    position: absolute
+    display: inline-block
+    background-color: rgba(255,255,255,0.4)
+    border-radius: 50px
+    padding: 3px 10px
+    height: 100px
+    width: 100px
+    margin: 50% -30px 0
+    top: 0
+    margin-top: calc((98vw / 16 * 9) + 130px + 7vh)
+
+  @media #{$MobileXM}
+    font-size: 60px
+    border-radius: 40px
+    padding: 5px 10px
+    height: 80px
+    width: 80px
+
+
+#RightArrow
+  right: 0
+
+  @media #{$MobileXXL}
+    align-self: center
+    vertical-align: middle
+
+.Slides
+  transition: all .2s ease
+  display: inline-flex
+  width: calc(100% - 300px - 2vw)
+  align-content: center
+  align-items: center
+  margin: 0
+  overflow: hidden
+
+  @media #{$TabletM}
+    width: calc(100% - 200px - 2vw) !important
+
+  @media #{$MobileXXL}
+    width: calc(100% - 4vw) !important
+    margin: 0 2vw
+
+
+.Project
+  transition: all .3s ease
+  display: inline-block
+  width: calc(100% / 3 - 2vw)
+  height: auto
+  margin: 1vw
+  text-decoration: none
+  box-shadow: $Shadow
+  border-radius: 15px
+
+  @media #{$Desktop}
+    width: calc(100% / 2 - 2vw)
+
+  @media #{$Laptop}
+    width: calc(100% - 2vw)
+
+  &:hover
+    transition: all .3s ease
+    transform: scale(1.03)
+
+  img
+    width: 100%
+    height: auto
+    border-radius: 15px 15px 0px 0px
+
+  div
+    width: 100%
+    padding: 10px
+    overflow: hidden
+
+    h3
+      color: $MainColor
+      font-size: 1.5em
+      font-weight: 400
+      margin: 0px 0px 10px
+
+    span
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      max-width: 100%
+      display: block
+      color: black
+
+      &::after
+        content: ".  .  ."
