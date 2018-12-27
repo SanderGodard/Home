@@ -224,8 +224,7 @@ h1 {
   overflow: auto hidden; }
   @media only screen and (max-width: 700px) {
     .Slides {
-      width: calc(100% - 200px - 0vw) !important;
-      padding-right: 1vw; } }
+      width: calc(100% - 200px - 2vw) !important; } }
   @media only screen and (max-width: 575px) {
     .Slides {
       width: calc(100% - 4vw) !important;
