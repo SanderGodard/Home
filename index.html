@@ -22,18 +22,50 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script>
+    //Scroll to top function
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
   </script>
   <script>
+    //Gallery scrolling with buttons function
+    function GalleryScrollLeft() {
+      event.preventDefault();
+      getElementById("Mosala").animate({
+        marginLeft: "+=200px"
+      }, "fast");
+    };
+  </script>
+  <script>
+    //Gallery scrolling with buttons function
+    function GalleryScrollRight() {
+      var x = document.getElementById("Mosala");
+      var info = x.getBoundingClientRect();
+      var width = info.width;
+      alert(width);
+      x.style.marginLeft = -width;
+    };
+  </script>
+  <script>
+    //Mobile nav menu script
     function MenuToggle() {
       var x = document.getElementById("MobileNav");
+      var y = document.getElementsByClassName("SideArrow");
       if (x.style.height === "197px") {
         x.style.height = "0px";
+        //if (y.style.height === "100px") {
+        //  y.style.marginTop = "495px";
+        //} else {
+        //  y.style.marginTop = "0px";
+        //}
       } else {
         x.style.height = "197px";
+        //if (y.style.height === "100px") {
+        //  y.style.marginTop = "692px";
+        //} else {
+        //  y.style.marginTop = "0px";
+        //}
       }
       var a = document.getElementById("MobileMenu");
       if (a.innerHTML === "menu") {
@@ -69,7 +101,7 @@
     <div class="GalleriPart">
       <div class="Body">
         <h1><a href="Pages/Galleri.html">Galleri</a></h1>
-        <span class="SideArrow Material">keyboard_arrow_left</span>
+        <span class="SideArrow Material" onclick="GalleryScrollLeft()">keyboard_arrow_left</span>
         <div class="Slides">
 
           <a class="Project" id="Mosala" href="Pages/Galleri.html#Mosala">
@@ -113,7 +145,7 @@
           </a>
 
         </div>
-        <span class="SideArrow Material" id="RightArrow">keyboard_arrow_right</span>
+        <span class="SideArrow Material" id="RightArrow" onclick="GalleryScrollRight()">keyboard_arrow_right</span>
       </div>
     </div>
 
