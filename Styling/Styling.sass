@@ -299,11 +299,12 @@ h1
 .Slides
   transition: all .2s ease
   display: inline-flex
-  width: calc(100% - 301px - 1vw)
+  width: calc(100% - 301px - 2vw)
   align-content: center
   align-items: center
   margin: 0
-  overflow: auto hidden
+  overflow-x: auto
+  overflow-y: hidden
 
   @media #{$TabletM}
     width: calc(100% - 200px - 2vw) !important
@@ -318,7 +319,7 @@ h1
   display: inline-block
   width: calc(100% / 3 - 2vw)
   height: auto
-  margin: 1vw
+  margin: 1vw !important
   text-decoration: none
   box-shadow: $Shadow
   border-radius: 15px
