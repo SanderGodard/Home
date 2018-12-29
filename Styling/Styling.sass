@@ -95,6 +95,9 @@ img
   background: #999
   border-radius: 2.5px
 
+  &:hover
+    transition: all 0.3s ease-in-out
+    background: #666
 
 
 header
@@ -367,11 +370,17 @@ main h1
 .Slides
   transition: all .2s ease
   display: inline-flex
+  width: calc(100% - 303px - 1vw)
   align-content: center
   align-items: center
   margin: 0
   overflow: hidden
   z-index: 1
+  overflow-x: auto
+  overflow-y: hidden
+
+  &::-webkit-scrollbar
+    width: 0px
 
   @media #{$TabletM}
 
@@ -381,6 +390,7 @@ main h1
 
 
 .Project
+  white-space: nowrap
   transition: all .3s ease
   display: inline-block
   width: calc(100% / 3 - .8vw)
