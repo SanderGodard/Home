@@ -33,6 +33,9 @@ body {
 a {
   text-decoration: none; }
 
+img {
+  filter: grayscale(1); }
+
 ::-moz-selection {
   background: #772121;
   opacity: 0.7;
@@ -58,6 +61,82 @@ a {
   transition: all 0.3s ease-in-out;
   background: #666; }
 
+header {
+  background-color: #772121;
+  color: #FFF;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1; }
+  header #Path {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    height: 100vh;
+    width: 20vw;
+    position: absolute;
+    left: 40vw;
+    top: 0;
+    z-index: 3;
+    background-color: #772121;
+    display: block; }
+  header #Next1 {
+    color: #FFF;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: calc(50vw - 75px);
+    text-align: center;
+    top: 80vh;
+    z-index: 6;
+    font-size: 8em; }
+  header img {
+    height: 100vh;
+    width: auto;
+    width: 60vw;
+    object-fit: cover;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2; }
+  header .HeaderContent {
+    background-color: #772121;
+    width: 25vw;
+    height: 60vh;
+    position: absolute;
+    top: 20vh;
+    right: 12.5vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 5; }
+    header .HeaderContent h1 {
+      font-size: 2.9em;
+      font-weight: 400; }
+    header .HeaderContent #CTA {
+      display: block;
+      color: #772121;
+      background-color: #FFF;
+      text-align: center;
+      padding-top: 0.4em;
+      border-radius: 1em;
+      width: 102%;
+      height: 2em;
+      position: relative;
+      vertical-align: middle;
+      bottom: 0;
+      margin: 10vh -1% 0;
+      font-size: 2.5em; }
+    header .HeaderContent p {
+      margin: 2.5em 0 0; }
+  header #MobileMenuHeader {
+    display: none;
+    width: calc(40px + 2vw);
+    position: absolute;
+    top: 23px;
+    right: 0;
+    font-size: 2em;
+    display: flex;
+    color: white;
+    z-index: 5; }
+
 nav {
   background-color: #FFF;
   vertical-align: middle;
@@ -67,6 +146,30 @@ nav {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   top: 0;
   z-index: 9999999; }
+  nav .NavBtn {
+    padding: 0 1vw;
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 70px;
+    color: #772121;
+    text-decoration: none;
+    font-size: 1.5em; }
+    @media only screen and (max-width: 800px) {
+      nav .NavBtn {
+        display: none; } }
+  nav #Navn {
+    float: left; }
+    @media only screen and (max-width: 800px) {
+      nav #Navn {
+        display: flex; } }
+  nav #MobileMenu {
+    display: none;
+    width: calc(40px + 2vw);
+    font-size: 2em; }
+    @media only screen and (max-width: 800px) {
+      nav #MobileMenu {
+        display: flex; } }
   nav .Body {
     width: calc(90% + 2vw); }
     @media only screen and (max-width: 575px) {
@@ -84,33 +187,6 @@ footer {
   @media only screen and (max-width: 575px) {
     .Body {
       width: calc(100% - 4vw); } }
-
-.NavBtn {
-  padding: 0 1vw;
-  display: flex;
-  align-items: center;
-  float: right;
-  height: 70px;
-  color: #772121;
-  text-decoration: none;
-  font-size: 1.5em; }
-  @media only screen and (max-width: 800px) {
-    .NavBtn {
-      display: none; } }
-
-#Navn {
-  float: left; }
-  @media only screen and (max-width: 800px) {
-    #Navn {
-      display: flex; } }
-
-#MobileMenu {
-  display: none;
-  width: calc(40px + 2vw);
-  font-size: 2em; }
-  @media only screen and (max-width: 800px) {
-    #MobileMenu {
-      display: flex; } }
 
 .MobileNav {
   transition: all 0.3s ease;
@@ -146,29 +222,31 @@ footer {
   display: block;
   margin: 5vh auto;
   vertical-align: top; }
-  @media only screen and (max-width: 575px) {
-    .GalleriPart .Body {
-      width: 100%; } }
+  .GalleriPart .Body {
+    width: calc(90% + 100px); }
+    @media only screen and (max-width: 575px) {
+      .GalleriPart .Body {
+        width: 100%; } }
 
-h1 {
+main h1 {
   font-size: 2.5em;
   padding-left: calc(150px + 1vw);
   font-weight: 400; }
   @media only screen and (max-width: 700px) {
-    h1 {
+    main h1 {
       padding-left: calc(100px + 1vw); } }
   @media only screen and (max-width: 575px) {
-    h1 {
+    main h1 {
       text-align: center;
       padding-left: 0;
       margin: 0 0 2vh; } }
-  h1 a {
+  main h1 a {
     color: black;
     text-decoration: none;
     text-align: center;
     width: 100%; }
     @media only screen and (max-width: 575px) {
-      h1 a {
+      main h1 a {
         text-align: center;
         padding: 4px 10vw;
         background-color: #E4E4E4;
@@ -182,7 +260,6 @@ h1 {
   font-weight: 100;
   font-size: 150px;
   color: #772121;
-  transform: translate(0, -150%);
   display: inline;
   z-index: 2; }
   .SideArrow:hover {
@@ -240,18 +317,18 @@ h1 {
 .Project {
   transition: all 0.3s ease;
   display: inline-block;
-  width: calc(100% / 3 - 2vw);
+  width: calc(100% / 3 - .8vw);
   height: auto;
-  margin: 1vw;
+  margin: 1vw 0.4vw;
   text-decoration: none;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 15px; }
   @media only screen and (max-width: 1222px) {
     .Project {
-      width: calc(100% / 2 - 2vw); } }
+      width: calc(100% / 2 - .8vw); } }
   @media only screen and (max-width: 1023px) {
     .Project {
-      width: calc(100% - 2vw); } }
+      width: calc(100% - .8vw); } }
   .Project:hover {
     transition: all 0.3s ease;
     transform: scale(1.03); }
