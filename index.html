@@ -24,6 +24,7 @@
 
   <script type="text/javascript" src="Scripts/ScrollTop.js"></script>
   <script type="text/javascript" src="Scripts/MobileMenu.js"></script>
+  <script type="text/javascript" src="Scripts/Scroll.js"></script>
 </head>
 
 <body>
@@ -50,10 +51,10 @@
     <div class="GalleriPart">
       <div class="Body">
         <h1><a href="Pages/Galleri.html">Galleri</a></h1>
-        <span class="SideArrow Material">keyboard_arrow_left</span>
-        <div class="Slides">
+        <span class="SideArrow Material" onclick="ScrollLeft()">keyboard_arrow_left</span>
+        <div class="Slides" id="Slider">
 
-          <a class="Project" id="Mosala" href="Pages/Galleri.html#Mosala">
+          <a class="Project" id="Project1" href="Pages/Galleri.html#Mosala">
             <img src="Images/Placeholder.png" alt="Project 1">
             <div>
               <h3>Mosala</h3>
@@ -77,8 +78,24 @@
             </div>
           </a>
 
+          <a class="Project" id="Project4" href="Pages/Galleri.html#Project4">
+            <img src="Images/Placeholder.png" alt="Project 4">
+            <div>
+              <h3>Prosj 4</h3>
+              <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
+            </div>
+          </a>
+
+          <a class="Project" id="Project5" href="Pages/Galleri.html#Project5">
+            <img src="Images/Placeholder.png" alt="Project 5">
+            <div>
+              <h3>Prosj 5</h3>
+              <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
+            </div>
+          </a>
+
         </div>
-        <span class="SideArrow Material" id="RightArrow">keyboard_arrow_right</span>
+        <span class="SideArrow Material" id="RightArrow" onclick="Scroll()">keyboard_arrow_right</span>
       </div>
     </div>
 

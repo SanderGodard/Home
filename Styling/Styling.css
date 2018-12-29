@@ -53,10 +53,9 @@ a {
   transition: all 0.3s ease-in-out;
   background: #999;
   border-radius: 2.5px; }
-
-::-webkit-scrollbar-thumb:hover {
-  transition: all 0.3s ease-in-out;
-  background: #666; }
+  ::-webkit-scrollbar-thumb:hover {
+    transition: all 0.3s ease-in-out;
+    background: #666; }
 
 nav {
   background-color: #FFF;
@@ -223,21 +222,32 @@ h1 {
 .Slides {
   transition: all 0.2s ease;
   display: inline-flex;
-  width: calc(100% - 301px - 1vw);
+  width: calc(100% - 303px - 1vw);
   align-content: center;
   align-items: center;
   margin: 0;
   overflow: hidden;
-  z-index: 1; }
+  z-index: 1;
+  overflow-x: auto;
+  overflow-y: hidden; }
+  .Slides::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none; }
+  .Slides::-webkit-scrollbar-thumb {
+    width: 0px;
+    height: 0px;
+    display: none; }
   @media only screen and (max-width: 700px) {
     .Slides {
-      width: calc(100% - 200px - 1vw) !important; } }
+      width: calc(100% - 200px - 2vw) !important; } }
   @media only screen and (max-width: 575px) {
     .Slides {
       width: calc(100% - 4vw) !important;
       margin: 0 2vw; } }
 
 .Project {
+  white-space: nowrap;
   transition: all 0.3s ease;
   display: inline-block;
   width: calc(100% / 3 - 2vw);
