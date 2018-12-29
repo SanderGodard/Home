@@ -34,7 +34,7 @@ function GetStyle(CLASSname) {
 
 var objName = "SideArrow";
 var objStyle = "display: ";
-var objProperty = "inline";
+var objProperty = "inline-block";
 
 var fullObjStyle = GetStyle("." + objName);
 var displayIndex = fullObjStyle.indexOf(objStyle);
@@ -45,28 +45,48 @@ console.log(displayProperty);
 //Function to toggle menu
 var nav = document.getElementById("MobileNav");
 var menubtn = document.getElementById("MobileMenu");
-var arrows = document.getElementsByClassName(objName);
+//var arrows = document.getElementsByClassName(objName);
 
-var style = window.getComputedStyle(arrows);
-margin = style.getPropertyValue('margin-top');
+//var style = window.getComputedStyle(arrows);
+//margin = style.getPropertyValue('margin-top');
 
-alert(margin);
+var arrows = Array.prototype.slice.call(document.querySelectorAll("." + objName));
+var margin = arrows.map(x => x.style.marginTop);
 
-var mvalue = arrows.rules.marginTop;
+
+
+console.log(margin);
+console.log(arrows);
+
+
+var mvalue = arrows.style.marginTop;
 var tvalue = 197;
 var zvalue = mvalue + tvalue;
 
 console.log(mvalue);
+console.log(zvalue);
+
 
 function MenuToggle() {
-  if (nav.style.height === "197px") {
+  if (arrows.some(x => x.style.display == objProperty) && nav.style.height === "197px") {
     nav.style.height = "0px";
     menubtn.innerHTML = "menu";
     arrows.style.marginTop = "mvalue" + "px";
-  } else {
+
+  }
+  else if (arrows.some(x => x.style.display == objProperty) && nav.style.height === "0px") {
     nav.style.height = "197px";
     menubtn.innerHTML = "clear";
     arrows.style.marginTop = "zvalue" + "px";
-    //arrows.style.marginTop = "200px";
+  }
+  else if (arrows.some(x => x.style.display != objProperty) && nav.style.height === "197px") {
+    nav.style.height = "0px";
+    menubtn.innerHTML = "clear";
+    arrows.style.marginTop = "mvalue" + "px";
+  }
+  else {
+    nav.style.height = "197px";
+    menubtn.innerHTML = "clear";
+    arrows.style.marginTop = "mvalue" + "px";
   }
 }
