@@ -57,10 +57,6 @@ img {
   background: #999;
   border-radius: 2.5px; }
 
-::-webkit-scrollbar-thumb:hover {
-  transition: all 0.3s ease-in-out;
-  background: #666; }
-
 header {
   background-color: #772121;
   color: #FFF;
@@ -300,15 +296,12 @@ main h1 {
 .Slides {
   transition: all 0.2s ease;
   display: inline-flex;
-  width: calc(100% - 301px - 1vw);
   align-content: center;
   align-items: center;
   margin: 0;
   overflow: hidden;
-  z-index: 1; }
   @media only screen and (max-width: 700px) {
     .Slides {
-      width: calc(100% - 200px - 1vw) !important; } }
   @media only screen and (max-width: 575px) {
     .Slides {
       width: calc(100% - 4vw) !important;
