@@ -161,9 +161,12 @@ footer
   display: block
   width: 100%
   height: 262.5px
+  position: sticky
+  top: 70px
   box-shadow: $Shadow
   background-color: $ThirdColor
   overflow: hidden
+  z-index: 999
 
   a
     transition: all .3s ease
@@ -261,6 +264,7 @@ h1
   color: $MainColor
   transform: translate(0, -150%)
   display: inline
+  z-index: 2
 
   &:hover
     cursor: pointer
@@ -278,8 +282,8 @@ h1
     height: 100px
     width: 100px
     margin: 50% -30px 0
-    top: 0
-    margin-top: calc((98vw / 16 * 9) + 130px + 7vh)
+    //top: 0
+    //margin-top: calc((98vw / 16 * 9) + 130px + 7vh)
 
   @media #{$MobileXM}
     font-size: 60px
@@ -295,6 +299,11 @@ h1
   @media #{$MobileXXL}
     align-self: center
     vertical-align: middle
+    margin-top: calc(-310px + 2.5em)
+
+  @media #{$MobileXM}
+    margin-top: calc(-253px + 2.5em)
+
 
 .Slides
   transition: all .2s ease
@@ -304,6 +313,7 @@ h1
   align-items: center
   margin: 0
   overflow: hidden
+  z-index: 1
 
   @media #{$TabletM}
     width: calc(100% - 200px - 1vw) !important

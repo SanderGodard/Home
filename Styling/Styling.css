@@ -117,9 +117,12 @@ footer {
   display: block;
   width: 100%;
   height: 262.5px;
+  position: sticky;
+  top: 70px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   background-color: #7D7D7D;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 999; }
   .MobileNav a {
     transition: all 0.3s ease;
     height: 65px;
@@ -180,7 +183,8 @@ h1 {
   font-size: 150px;
   color: #772121;
   transform: translate(0, -150%);
-  display: inline; }
+  display: inline;
+  z-index: 2; }
   .SideArrow:hover {
     cursor: pointer; }
   @media only screen and (max-width: 700px) {
@@ -196,9 +200,7 @@ h1 {
       padding: 3px 10px;
       height: 100px;
       width: 100px;
-      margin: 50% -30px 0;
-      top: 0;
-      margin-top: calc((98vw / 16 * 9) + 130px + 7vh); } }
+      margin: 50% -30px 0; } }
   @media only screen and (max-width: 395px) {
     .SideArrow {
       font-size: 60px;
@@ -212,7 +214,11 @@ h1 {
   @media only screen and (max-width: 575px) {
     #RightArrow {
       align-self: center;
-      vertical-align: middle; } }
+      vertical-align: middle;
+      margin-top: calc(-310px + 2.5em); } }
+  @media only screen and (max-width: 395px) {
+    #RightArrow {
+      margin-top: calc(-253px + 2.5em); } }
 
 .Slides {
   transition: all 0.2s ease;
@@ -221,7 +227,8 @@ h1 {
   align-content: center;
   align-items: center;
   margin: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   @media only screen and (max-width: 700px) {
     .Slides {
       width: calc(100% - 200px - 1vw) !important; } }
