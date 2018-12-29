@@ -93,6 +93,9 @@ a
   background: #999
   border-radius: 2.5px
 
+  &:hover
+    transition: all 0.3s ease-in-out
+    background: #666
 
 
 nav
@@ -304,13 +307,28 @@ h1
 .Slides
   transition: all .2s ease
   display: inline-flex
+  width: calc(100% - 303px - 1vw)
   align-content: center
   align-items: center
   margin: 0
   overflow: hidden
   z-index: 1
+  overflow-x: auto
+  overflow-y: hidden
+
+  &::-webkit-scrollbar
+    width: 0px
+    height: 0px
+    display: none
+
+
+  &::-webkit-scrollbar-thumb
+    width: 0px
+    height: 0px
+    display: none
 
   @media #{$TabletM}
+    width: calc(100% - 200px - 2vw) !important
 
   @media #{$MobileXXL}
     width: calc(100% - 4vw) !important
