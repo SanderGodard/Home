@@ -381,8 +381,17 @@ main h1
 
   &::-webkit-scrollbar
     width: 0px
+    height: 0px
+    display: none
+
+
+  &::-webkit-scrollbar-thumb
+    width: 0px
+    height: 0px
+    display: none
 
   @media #{$TabletM}
+    width: calc(100% - 200px - 2vw) !important
 
   @media #{$MobileXXL}
     width: calc(100% - 4vw) !important
