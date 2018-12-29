@@ -53,10 +53,9 @@ a {
   transition: all 0.3s ease-in-out;
   background: #999;
   border-radius: 2.5px; }
-
-::-webkit-scrollbar-thumb:hover {
-  transition: all 0.3s ease-in-out;
-  background: #666; }
+  ::-webkit-scrollbar-thumb:hover {
+    transition: all 0.3s ease-in-out;
+    background: #666; }
 
 nav {
   background-color: #FFF;
@@ -223,6 +222,14 @@ h1 {
   margin: 0;
   overflow-x: auto;
   overflow-y: hidden; }
+  .Slides::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none; }
+  .Slides::-webkit-scrollbar-thumb {
+    width: 0px;
+    height: 0px;
+    display: none; }
   @media only screen and (max-width: 700px) {
     .Slides {
       width: calc(100% - 200px - 2vw) !important; } }

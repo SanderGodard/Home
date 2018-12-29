@@ -75,6 +75,9 @@
       }
     }
   </script>
+  <script type="text/javascript" src="Scripts/Scroll.js">
+
+  </script>
 </head>
 
 <body>
@@ -101,10 +104,10 @@
     <div class="GalleriPart">
       <div class="Body">
         <h1><a href="Pages/Galleri.html">Galleri</a></h1>
-        <span class="SideArrow Material" onclick="GalleryScrollLeft()">keyboard_arrow_left</span>
-        <div class="Slides">
+        <span class="SideArrow Material" onclick="ScrollLeft()">keyboard_arrow_left</span>
+        <div class="Slides" id="Slider">
 
-          <a class="Project" id="Mosala" href="Pages/Galleri.html#Mosala">
+          <a class="Project" id="Project1" href="Pages/Galleri.html#Mosala">
             <img src="Images/Placeholder.png" alt="Project 1">
             <div>
               <h3>Mosala</h3>
@@ -145,7 +148,7 @@
           </a>
 
         </div>
-        <span class="SideArrow Material" id="RightArrow" onclick="GalleryScrollRight()">keyboard_arrow_right</span>
+        <span class="SideArrow Material" id="RightArrow" onclick="Scroll()">keyboard_arrow_right</span>
       </div>
     </div>
 

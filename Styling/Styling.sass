@@ -93,10 +93,9 @@ a
   background: #999
   border-radius: 2.5px
 
-
-::-webkit-scrollbar-thumb:hover
-  transition: all 0.3s ease-in-out
-  background: #666
+  &:hover
+    transition: all 0.3s ease-in-out
+    background: #666
 
 
 nav
@@ -305,6 +304,17 @@ h1
   margin: 0
   overflow-x: auto
   overflow-y: hidden
+
+  &::-webkit-scrollbar
+    width: 0px
+    height: 0px
+    display: none
+
+
+  &::-webkit-scrollbar-thumb
+    width: 0px
+    height: 0px
+    display: none
 
   @media #{$TabletM}
     width: calc(100% - 200px - 2vw) !important
