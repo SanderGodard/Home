@@ -1,14 +1,14 @@
-//Function to toggle menu
-var nav = document.getElementById("MobileNav");
-var menubtn = document.getElementById("MobileMenu");
-
 function MenuToggle() {
-  if (nav.style.height === "197px") {
-    nav.style.height = "0px";
-    menubtn.innerHTML = "menu";
+  var x = document.getElementById("MobileNav");
+  if (x.style.height === "197px") {
+    x.style.height = "0px";
+  } else {
+    x.style.height = "197px";
   }
-  else {
-    nav.style.height = "197px";
-    menubtn.innerHTML = "clear";
+  var a = document.getElementById("MobileMenu");
+  if (a.innerHTML === "menu") {
+    a.innerHTML = "clear";
+  } else {
+    a.innerHTML = "menu";
   }
 }

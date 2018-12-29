@@ -166,6 +166,7 @@ footer
   box-shadow: $Shadow
   background-color: $ThirdColor
   overflow: hidden
+  z-index: 999
 
   a
     transition: all .3s ease
@@ -263,6 +264,7 @@ h1
   color: $MainColor
   transform: translate(0, -150%)
   display: inline
+  z-index: 2
 
   &:hover
     cursor: pointer
@@ -311,6 +313,7 @@ h1
   align-items: center
   margin: 0
   overflow: hidden
+  z-index: 1
 
   @media #{$TabletM}
     width: calc(100% - 200px - 1vw) !important
