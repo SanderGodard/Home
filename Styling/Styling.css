@@ -66,17 +66,38 @@ header {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  overflow: hidden; }
+  overflow: hidden;
+  display: block; }
   header #Path {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     height: 100vh;
     width: 20vw;
     position: absolute;
-    left: 40vw;
+    left: calc(40vw + 1px);
     top: 0;
     z-index: 3;
     background-color: #772121;
     display: block; }
+    @media only screen and (max-width: 800px) {
+      header #Path {
+        clip-path: polygon(-5% 100%, 100% 0, 100% 100%);
+        height: 40px;
+        width: 100vw;
+        left: 0;
+        top: calc((100vw / 16 * 9) + 31px); } }
+  header #Path2 {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    clip-path: polygon(-5% 100%, 0% 0%, 100% 0);
+    height: 40px;
+    width: 100vw;
+    left: 0;
+    top: 69px;
+    background-color: #772121; }
+    @media only screen and (max-width: 800px) {
+      header #Path2 {
+        display: block; } }
   header #Next1 {
     color: #FFF;
     position: absolute;
@@ -87,9 +108,11 @@ header {
     top: 80vh;
     z-index: 6;
     font-size: 8em; }
+    @media only screen and (max-width: 1023px) {
+      header #Next1 {
+        font-size: 7em; } }
   header img {
     height: 100vh;
-    width: auto;
     width: 60vw;
     object-fit: cover;
     bottom: 0;
@@ -97,6 +120,12 @@ header {
     right: 0;
     left: 0;
     z-index: 2; }
+    @media only screen and (max-width: 800px) {
+      header img {
+        height: auto;
+        width: 100vw;
+        margin-top: 70px;
+        display: block; } }
   header .HeaderContent {
     background-color: #772121;
     width: 25vw;
@@ -107,15 +136,34 @@ header {
     display: flex;
     flex-direction: column;
     z-index: 5; }
+    @media only screen and (max-width: 800px) {
+      header .HeaderContent {
+        background-color: rgba(0, 0, 0, 0);
+        width: 90vw;
+        height: 90vh;
+        top: calc(5vh + 110px);
+        right: 5vw; } }
     header .HeaderContent h1 {
       font-size: 2.9em;
       font-weight: 400; }
+      @media only screen and (max-width: 1222px) {
+        header .HeaderContent h1 {
+          font-size: 2.4em; } }
+      @media only screen and (max-width: 1023px) {
+        header .HeaderContent h1 {
+          font-size: 1.9em; } }
+      @media only screen and (max-width: 800px) {
+        header .HeaderContent h1 {
+          margin-top: calc(((100vw / 16 * 9) / 2) - 120px );
+          top: 0;
+          position: absolute;
+          font-size: 2.5em; } }
     header .HeaderContent #CTA {
       display: block;
       color: #772121;
       background-color: #FFF;
       text-align: center;
-      padding-top: 0.4em;
+      padding: 0.4em 0 0;
       border-radius: 1em;
       width: 102%;
       height: 2em;
@@ -124,18 +172,38 @@ header {
       bottom: 0;
       margin: 10vh -1% 0;
       font-size: 2.5em; }
+      @media screen and (max-width: 1271px) {
+        header .HeaderContent #CTA {
+          font-size: 2.3em;
+          padding: 0.2em; } }
+      @media only screen and (max-width: 1222px) {
+        header .HeaderContent #CTA {
+          font-size: 2em; } }
+      @media only screen and (max-width: 1023px) {
+        header .HeaderContent #CTA {
+          font-size: 1.5em;
+          height: 1.7em; } }
+      @media only screen and (max-width: 800px) {
+        header .HeaderContent #CTA {
+          margin-top: calc((100vw / 16 * 9) + 7vh);
+          top: 0;
+          position: absolute; } }
     header .HeaderContent p {
       margin: 2.5em 0 0; }
+      @media only screen and (max-width: 800px) {
+        header .HeaderContent p {
+          margin-top: calc((100vw / 16 * 9) - 50px);
+          position: absolute; } }
   header #MobileMenuHeader {
     display: none;
     width: calc(40px + 2vw);
     position: absolute;
-    top: 23px;
+    top: 10px;
     right: 0;
     font-size: 2em;
     display: flex;
     color: white;
-    z-index: 5; }
+    z-index: 999999999999999999; }
 
 nav {
   background-color: #FFF;
@@ -175,6 +243,9 @@ nav {
     @media only screen and (max-width: 575px) {
       nav .Body {
         width: calc(100% - 4vw); } }
+
+main {
+  z-index: 2; }
 
 footer {
   width: 100%;
@@ -216,6 +287,35 @@ footer {
 #MobileNav {
   transition: all 0.3s ease;
   height: 0px; }
+
+.HeaderNav {
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 332.5px;
+  position: absolute;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: #772121;
+  overflow: hidden;
+  z-index: 99999999; }
+  .HeaderNav a {
+    transition: all 0.3s ease;
+    height: 65px;
+    color: #FFF;
+    width: 100%;
+    display: block;
+    background-color: #772121;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 0 0;
+    margin: 0 0 0.5px; }
+  .HeaderNav .Active {
+    border-bottom: 1px solid #FFF; }
+
+#HeaderNav {
+  transition: all 0.3s ease;
+  height: 0px;
+  padding-top: 0px; }
 
 .GalleriPart {
   width: 100%;
