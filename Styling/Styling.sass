@@ -6,6 +6,11 @@ $SecondaryColor: #383838
 $ThirdColor: #7D7D7D
 $White: #FFF
 
+$ButtonColor: #7D7D7D
+$ButtonHover: #666666
+
+$LineClip: polygon(25% 0, 34% 0, 100% 70%, 100% 79%)
+
 $Shadow: 0px 3px 6px rgba(0,0,0,0.2)
 
 // ============ Mobile
@@ -227,11 +232,9 @@ footer
     @media #{$MobileXXL}
       width: 100%
 
-
-.BackgroundLine
-  clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%)
-  height: 3000px
-  width: 3000px
+.Background
+  height: 100vw
+  width: 100vw
   position: absolute
   left: 0
   top: 0
@@ -239,17 +242,51 @@ footer
   background-color: $MainColor
   display: block
 
+  @media #{$TabletL}
+    height: 200vh
+    width: 200vh
 
-.BackgroundTriangle
+  @media #{$MobileXXL}
+    height: 150vh
+    width: 150vh
+
+  @media #{$MobileM}
+    height: 100vh
+    width: 100vh
+
+.Line
+  clip-path: $LineClip
+
+
+.Triangle
   clip-path: polygon(0 29%, 0 72%, 21% 51%)
-  height: 3000px
-  width: 3000px
-  position: absolute
-  left: 0
-  top: 0
-  z-index: -1
-  background-color: $MainColor
+
+
+.ToBtn
+  transition: all .1s ease
+  background-color: $ButtonColor
+  color: white
+  font-size: 1.25em
   display: block
+  width: 250px
+  text-align: center
+  margin-left: calc(50% - 125px)
+  margin-top: 5vh
+  border-radius: 26.5px
+  padding: 10px
+  box-shadow: $Shadow
+
+  &:hover
+    transition: all .1s ease
+    background-color: $ButtonHover
+
+  &:active
+    transition: all .1s ease
+    box-shadow: 0
+    margin-top: calc(5vh + 2px)
+
+  @media #{$MobileXXL}
+    display: none
 
 
 h1
@@ -272,10 +309,15 @@ h1
     width: 100%
 
     @media #{$MobileXXL}
+      transition: all .1s ease
       text-align: center
       padding: 4px 10vw
       background-color: #E4E4E4
-      border-radius: 26.5px
+      border-radius: 30px
+
+      &:hover
+        transition: all .1s ease
+        background-color: #D7D7D7
 
 
 .Material

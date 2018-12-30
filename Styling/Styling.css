@@ -149,27 +149,57 @@ footer {
     .GalleriPart .Body {
       width: 100%; } }
 
-.BackgroundLine {
-  clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
-  height: 3000px;
-  width: 3000px;
+.Background {
+  height: 100vw;
+  width: 100vw;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
   background-color: #772121;
   display: block; }
+  @media only screen and (max-width: 800px) {
+    .Background {
+      height: 200vh;
+      width: 200vh; } }
+  @media only screen and (max-width: 575px) {
+    .Background {
+      height: 150vh;
+      width: 150vh; } }
+  @media only screen and (max-width: 376px) {
+    .Background {
+      height: 100vh;
+      width: 100vh; } }
 
-.BackgroundTriangle {
-  clip-path: polygon(0 29%, 0 72%, 21% 51%);
-  height: 3000px;
-  width: 3000px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background-color: #772121;
-  display: block; }
+.Line {
+  clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%); }
+
+.Triangle {
+  clip-path: polygon(0 29%, 0 72%, 21% 51%); }
+
+.ToBtn {
+  transition: all 0.1s ease;
+  background-color: #7D7D7D;
+  color: white;
+  font-size: 1.25em;
+  display: block;
+  width: 250px;
+  text-align: center;
+  margin-left: calc(50% - 125px);
+  margin-top: 5vh;
+  border-radius: 26.5px;
+  padding: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); }
+  .ToBtn:hover {
+    transition: all 0.1s ease;
+    background-color: #666666; }
+  .ToBtn:active {
+    transition: all 0.1s ease;
+    box-shadow: 0;
+    margin-top: calc(5vh + 2px); }
+  @media only screen and (max-width: 575px) {
+    .ToBtn {
+      display: none; } }
 
 h1 {
   font-size: 2.5em;
@@ -190,10 +220,14 @@ h1 {
     width: 100%; }
     @media only screen and (max-width: 575px) {
       h1 a {
+        transition: all 0.1s ease;
         text-align: center;
         padding: 4px 10vw;
         background-color: #E4E4E4;
-        border-radius: 26.5px; } }
+        border-radius: 30px; }
+        h1 a:hover {
+          transition: all 0.1s ease;
+          background-color: #D7D7D7; } }
 
 .Material {
   font-family: "Material Icons", sans-serif;
