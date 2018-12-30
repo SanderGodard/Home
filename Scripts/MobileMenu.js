@@ -22,7 +22,7 @@ function HeaderMenuToggle() {
     x.style.height = "267px";
     x.style.paddingTop = "70px";
   }
-  var a = document.getElementById("MobileHeaderMenu");
+  var a = document.getElementById("MobileMenuHeader");
   if (a.innerHTML === "menu") {
     a.innerHTML = "clear";
   } else {

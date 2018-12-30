@@ -105,9 +105,10 @@ header {
     height: 150px;
     left: calc(50vw - 75px);
     text-align: center;
-    top: 80vh;
+    top: 100vh;
     z-index: 6;
-    font-size: 8em; }
+    font-size: 8em;
+    transform: translate(0%, -100%); }
     @media only screen and (max-width: 1023px) {
       header #Next1 {
         font-size: 7em; } }
@@ -144,7 +145,7 @@ header {
         top: calc(5vh + 110px);
         right: 5vw; } }
     header .HeaderContent h1 {
-      font-size: 2.9em;
+      font-size: 2.7em;
       font-weight: 400; }
       @media only screen and (max-width: 1222px) {
         header .HeaderContent h1 {

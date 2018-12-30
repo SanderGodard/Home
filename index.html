@@ -25,9 +25,10 @@
   <script type="text/javascript" src="Scripts/ScrollTop.js"></script>
   <script type="text/javascript" src="Scripts/MobileMenu.js"></script>
   <script type="text/javascript" src="Scripts/Scroll.js"></script>
+  <script type="text/javascript" src="Scripts/MobileArrows.js"></script>
 </head>
 
-<body>
+<body onload="arrowsMargin()">
   <header>
     <div class="Body">
       <a href="javascript:void(0)" onclick="HeaderMenuToggle()" class="NavBtn Material" id="MobileMenuHeader">menu</a>
@@ -72,7 +73,7 @@
     <div class="GalleriPart">
       <div class="Body">
         <h1><a href="Pages/Galleri.html">Galleri</a></h1>
-        <span class="SideArrow Material" onclick="ScrollLeft()">keyboard_arrow_left</span>
+        <span class="SideArrow Material" id="LeftArrow" onclick="ScrollLeft()">keyboard_arrow_left</span>
         <div class="Slides" id="Slider">
 
           <a class="Project" id="Project1" href="Pages/Galleri.html#Mosala">
