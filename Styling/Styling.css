@@ -34,12 +34,12 @@ a {
   text-decoration: none; }
 
 ::-moz-selection {
-  background: #772121;
+  background: #6C1919;
   opacity: 0.7;
   color: #FFF; }
 
 ::selection {
-  background: #772121;
+  background: #6C1919;
   color: #FFF;
   opacity: 0.7; }
 
@@ -90,7 +90,7 @@ footer {
   align-items: center;
   float: right;
   height: 70px;
-  color: #772121;
+  color: #6C1919;
   text-decoration: none;
   font-size: 1.5em; }
   @media only screen and (max-width: 800px) {
@@ -125,7 +125,7 @@ footer {
   .MobileNav a {
     transition: all 0.3s ease;
     height: 65px;
-    color: #772121;
+    color: #6C1919;
     width: 100%;
     display: block;
     background-color: #FFF;
@@ -134,7 +134,7 @@ footer {
     padding: 20px 0 0;
     margin: 0 0 0.5px; }
   .MobileNav .Active {
-    border-bottom: 1px solid #772121; }
+    border-bottom: 1px solid #6C1919; }
 
 #MobileNav {
   transition: all 0.3s ease;
@@ -156,7 +156,7 @@ footer {
   left: 0;
   top: 0;
   z-index: -1;
-  background-color: #772121;
+  background-color: #6C1919;
   display: block; }
   @media only screen and (max-width: 800px) {
     .Background {
@@ -236,7 +236,7 @@ h1 {
 .SideArrow {
   font-weight: 100;
   font-size: 150px;
-  color: #772121;
+  color: #6C1919;
   transform: translate(0, -150%);
   display: inline;
   z-index: 2; }
@@ -331,7 +331,7 @@ h1 {
     padding: 10px;
     overflow: hidden; }
     .Project div h3 {
-      color: #772121;
+      color: #6C1919;
       font-size: 1.5em;
       font-weight: 400;
       margin: 0px 0px 10px; }
