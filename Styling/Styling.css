@@ -285,6 +285,10 @@ footer {
   .MobileNav .Active {
     border-bottom: 1px solid #6C1919; }
 
+.NavActive {
+  border-bottom: 1px solid #6C1919;
+  padding-bottom: 20px; }
+
 #MobileNav {
   transition: all 0.3s ease;
   height: 0px; }
