@@ -31,7 +31,8 @@ body {
   border-collapse: collapse; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 img {
   filter: grayscale(1); }
@@ -216,6 +217,7 @@ nav {
   top: 0;
   z-index: 9999999; }
   nav .NavBtn {
+    transition: all 0.1s ease;
     padding: 0 1vw;
     display: flex;
     align-items: center;
@@ -224,6 +226,12 @@ nav {
     color: #6C1919;
     text-decoration: none;
     font-size: 1.5em; }
+    nav .NavBtn:hover {
+      transition: all 0.1s ease;
+      background-color: #FBFBFB; }
+    nav .NavBtn:focus {
+      transition: all 0.1s ease;
+      background-color: #FBFBFB; }
     @media only screen and (max-width: 800px) {
       nav .NavBtn {
         display: none; } }
@@ -285,6 +293,82 @@ footer {
   .MobileNav .Active {
     border-bottom: 1px solid #6C1919; }
 
+.GalleriInfo {
+  text-align: right;
+  width: 59%;
+  display: block;
+  margin: 5vh 0 2vh 41%; }
+
+input {
+  background: url("../Images/Search.png") right no-repeat;
+  background-size: 30px;
+  background-origin: content-box;
+  transition: all 0.2s ease;
+  background-color: #FFF;
+  height: 50px;
+  position: relative;
+  padding: 12.5px 20px;
+  margin: 5vh auto 7vh;
+  width: 90%;
+  max-width: 420px;
+  min-width: 300px;
+  border-radius: 25px;
+  color: #6C1919;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border: 0px solid #FFF;
+  display: block;
+  font-size: 1em; }
+  input:hover {
+    transition: all 0.4s ease;
+    transform: scale(1.02); }
+  input:focus {
+    transition: all 0.3s ease;
+    transform: scale(1.03); }
+  input::placeholder {
+    color: #6C1919;
+    opacity: 1; }
+
+.GalleriFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: auto;
+  width: 90%; }
+  @media only screen and (max-width: 575px) {
+    .GalleriFlex {
+      width: calc(100% - 4vw); } }
+  .GalleriFlex .Project {
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: calc(100% / 4 - .8vw);
+    height: auto;
+    margin: 1vw 0.4vw;
+    text-decoration: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #FFF; }
+    @media only screen and (max-width: 1023px) {
+      .GalleriFlex .Project {
+        width: calc(100% / 3 - .8vw); } }
+    @media only screen and (max-width: 800px) {
+      .GalleriFlex .Project {
+        width: calc(100% / 2 - .8vw); } }
+    @media only screen and (max-width: 575px) {
+      .GalleriFlex .Project {
+        width: calc(100% - .8vw); } }
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 9px;
+  margin: 3vh auto 1vh;
+  color: black;
+  font-weight: 400; }
+
 .NavActive {
   border-bottom: 1px solid #6C1919;
   padding-bottom: 20px; }
@@ -333,12 +417,15 @@ footer {
       .GalleriPart .Body {
         width: 100%; } }
 
+#home .Background {
+  top: calc(100vh + 70px) !important; }
+
 .Background {
   height: 100vw;
   width: 100vw;
   position: absolute;
   left: 0;
-  top: calc(100vh + 70px);
+  top: 70px;
   z-index: -1;
   background-color: #6C1919;
   display: block; }
@@ -398,6 +485,7 @@ main h1 {
       padding-left: 0;
       margin: 0 0 2vh; } }
   main h1 a {
+    transition: all 0.1s ease;
     color: black;
     text-decoration: none;
     text-align: center;
@@ -418,13 +506,19 @@ main h1 {
   font-size: 1.1em; }
 
 .SideArrow {
+  transition: all 0.1s ease;
   font-weight: 100;
   font-size: 150px;
   color: #6C1919;
   display: inline;
   z-index: 2; }
   .SideArrow:hover {
+    transition: all 0.2s ease;
+    transform: scale(1.01);
     cursor: pointer; }
+  .SideArrow:focus {
+    transition: all 0.3s ease;
+    transform: scale(1.03); }
   @media only screen and (max-width: 700px) {
     .SideArrow {
       font-size: 100px; } }
@@ -503,6 +597,9 @@ main h1 {
     .Project {
       width: calc(100% - .8vw); } }
   .Project:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.03); }
+  .Project:focus {
     transition: all 0.3s ease;
     transform: scale(1.03); }
   .Project img {

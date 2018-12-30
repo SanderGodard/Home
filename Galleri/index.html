@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="Images/Favicon.ico">
-  <link rel="stylesheet" href="Styling/Styling.css">
-  <title>Sander Godard | Hjem</title>
+  <link rel="shortcut icon" href="../Images/Favicon.ico">
+  <link rel="stylesheet" href="../Styling/Styling.css">
+  <title>Sander Godard | Galleri</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <meta name="keywords" content="Sander Godard, portfolio, Web utvikler">
@@ -22,42 +22,19 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <script type="text/javascript" src="Scripts/ScrollTop.js"></script>
-  <script type="text/javascript" src="Scripts/MobileMenu.js"></script>
-  <script type="text/javascript" src="Scripts/Scroll.js"></script>
-  <script type="text/javascript" src="Scripts/MobileArrows.js"></script>
+  <script type="text/javascript" src="../Scripts/ScrollTop.js"></script>
+  <script type="text/javascript" src="../Scripts/MobileMenu.js"></script>
+  <script type="text/javascript" src="../Scripts/Search.js"></script>
 </head>
 
-<body onload="arrowsMargin()">
-  <header>
-    <div class="Body">
-      <a href="javascript:void(0)" onclick="HeaderMenuToggle()" class="NavBtn Material" id="MobileMenuHeader">menu</a>
-    </div>
-    <div class="HeaderNav" id="HeaderNav">
-      <a href="../Galleri" class="Active">Galleri</a>
-      <a href="../Om-meg">Om meg</a>
-      <a href="../Kontakt">Kontakt</a>
-    </div>
-    <img src="Images/Placeholder.png" alt="This is me">
-    <div id=Path2></div>
-    <div id=Path></div>
-    <div class="HeaderContent">
-      <h1>Sander<br>Maurice Godard</h1>
-      <p>Velkommen til min nettside.<br>
-        Her kan du se litt om meg, og om prosjekter jeg har
-        jobbet med før.
-      </p>
-      <a href="Pages/Contact.html" id="CTA">Kom i kontakt</a>
-    </div>
-    <a href="#Next" class="Material" id="Next1">keyboard_arrow_down</a>
-  </header>
+<body>
   <nav style="position: sticky;" id="Next">
     <div class="Body">
       <a href="/Home" class="NavBtn" id="Navn">Sander Godard</a>
 
       <a href="../Kontakt" class="NavBtn">Kontakt</a>
       <a href="../Om-meg" class="NavBtn">Om meg</a>
-      <a href="../Galleri" class="NavBtn" class="NavActive">Galleri</a>
+      <a href="../Galleri" class="NavBtn NavActive">Galleri</a>
 
       <a href="javascript:void(0)" onclick="MenuToggle()" class="NavBtn Material" id="MobileMenu">menu</a>
     </div>
@@ -70,64 +47,66 @@
   <main>
     <div class="Background Line"></div>
     <div class="Background Triangle"></div>
-    <div class="GalleriPart">
-      <div class="Body">
-        <h1><a href="../Galleri">Galleri</a></h1>
-        <span class="SideArrow Material" id="LeftArrow" onclick="ScrollLeft()">keyboard_arrow_left</span>
-        <div class="Slides" id="Slider">
+    <div class="Body">
+      <h2><a href="../Galleri">Galleri</a></h2>
+      <p class="GalleriInfo">
+        Her kan du se på prosjektene jeg har jobbet med før. Jeg liker å jobbe med alt fra enkle nettsider til webapplikasjoner.<br>
+        Jeg designer, koder, tester og forbedrer alt du kan se på en nettside
+      </p>
+      <input type="text" name="Search" id="Search" placeholder="Søk..." onkeyup="SearchFunction()" maxlength="20">
+    </div>
 
-          <a class="Project" id="Project1" href="../Galleri#Mosala">
-            <img src="Images/Placeholder.png" alt="Project 1">
-            <div>
-              <h3>Mosala</h3>
-              <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
-            </div>
-          </a>
+    <div class="GalleriFlex" id="SearchList">
 
-          <a class="Project" id="Project2" href="../Galleri#Project2">
-            <img src="Images/Placeholder.png" alt="Project 2">
-            <div>
-              <h3>Prosj 2</h3>
-              <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
-            </div>
-          </a>
-
-          <a class="Project" id="Project3" href="../Galleri#Project3">
-            <img src="Images/Placeholder.png" alt="Project 3">
-            <div>
-              <h3>Prosj 3</h3>
-              <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
-            </div>
-          </a>
-
-          <a class="Project" id="Project4" href="../Galleri#Project4">
-            <img src="Images/Placeholder.png" alt="Project 4">
-            <div>
-              <h3>Prosj 4</h3>
-              <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
-            </div>
-          </a>
-
-          <a class="Project" id="Project5" href="../Galleri#Project5">
-            <img src="Images/Placeholder.png" alt="Project 5">
-            <div>
-              <h3>Prosj 5</h3>
-              <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
-            </div>
-          </a>
-
-          <a class="Project" id="Project6" href="../Galleri#Project6">
-            <img src="Images/Placeholder.png" alt="Project 6">
-            <div>
-              <h3>Prosj 6</h3>
-              <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
-            </div>
-          </a>
-
+      <a class="Project" id="Project1" href="../Galleri#Mosala">
+        <img src="../Images/Placeholder.png" alt="Project 1">
+        <div>
+          <h3>Mosala</h3>
+          <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
         </div>
-        <span class="SideArrow Material" id="RightArrow" onclick="Scroll()">keyboard_arrow_right</span>
-      </div>
-      <a href="../Galleri" class="ToBtn">Til galleri</a>
+      </a>
+
+      <a class="Project" id="Project2" href="../Galleri#Project2">
+        <img src="../Images/Placeholder.png" alt="Project 2">
+        <div>
+          <h3>Prosj 2</h3>
+          <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
+        </div>
+      </a>
+
+      <a class="Project" id="Project3" href="../Galleri#Project3">
+        <img src="../Images/Placeholder.png" alt="Project 3">
+        <div>
+          <h3>Prosj 3</h3>
+          <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
+        </div>
+      </a>
+
+      <a class="Project" id="Project4" href="../Galleri#Project4">
+        <img src="../Images/Placeholder.png" alt="Project 4">
+        <div>
+          <h3>Prosj 4</h3>
+          <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
+        </div>
+      </a>
+
+      <a class="Project" id="Project5" href="../Galleri#Project5">
+        <img src="../Images/Placeholder.png" alt="Project 5">
+        <div>
+          <h3>Prosj 5</h3>
+          <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
+        </div>
+      </a>
+
+      <a class="Project" id="Project6" href="../Galleri#Project6">
+        <img src="../Images/Placeholder.png" alt="Project 6">
+        <div>
+          <h3>Prosj 6</h3>
+          <span>En nettside hvor oppstartsbedrifter og arbeidere kan lettere finne hverandre</span>
+        </div>
+      </a>
+
+    </div>
     </div>
 
     <br>

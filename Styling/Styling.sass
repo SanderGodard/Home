@@ -5,6 +5,7 @@ $MainColor: #6C1919
 $SecondaryColor: #383838
 $ThirdColor: #7D7D7D
 $White: #FFF
+$WhiteHover : #FBFBFB
 
 $ButtonColor: #7D7D7D
 $ButtonHover: #666666
@@ -72,6 +73,7 @@ body
 
 a
   text-decoration: none
+  color: black
 
 img
   filter: grayscale(1)
@@ -275,6 +277,7 @@ nav
   z-index: 9999999
 
   .NavBtn
+    transition: all .1s ease
     padding: 0 1vw
     display: flex
     align-items: center
@@ -283,6 +286,14 @@ nav
     color: $MainColor
     text-decoration: none
     font-size: 1.5em
+
+    &:hover
+      transition: all .1s ease
+      background-color: $WhiteHover
+
+    &:focus
+      transition: all .1s ease
+      background-color: $WhiteHover
 
     @media #{$TabletL}
       display: none
@@ -354,6 +365,93 @@ footer
     border-bottom: 1px solid $MainColor
 
 
+.GalleriInfo
+  text-align: right
+  width: 59%
+  display: block
+  margin: 5vh 0 2vh 41%
+
+
+input
+  background: url("../Images/Search.png") right no-repeat
+  background-size: 30px
+  background-origin: content-box
+  transition: all .2s ease
+  background-color: $White
+  height: 50px
+  position: relative
+  padding: 12.5px 20px
+  margin: 5vh auto 7vh
+  width: 90%
+  max-width: 420px
+  min-width: 300px
+  border-radius: 25px
+  color: $MainColor
+  box-shadow: $Shadow
+  border: 0px solid $White
+  display: block
+  font-size: 1em
+
+  &:hover
+    transition: all .4s ease
+    transform: scale(1.02)
+
+  &:focus
+    transition: all .3s ease
+    transform: scale(1.03)
+
+  &::placeholder
+    color: $MainColor
+    opacity: 1
+
+
+.GalleriFlex
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-items: flex-start
+  align-content: flex-start
+  margin: auto
+  width: 90%
+
+  @media #{$MobileXXL}
+    width: calc(100% - 4vw)
+
+  .Project
+    white-space: nowrap
+    transition: all .3s ease
+    display: inline-block
+    width: calc(100% / 4 - .8vw)
+    height: auto
+    margin: 1vw .4vw
+    text-decoration: none
+    box-shadow: $Shadow
+    border-radius: 15px
+    background-color: $White
+
+    @media #{$Laptop}
+      width: calc(100% / 3 - .8vw)
+
+    @media #{$TabletL}
+      width: calc(100% / 2 - .8vw)
+
+    @media #{$MobileXXL}
+      width: calc(100% - .8vw)
+
+
+h2
+  text-align: center
+  font-size: 2.5em
+  letter-spacing: 9px
+  //display: inline-block
+  //width: 50%
+  //min-width: 260px
+  margin: 3vh auto 1vh
+  color: black
+  font-weight: 400
+
+
 .NavActive
   border-bottom: 1px solid $MainColor
   padding-bottom: 20px
@@ -408,12 +506,16 @@ footer
     @media #{$MobileXXL}
       width: 100%
 
+#home
+  .Background
+    top: calc(100vh + 70px) !important
+
 .Background
   height: 100vw
   width: 100vw
   position: absolute
   left: 0
-  top: calc(100vh + 70px)
+  top: 70px
   z-index: -1
   background-color: $MainColor
   display: block
@@ -479,6 +581,7 @@ main h1
     margin: 0 0 2vh
 
   a
+    transition: all .1s ease
     color: black
     text-decoration: none
     text-align: center
@@ -501,15 +604,21 @@ main h1
   font-size: 1.1em
 
 .SideArrow
+  transition: all .1s ease
   font-weight: 100
   font-size: 150px
   color: $MainColor
-
   display: inline
   z-index: 2
 
   &:hover
+    transition: all .2s ease
+    transform: scale(1.01)
     cursor: pointer
+
+  &:focus
+    transition: all .3s ease
+    transform: scale(1.03)
 
   @media #{$TabletM}
     font-size: 100px
@@ -597,6 +706,10 @@ main h1
     width: calc(100% - .8vw)
 
   &:hover
+    transition: all .3s ease
+    transform: scale(1.03)
+
+  &:focus
     transition: all .3s ease
     transform: scale(1.03)
 
