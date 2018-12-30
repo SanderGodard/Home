@@ -333,7 +333,7 @@ footer {
   width: 100vw;
   position: absolute;
   left: 0;
-  top: 0;
+  top: calc(100vh + 70px);
   z-index: -1;
   background-color: #6C1919;
   display: block; }
