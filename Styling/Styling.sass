@@ -229,9 +229,28 @@ footer
 
 
 .BackgroundLine
+  clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%)
+  height: 3000px
+  width: 3000px
+  position: absolute
+  left: 0
+  top: 0
+  z-index: -1
   background-color: $MainColor
-  clip-path: polygon(31% 0, 44% 0, 100% 81%, 100% 100%)
-  z-index: 1
+  display: block
+
+
+.BackgroundTriangle
+  clip-path: polygon(0 29%, 0 72%, 21% 51%)
+  height: 3000px
+  width: 3000px
+  position: absolute
+  left: 0
+  top: 0
+  z-index: -1
+  background-color: $MainColor
+  display: block
+
 
 h1
   font-size: 2.5em
@@ -351,6 +370,7 @@ h1
   text-decoration: none
   box-shadow: $Shadow
   border-radius: 15px
+  background-color: $White
 
   @media #{$Desktop}
     width: calc(100% / 2 - 2vw)
