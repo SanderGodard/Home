@@ -73,6 +73,8 @@ body
 a
   text-decoration: none
 
+img
+  filter: grayscale(1)
 
 ::-moz-selection
   background: $MainColor
@@ -103,6 +105,164 @@ a
     background: #666
 
 
+header
+  background-color: $MainColor
+  color: $White
+  width: 100vw
+  height: 100vh
+  z-index: 1
+  overflow: hidden
+  display: block
+
+  #Path
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%)
+    height: 100vh
+    width: 20vw
+    position: absolute
+    left: calc(40vw + 1px)
+    top: 0
+    z-index: 3
+    background-color: $MainColor
+    display: block
+
+    @media #{$TabletL}
+      clip-path: polygon(-5% 100%, 100% 0, 100% 100%)
+      height: 40px
+      width: 100vw
+      left: 0
+      top: calc((100vw / 16 * 9) + 31px)
+
+  #Path2
+    display: none
+    position: absolute
+    z-index: 3
+    clip-path: polygon(-5% 100%, 0% 0%, 100% 0)
+    height: 40px
+    width: 100vw
+    left: 0
+    top: 69px
+    background-color: $MainColor
+
+    @media #{$TabletL}
+      display: block
+
+
+  #Next1
+    color: $White
+    position: absolute
+    width: 150px
+    height: 150px
+    left: calc(50vw - 75px)
+    text-align: center
+    top: 80vh
+    z-index: 6
+    font-size: 8em
+
+    @media #{$Laptop}
+      font-size: 7em
+
+  img
+    height: 100vh
+    width: 60vw
+    object-fit: cover
+    bottom: 0
+    top: 0
+    right: 0
+    left: 0
+    z-index: 2
+
+    @media #{$TabletL}
+      height: auto
+      width: 100vw
+      margin-top: 70px
+      display: block
+
+  .HeaderContent
+    background-color: $MainColor
+    width: 25vw
+    height: 60vh
+    position: absolute
+    top: 20vh
+    right: 12.5vw
+    display: flex
+    flex-direction: column
+    z-index: 5
+
+    @media #{$TabletL}
+      background-color: rgba(0,0,0,0)
+      width: 90vw
+      height: 90vh
+      top: calc(5vh + 110px)
+      right: 5vw
+
+    h1
+      font-size: 2.9em
+      font-weight: 400
+      //1.785vw
+
+      @media #{$Desktop}
+        font-size: 2.4em
+
+      @media #{$Laptop}
+        font-size: 1.9em
+
+      @media #{$TabletL}
+        margin-top: calc(((100vw / 16 * 9) / 2) - 120px )
+        top: 0
+        position: absolute
+        font-size: 2.5em
+
+
+    #CTA
+      display: block
+      color: $MainColor
+      background-color: $White
+      text-align: center
+      padding: .4em 0 0
+      border-radius: 1em
+      width: 102%
+      height: 2em
+      position: relative
+      vertical-align: middle
+      bottom: 0
+      margin: 10vh -1% 0
+      font-size: 2.5em
+
+      @media screen and (max-width: 1271px)
+        font-size: 2.3em
+        padding: .2em
+
+      @media #{$Desktop}
+        font-size: 2em
+
+      @media #{$Laptop}
+        font-size: 1.5em
+        height: 1.7em
+
+      @media #{$TabletL}
+        margin-top: calc((100vw / 16 * 9) + 7vh)
+        top: 0
+        position: absolute
+
+    p
+      margin: 2.5em 0 0
+
+      @media #{$TabletL}
+        margin-top: calc((100vw / 16 * 9) - 50px)
+        position: absolute
+
+  #MobileMenuHeader
+    display: none
+    width: calc(40px + 2vw)
+    position: absolute
+    top: 10px
+    right: 0
+    font-size: 2em
+    display: flex
+    color: white
+    z-index: 999999999999999999
+
+
 nav
   background-color: $White
   vertical-align: middle
@@ -113,11 +273,42 @@ nav
   top: 0
   z-index: 9999999
 
+  .NavBtn
+    padding: 0 1vw
+    display: flex
+    align-items: center
+    float: right
+    height: 70px
+    color: $MainColor
+    text-decoration: none
+    font-size: 1.5em
+
+    @media #{$TabletL}
+      display: none
+
+  #Navn
+    float: left
+
+    @media #{$TabletL}
+      display: flex
+
+  #MobileMenu
+    display: none
+    width: calc(40px + 2vw)
+    font-size: 2em
+
+    @media #{$TabletL}
+      display: flex
+
   .Body
     width: calc(90% + 2vw)
 
     @media #{$MobileXXL}
       width: calc(100% - 4vw)
+
+
+main
+  z-index: 2
 
 
 footer
@@ -133,32 +324,6 @@ footer
   @media #{$MobileXXL}
     width: calc(100% - 4vw)
 
-.NavBtn
-  padding: 0 1vw
-  display: flex
-  align-items: center
-  float: right
-  height: 70px
-  color: $MainColor
-  text-decoration: none
-  font-size: 1.5em
-
-  @media #{$TabletL}
-    display: none
-
-#Navn
-  float: left
-
-  @media #{$TabletL}
-    display: flex
-
-#MobileMenu
-  display: none
-  width: calc(40px + 2vw)
-  font-size: 2em
-
-  @media #{$TabletL}
-    display: flex
 
 .MobileNav
   transition: all .3s ease
@@ -193,33 +358,37 @@ footer
   height: 0px
 
 
-//.MobileMenu span
-  transition-duration: 0s
-  transition-delay: 0.2s
+.HeaderNav
+  transition: all .3s ease
+  display: block
+  width: 100%
+  height: 332.5px
+  position: absolute
+  box-shadow: $Shadow
+  background-color: $MainColor
+  overflow: hidden
+  z-index: 99999999
 
-  &:before
-    transition-property: margin, transform
-    transition-duration: 0.2s
-    transition-delay: 0.2s, 0s
+  a
+    transition: all .3s ease
+    height: 65px
+    color: $White
+    width: 100%
+    display: block
+    background-color: $MainColor
+    font-size: 1.5em
+    text-align: center
+    padding: 20px 0 0
+    margin: 0 0 .5px
 
-  &:after
-    transition-property: margin, transform
-    transition-duration: 0.2s
-    transition-delay: 0.2s, 0s
+  .Active
+    border-bottom: 1px solid $White
 
-//.MobileMenu:hover span
-  background-color: rgba(0,0,0,0.0)
-  transition-delay: 0.2s
 
-  &:before
-    margin-top: 0
-    transform: rotate(45deg)
-    transition-delay: 0s, 0.2s
-
-  &:after
-    margin-top: 0
-    transform: rotate(-45deg)
-    transition-delay: 0s, 0.2s
+#HeaderNav
+  transition: all .3s ease
+  height: 0px
+  padding-top: 0px
 
 
 .GalleriPart
@@ -229,6 +398,7 @@ footer
   vertical-align: top
 
   .Body
+    width: calc(90% + 100px)
     @media #{$MobileXXL}
       width: 100%
 
@@ -287,9 +457,9 @@ footer
 
   @media #{$MobileXXL}
     display: none
+    
 
-
-h1
+main h1
   font-size: 2.5em
   padding-left: calc(150px + 1vw)
   font-weight: 400
@@ -328,7 +498,7 @@ h1
   font-weight: 100
   font-size: 150px
   color: $MainColor
-  transform: translate(0, -150%)
+
   display: inline
   z-index: 2
 
@@ -406,19 +576,19 @@ h1
   white-space: nowrap
   transition: all .3s ease
   display: inline-block
-  width: calc(100% / 3 - 2vw)
+  width: calc(100% / 3 - .8vw)
   height: auto
-  margin: 1vw
+  margin: 1vw .4vw
   text-decoration: none
   box-shadow: $Shadow
   border-radius: 15px
   background-color: $White
 
   @media #{$Desktop}
-    width: calc(100% / 2 - 2vw)
+    width: calc(100% / 2 - .8vw)
 
   @media #{$Laptop}
-    width: calc(100% - 2vw)
+    width: calc(100% - .8vw)
 
   &:hover
     transition: all .3s ease
