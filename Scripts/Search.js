@@ -3,7 +3,7 @@ function SearchFunction() {
   input = document.getElementById("Search");
   filter = input.value.toUpperCase();
   ul = document.getElementById("SearchList");
-  li = ul.getElementsByTagName("a");
+  li = ul.getElementsByClassName("Project");
   for (i = 0; i < li.length; i++) {
     title = li[i].getElementsByTagName("h3")[0];
     if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
