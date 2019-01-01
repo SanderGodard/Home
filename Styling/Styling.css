@@ -502,7 +502,8 @@ h2 {
     bottom: 0;
     left: 0;
     right: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    filter: none; }
   .modal .title {
     grid-area: title;
     top: 0; }
