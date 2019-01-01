@@ -78,7 +78,7 @@ a
   color: black
 
 img
-  filter: grayscale(1)
+  //filter: grayscale(1)
 
 ::-moz-selection
   background: $MainColor
@@ -322,12 +322,6 @@ nav
 
 
 main
-  z-index: 2
-
-
-footer
-  width: 100%
-  display: block
   z-index: 2
 
 
@@ -889,3 +883,74 @@ main h1
 
   a
     display: none !important
+
+
+footer
+  background-color: $SecondaryColor
+  border-top: 8px solid $MainColor
+  color: $White !important
+  width: 100vw
+  height: 350px
+  display: block
+  box-shadow: $Shadow
+  z-index: 3
+
+  @media #{$Laptop}
+    font-size: 16px
+
+  //@media #{$TabletM}
+    height: 500px
+
+  a
+    transition: all .1s ease
+    color: $White
+
+    &:hover
+      transition: all .1s ease
+      text-decoration: underline
+
+  .Topp
+    margin-top: .5em
+    font-size: .9
+    width: 100%
+    display: block
+
+    @media #{$TabletM}
+      text-align: right
+
+    &:hover
+      cursor: pointer
+
+  .Body
+
+    div
+      transform: translate(0, -50%)
+      display: inline-block
+      width: calc(50% - 2px)
+      margin-top: calc(290px / 2)
+
+      @media #{$TabletM}
+        display: block
+        transform: translate(0, 0)
+        display: block
+        width: 100%
+        margin-top: 4vh
+        text-align: center
+        float: none
+
+  .LeftFooter
+    font-size: 1.75em
+
+  .RightFooter
+    text-align: right
+    float: right
+
+    h1
+      font-size: 2.75em
+
+    p
+      font-size: 1.4em
+      display: block
+
+      @media #{$TabletM}
+        display: inline
