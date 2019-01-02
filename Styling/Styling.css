@@ -211,7 +211,7 @@ nav {
   vertical-align: middle;
   display: block;
   height: 70px;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   top: 0;
   z-index: 10; }
@@ -449,7 +449,7 @@ h2 {
 .TriangleBottom {
   clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
   left: 0;
-  bottom: 0; }
+  margin-bottom: 350px; }
 
 .modal {
   display: none;
@@ -748,7 +748,8 @@ footer {
   height: 350px;
   display: block;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-  z-index: 3; }
+  z-index: 3;
+  box-sizing: content-box; }
   @media only screen and (max-width: 1023px) {
     footer {
       font-size: 16px; } }
@@ -758,6 +759,14 @@ footer {
     footer a:hover {
       transition: all 0.1s ease;
       text-decoration: underline; }
+  footer span {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 700px) {
+      footer span {
+        margin: 1em 0 0; } }
   footer .Topp {
     margin-top: 0.5em;
     font-size: 0.9;
@@ -768,20 +777,22 @@ footer {
         text-align: right; } }
     footer .Topp:hover {
       cursor: pointer; }
-  footer .Body div {
-    transform: translate(0, -50%);
-    display: inline-block;
-    width: calc(50% - 2px);
-    margin-top: calc(290px / 2); }
-    @media only screen and (max-width: 700px) {
-      footer .Body div {
-        display: block;
-        transform: translate(0, 0);
-        display: block;
-        width: 100%;
-        margin-top: 4vh;
-        text-align: center;
-        float: none; } }
+  footer .Body {
+    padding-bottom: 1em; }
+    footer .Body div {
+      transform: translate(0, -50%);
+      display: inline-block;
+      width: calc(50% - 2px);
+      margin-top: calc(290px / 2); }
+      @media only screen and (max-width: 700px) {
+        footer .Body div {
+          display: block;
+          transform: translate(0, 0);
+          display: block;
+          width: 100%;
+          margin-top: 4vh;
+          text-align: center;
+          float: none; } }
   footer .LeftFooter {
     font-size: 1.75em; }
   footer .RightFooter {

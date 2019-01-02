@@ -1,6 +1,6 @@
 //Right Button Scroll
 function Scroll() {
-  var amount = document.getElementById("Project1").offsetWidth;
+  var amount = document.getElementById("Mosala").offsetWidth;
   var div = document.getElementById("Slider");
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   var v = .8
@@ -14,7 +14,7 @@ function Scroll() {
 }
 //Left Button Scroll
 function ScrollLeft() {
-  var amount = document.getElementById("Project1").offsetWidth;
+  var amount = document.getElementById("Mosala").offsetWidth;
   var div = document.getElementById("Slider");
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   var v = .8

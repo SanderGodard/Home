@@ -273,7 +273,7 @@ nav
   vertical-align: middle
   display: block
   height: 70px
-  width: 100%
+  width: 100vw
   box-shadow: $Shadow
   top: 0
   z-index: 10
@@ -542,7 +542,7 @@ h2
 .TriangleBottom
   clip-path: polygon(50% 50%, 0% 100%, 100% 100%)
   left: 0
-  bottom: 0
+  margin-bottom: 350px
   //Edit to be the same as footer's height
 
 
@@ -894,12 +894,10 @@ footer
   display: block
   box-shadow: $Shadow
   z-index: 3
+  box-sizing: content-box
 
   @media #{$Laptop}
     font-size: 16px
-
-  //@media #{$TabletM}
-    height: 500px
 
   a
     transition: all .1s ease
@@ -908,6 +906,15 @@ footer
     &:hover
       transition: all .1s ease
       text-decoration: underline
+
+  span
+    text-align: center
+    width: 100%
+    display: flex
+    justify-content: center
+    
+    @media #{$TabletM}
+      margin: 1em 0 0
 
   .Topp
     margin-top: .5em
@@ -922,6 +929,7 @@ footer
       cursor: pointer
 
   .Body
+    padding-bottom: 1em
 
     div
       transform: translate(0, -50%)
