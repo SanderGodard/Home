@@ -151,6 +151,7 @@ img
       font-weight: 400
 
     a
+      transition: all .2s ease
       min-width: 330px
       text-align: center
       width: 40%
@@ -162,6 +163,15 @@ img
       border-radius: 35px
       padding-top: 10px
       font-size: 2em
+      border: 1px solid $White
+
+      &:hover
+        transition: all .2s ease
+        opacity: .9
+
+      &:focus
+        transition: all .2s ease
+        opacity: .9
 
       @media #{$TabletL}
         font-size: 1.7em
@@ -176,7 +186,7 @@ img
 
       span
         font-size: 1em
-        vertical-align: middle
+        vertical-align: sub
 
         @media #{$TabletL}
           font-size: .9em
