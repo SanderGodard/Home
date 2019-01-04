@@ -108,6 +108,91 @@ img
     transition: all 0.3s ease-in-out
     background: #666
 
+.Eller
+  text-align: center
+  width: 100%
+  display: block
+  margin-top: 10vh
+  font-weight: 100
+  font-style: normal
+  font-size: .8em
+
+.Banner
+  color: white
+  display: block
+  background-color: $MainColor
+  width: 100%
+  margin: 5vh auto 8vh
+
+  .Body
+    width: 70%
+
+    @media #{$Laptop}
+      width: 90%
+
+    i
+      transition: all .2s ease
+      font-size: 2em
+      text-align: center
+      width: 100%
+      display: block
+      font-weight: 400
+      margin-top: 2vh
+      display: none
+      font-style: normal
+
+      @media #{$TabletM}
+        margin-top: .5vh
+
+    b
+      text-align: center
+      width: 100%
+      display: block
+      font-weight: 400
+
+    a
+      min-width: 330px
+      text-align: center
+      width: 40%
+      height: 70px
+      margin: 8vh auto
+      background-color: $White
+      color: $MainColor
+      display: inline-block
+      border-radius: 35px
+      padding-top: 10px
+      font-size: 2em
+
+      @media #{$TabletL}
+        font-size: 1.7em
+        padding-top: 13px
+        min-width: 300px
+
+      @media #{$TabletM}
+        font-size: 2em
+        padding-top: 10px
+        width: 100%
+        display: block
+
+      span
+        font-size: 1em
+        vertical-align: middle
+
+        @media #{$TabletL}
+          font-size: .9em
+
+        @media #{$TabletM}
+          font-size: 1.1em
+
+    #RightBtn
+      float: right
+
+      @media #{$TabletM}
+        float: none
+        margin: .5vh auto
+
+
+
 
 header
   background-color: $MainColor
@@ -374,8 +459,18 @@ main
   margin: 5vh 0 2vh 41%
 
   @media #{$TabletL}
-    margin: 5vh 41% 2vh 0
+    margin: 5vh 30% 2vh 0
     text-align: left
+    width: 70%
+
+  @media #{$TabletM}
+    margin: 5vh 20% 2vh 0
+    text-align: left
+    width: 80%
+
+  @media #{$MobileXXL}
+    width: 90%
+    margin: 5vh 5% 2vh 5%
 
 
 input
@@ -425,6 +520,7 @@ input
     width: calc(100% - 4vw)
 
   .Project
+    //border: 1px solid $ThirdColor
     white-space: nowrap
     transition: all .3s ease
     display: inline-block
@@ -898,6 +994,62 @@ main h1
     display: none !important
 
 
+.TekstLink
+  text-decoration: underline
+  text-decoration-style: dotted
+  color: $MainColor
+
+  &:hover
+    text-decoration-style: solid
+
+
+.KontaktWidth
+  width: calc(70% + 4vw)
+  margin: auto
+
+  @media #{$Laptop}
+    width: calc(90% + 4vw)
+
+  table
+    margin: 10vh auto 0
+    table-layout: fixed
+    width: 100%
+
+    @media #{$TabletL}
+      margin: 0vh auto
+
+    td
+      width: 50%
+      padding: 0 2vw
+
+      @media #{$TabletL}
+        width: 100%
+        display: block
+        margin: 5vh auto 0
+
+      div
+        margin-left: 1vw
+        width: calc(100% - 1vw - 175px)
+        display: inline-block
+        vertical-align: middle
+
+        h3
+          font-weight: 400
+          font-size: 1.8em
+
+
+      img
+        vertical-align: middle
+        border-radius: 85px
+        height: 170px
+        width: 170px
+        display: inline-block
+
+        @media #{$MobileXXL}
+          border-radius: 70px
+          height: 140px
+          width: 140px
+
 footer
   background-color: $SecondaryColor
   border-top: 8px solid $MainColor
@@ -942,8 +1094,6 @@ footer
       cursor: pointer
 
   .Body
-    padding-bottom: 1em
-
     div
       transform: translate(0, -50%)
       display: inline-block

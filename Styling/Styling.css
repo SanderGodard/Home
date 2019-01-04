@@ -60,6 +60,83 @@ a {
     transition: all 0.3s ease-in-out;
     background: #666; }
 
+.Eller {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 10vh;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 0.8em; }
+
+.Banner {
+  color: white;
+  display: block;
+  background-color: #6C1919;
+  width: 100%;
+  margin: 5vh auto 8vh; }
+  .Banner .Body {
+    width: 70%; }
+    @media only screen and (max-width: 1023px) {
+      .Banner .Body {
+        width: 90%; } }
+    .Banner .Body i {
+      transition: all 0.2s ease;
+      font-size: 2em;
+      text-align: center;
+      width: 100%;
+      display: block;
+      font-weight: 400;
+      margin-top: 2vh;
+      display: none;
+      font-style: normal; }
+      @media only screen and (max-width: 700px) {
+        .Banner .Body i {
+          margin-top: 0.5vh; } }
+    .Banner .Body b {
+      text-align: center;
+      width: 100%;
+      display: block;
+      font-weight: 400; }
+    .Banner .Body a {
+      min-width: 330px;
+      text-align: center;
+      width: 40%;
+      height: 70px;
+      margin: 8vh auto;
+      background-color: #FFF;
+      color: #6C1919;
+      display: inline-block;
+      border-radius: 35px;
+      padding-top: 10px;
+      font-size: 2em; }
+      @media only screen and (max-width: 800px) {
+        .Banner .Body a {
+          font-size: 1.7em;
+          padding-top: 13px;
+          min-width: 300px; } }
+      @media only screen and (max-width: 700px) {
+        .Banner .Body a {
+          font-size: 2em;
+          padding-top: 10px;
+          width: 100%;
+          display: block; } }
+      .Banner .Body a span {
+        font-size: 1em;
+        vertical-align: middle; }
+        @media only screen and (max-width: 800px) {
+          .Banner .Body a span {
+            font-size: 0.9em; } }
+        @media only screen and (max-width: 700px) {
+          .Banner .Body a span {
+            font-size: 1.1em; } }
+    .Banner .Body #RightBtn {
+      float: right; }
+      @media only screen and (max-width: 700px) {
+        .Banner .Body #RightBtn {
+          float: none;
+          margin: 0.5vh auto; } }
+
 header {
   background-color: #6C1919;
   color: #FFF;
@@ -300,8 +377,18 @@ main {
   margin: 5vh 0 2vh 41%; }
   @media only screen and (max-width: 800px) {
     .GalleriInfo {
-      margin: 5vh 41% 2vh 0;
-      text-align: left; } }
+      margin: 5vh 30% 2vh 0;
+      text-align: left;
+      width: 70%; } }
+  @media only screen and (max-width: 700px) {
+    .GalleriInfo {
+      margin: 5vh 20% 2vh 0;
+      text-align: left;
+      width: 80%; } }
+  @media only screen and (max-width: 575px) {
+    .GalleriInfo {
+      width: 90%;
+      margin: 5vh 5% 2vh 5%; } }
 
 input {
   background: url("../Images/Search.png") right no-repeat;
@@ -752,6 +839,54 @@ main h1 {
   .Project a {
     display: none !important; }
 
+.TekstLink {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: #6C1919; }
+  .TekstLink:hover {
+    text-decoration-style: solid; }
+
+.KontaktWidth {
+  width: calc(70% + 4vw);
+  margin: auto; }
+  @media only screen and (max-width: 1023px) {
+    .KontaktWidth {
+      width: calc(90% + 4vw); } }
+  .KontaktWidth table {
+    margin: 10vh auto 0;
+    table-layout: fixed;
+    width: 100%; }
+    @media only screen and (max-width: 800px) {
+      .KontaktWidth table {
+        margin: 0vh auto; } }
+    .KontaktWidth table td {
+      width: 50%;
+      padding: 0 2vw; }
+      @media only screen and (max-width: 800px) {
+        .KontaktWidth table td {
+          width: 100%;
+          display: block;
+          margin: 5vh auto 0; } }
+      .KontaktWidth table td div {
+        margin-left: 1vw;
+        width: calc(100% - 1vw - 175px);
+        display: inline-block;
+        vertical-align: middle; }
+        .KontaktWidth table td div h3 {
+          font-weight: 400;
+          font-size: 1.8em; }
+      .KontaktWidth table td img {
+        vertical-align: middle;
+        border-radius: 85px;
+        height: 170px;
+        width: 170px;
+        display: inline-block; }
+        @media only screen and (max-width: 575px) {
+          .KontaktWidth table td img {
+            border-radius: 70px;
+            height: 140px;
+            width: 140px; } }
+
 footer {
   background-color: #383838;
   border-top: 8px solid #6C1919;
@@ -789,22 +924,20 @@ footer {
         text-align: right; } }
     footer .Topp:hover {
       cursor: pointer; }
-  footer .Body {
-    padding-bottom: 1em; }
-    footer .Body div {
-      transform: translate(0, -50%);
-      display: inline-block;
-      width: calc(50% - 2px);
-      margin-top: calc(290px / 2); }
-      @media only screen and (max-width: 700px) {
-        footer .Body div {
-          display: block;
-          transform: translate(0, 0);
-          display: block;
-          width: 100%;
-          margin-top: 4vh;
-          text-align: center;
-          float: none; } }
+  footer .Body div {
+    transform: translate(0, -50%);
+    display: inline-block;
+    width: calc(50% - 2px);
+    margin-top: calc(290px / 2); }
+    @media only screen and (max-width: 700px) {
+      footer .Body div {
+        display: block;
+        transform: translate(0, 0);
+        display: block;
+        width: 100%;
+        margin-top: 4vh;
+        text-align: center;
+        float: none; } }
   footer .LeftFooter {
     font-size: 1.75em; }
   footer .RightFooter {
