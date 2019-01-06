@@ -7,12 +7,15 @@ $ThirdColor: #7D7D7D
 $White: #FFF
 $WhiteHover : #FBFBFB
 
+$amount: 2
+
 $ButtonColor: #7D7D7D
 $ButtonHover: #666666
 
 $LineClip: polygon(25% 0, 34% 0, 100% 70%, 100% 79%)
 
 $Shadow: 0px 3px 6px rgba(0,0,0,0.2)
+$BigShadow: 0px 3px 9px 3px rgba(0,0,0,0.3)
 
 // ============ Mobile
 $MobileS: "only screen and (max-width : 334px)"
@@ -123,6 +126,7 @@ img
   background-color: $MainColor
   width: 100%
   margin: 5vh auto 8vh
+  box-shadow: $BigShadow
 
   .Body
     width: 70%
@@ -375,7 +379,7 @@ nav
   display: block
   height: 70px
   width: 100vw
-  box-shadow: $Shadow
+  box-shadow: $BigShadow
   top: 0
   z-index: 10
 
@@ -438,7 +442,7 @@ main
   transition: all .3s ease
   display: block
   width: 100%
-  height: 262.5px
+  height: 197px
   position: sticky
   top: 70px
   box-shadow: $Shadow
@@ -457,6 +461,12 @@ main
     text-align: center
     padding: 20px 0 0
     margin: 0 0 .5px
+
+    &:hover
+      transition: all .3s ease
+      background: darken($White, $amount)
+      font-size: 1.7em
+      padding: 17px 0 0
 
   .Active
     border-bottom: 1px solid $MainColor
@@ -589,6 +599,7 @@ h2
     transition: all .3s ease
     height: 65px
     color: $White
+    border-top: .5px solid $White
     width: 100%
     display: block
     background-color: $MainColor
@@ -596,6 +607,13 @@ h2
     text-align: center
     padding: 20px 0 0
     margin: 0 0 .5px
+
+    &:hover
+      transition: all .3s ease
+      background: darken($MainColor, $amount)
+      font-size: 1.7em
+      padding: 17px 0 0
+
 
   .Active
     border-bottom: 1px solid $White
@@ -651,6 +669,11 @@ h2
 
 
 .Triangle
+  //width: 0
+  //height: 0
+  //border-top: 50px solid transparent
+  //border-left: 100px solid $MainColor
+  //border-bottom: 50px solid transparent
   clip-path: polygon(0 29%, 0 72%, 21% 51%)
   -webkit-clip-path: polygon(0 29%, 0 72%, 21% 51%)
   -moz-clip-path: polygon(0 29%, 0 72%, 21% 51%)
@@ -676,7 +699,7 @@ h2
   height: 100vh
   overflow: auto
   background-color: rgb(0,0,0)
-  background-color: rgba(0,0,0,0.4)
+  background-color: rgba(0,0,0,0.5)
 
 
 
@@ -685,15 +708,15 @@ h2
 
   .modal-content
     background-color: #fefefe
-    margin: 5vmin
-    height: calc(100vh - 10vmin)
-    width: calc(100vw - 10vmin)
+    margin: 5vmax
+    height: calc(100vh - 10vmax)
+    width: calc(100vw - 10vmax)
     display: grid
     grid-template-areas: 'image image image info info''image image image info info''title title title info info''title title title button button'
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
     //grid-template-rows: 1fr 1fr 1fr 1fr
     padding: 0px
-    box-shadow: $Shadow
+    box-shadow: $BigShadow
     overflow: auto
     color: black
 
@@ -716,8 +739,8 @@ h2
     font-size: 28px
     font-weight: bold
     position: absolute
-    top: 5vmin
-    right: 5vmin
+    top: 5vmax
+    right: 5vmax
 
     &:hover, &:focus
       color: black
@@ -1068,7 +1091,7 @@ footer
   width: 100vw
   height: 350px
   display: block
-  box-shadow: $Shadow
+  box-shadow: $BigShadow
   z-index: 3
   box-sizing: content-box
 
