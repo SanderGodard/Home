@@ -26,6 +26,8 @@
   <script defer type="text/javascript" src="Scripts/MobileMenuIndex.js"></script>
   <script defer type="text/javascript" src="Scripts/Scroll.js"></script>
   <script defer type="text/javascript" src="Scripts/MobileArrows.js"></script>
+  <script defer type="text/javascript" src="Scripts/SMS.js"></script>
+
 </head>
 
 <body onload="arrowsMargin()" id="indexBody">
@@ -139,7 +141,7 @@
         <b>Hvis du vil ta kontakt kan du trykke her</b>
         <a href="mailto:sander@godard.no"><span class="Material">mail</span> Send E-post</a>
 
-        <a href="javascript:void(0)" onclick="this.innerHTML = '+47 901 89 461'" id="RightBtn"><span class="Material">message</span> Send SMS</a><br>
+        <a href="javascript:void(0)" onclick="SMSfunc()" id="SMS"><span class="Material">message</span> Send SMS</a><br>
 
         <!--
           <a href="javascript:void(0)" onclick="document.getElementById('TelefonNr').style.display = 'Block'" id="RightBtn"><span class="Material">message</span> Send SMS</a><br>

@@ -1,8 +1,11 @@
 var a = document.getElementById("SMS");
-console.log(a);
-var html = a.outerHTML;
+var current = a.innerHTML;
 
 function SMSfunc() {
-  a.innerHTML = '+47 901 89 461';
+  if (a.innerHTML == current) {
+    a.innerHTML = '+47 901 89 461';
 
+  } else {
+    a.innerHTML = current;
+  }
 }
