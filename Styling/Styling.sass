@@ -206,8 +206,6 @@ img
         margin: .5vh auto
 
 
-
-
 header
   background-color: $MainColor
   color: $White
@@ -363,14 +361,19 @@ header
 
   #MobileMenuHeader
     display: none
-    width: calc(40px + 2vw)
+    width: 40px
     position: absolute
     top: 10px
-    right: 0
+    right: 2vw
     font-size: 2em
     display: flex
     color: white
     z-index: 13
+    -moz-transform: scaleX(-1)
+    -o-transform: scaleX(-1)
+    -webkit-transform: scaleX(-1)
+    transform: scaleX(-1)
+    filter: FlipH
 
 
 nav
@@ -415,6 +418,11 @@ nav
     display: none
     width: calc(40px + 2vw)
     font-size: 2em
+    -moz-transform: scaleX(-1)
+    -o-transform: scaleX(-1)
+    -webkit-transform: scaleX(-1)
+    transform: scaleX(-1)
+    filter: FlipH
 
     @media #{$TabletL}
       display: flex
@@ -438,6 +446,20 @@ main
     width: calc(100% - 4vw)
 
 
+.Back
+  transition: all .3s ease
+  font-family: 'Material icons', sans-serif
+  color: $MainColor
+  font-size: 2.5em
+  position: absolute
+  top: calc(70px + 3vh)
+  height: 1em
+  padding: 0 0 0 5px
+
+  &:hover
+    transition: all .3s ease
+    padding: 0
+
 .MobileNav
   transition: all .3s ease
   display: block
@@ -459,14 +481,19 @@ main
     background-color: $White
     font-size: 1.5em
     text-align: center
-    padding: 20px 0 0
+    padding: 6px 0 0
     margin: 0 0 .5px
 
     &:hover
       transition: all .3s ease
       background: darken($White, $amount)
       font-size: 1.7em
-      padding: 17px 0 0
+      padding: 3px 0 0
+
+    span
+      vertical-align: middle
+      margin: -3px 10px 0 0
+      font-size: 1.5em
 
   .Active
     border-bottom: 1px solid $MainColor
@@ -605,14 +632,19 @@ h2
     background-color: $MainColor
     font-size: 1.5em
     text-align: center
-    padding: 20px 0 0
+    padding: 6px 0 0
     margin: 0 0 .5px
 
     &:hover
       transition: all .3s ease
       background: darken($MainColor, $amount)
       font-size: 1.7em
-      padding: 17px 0 0
+      padding: 3px 0 0
+
+    span
+      vertical-align: middle
+      margin: -3px 10px 0 0
+      font-size: 1.5em
 
 
   .Active
@@ -1127,6 +1159,15 @@ footer
 
     &:hover
       cursor: pointer
+
+    span
+      text-align: left
+      vertical-align: sub
+      display: inline-block
+      width: auto
+
+      @media #{$TabletM}
+        text-align: right
 
   .Body
     div

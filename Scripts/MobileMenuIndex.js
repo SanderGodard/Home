@@ -21,10 +21,10 @@ function MenuToggle() {
     };
   }
   var a = document.getElementById("MobileMenu");
-  if (a.innerHTML === "menu") {
+  if (a.innerHTML === "notes") {
     a.innerHTML = "clear";
   } else {
-    a.innerHTML = "menu";
+    a.innerHTML = "notes";
   }
 }
 
@@ -38,9 +38,9 @@ function HeaderMenuToggle() {
     x.style.paddingTop = "70px";
   }
   var a = document.getElementById("MobileMenuHeader");
-  if (a.innerHTML === "menu") {
+  if (a.innerHTML === "notes") {
     a.innerHTML = "clear";
   } else {
-    a.innerHTML = "menu";
+    a.innerHTML = "notes";
   }
 }

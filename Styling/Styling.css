@@ -289,14 +289,19 @@ header {
           position: absolute; } }
   header #MobileMenuHeader {
     display: none;
-    width: calc(40px + 2vw);
+    width: 40px;
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 2vw;
     font-size: 2em;
     display: flex;
     color: white;
-    z-index: 13; }
+    z-index: 13;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH; }
 
 nav {
   background-color: #FFF;
@@ -334,7 +339,12 @@ nav {
   nav #MobileMenu {
     display: none;
     width: calc(40px + 2vw);
-    font-size: 2em; }
+    font-size: 2em;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH; }
     @media only screen and (max-width: 800px) {
       nav #MobileMenu {
         display: flex; } }
@@ -353,6 +363,19 @@ main {
   @media only screen and (max-width: 575px) {
     .Body {
       width: calc(100% - 4vw); } }
+
+.Back {
+  transition: all 0.3s ease;
+  font-family: "Material icons", sans-serif;
+  color: #6C1919;
+  font-size: 2.5em;
+  position: absolute;
+  top: calc(70px + 3vh);
+  height: 1em;
+  padding: 0 0 0 5px; }
+  .Back:hover {
+    transition: all 0.3s ease;
+    padding: 0; }
 
 .MobileNav {
   transition: all 0.3s ease;
@@ -374,13 +397,17 @@ main {
     background-color: #FFF;
     font-size: 1.5em;
     text-align: center;
-    padding: 20px 0 0;
+    padding: 6px 0 0;
     margin: 0 0 0.5px; }
     .MobileNav a:hover {
       transition: all 0.3s ease;
       background: #fafafa;
       font-size: 1.7em;
-      padding: 17px 0 0; }
+      padding: 3px 0 0; }
+    .MobileNav a span {
+      vertical-align: middle;
+      margin: -3px 10px 0 0;
+      font-size: 1.5em; }
   .MobileNav .Active {
     border-bottom: 1px solid #6C1919; }
 
@@ -502,13 +529,17 @@ h2 {
     background-color: #6C1919;
     font-size: 1.5em;
     text-align: center;
-    padding: 20px 0 0;
+    padding: 6px 0 0;
     margin: 0 0 0.5px; }
     .HeaderNav a:hover {
       transition: all 0.3s ease;
       background: #641717;
       font-size: 1.7em;
-      padding: 17px 0 0; }
+      padding: 3px 0 0; }
+    .HeaderNav a span {
+      vertical-align: middle;
+      margin: -3px 10px 0 0;
+      font-size: 1.5em; }
   .HeaderNav .Active {
     border-bottom: 1px solid #FFF; }
 
@@ -942,6 +973,14 @@ footer {
         text-align: right; } }
     footer .Topp:hover {
       cursor: pointer; }
+    footer .Topp span {
+      text-align: left;
+      vertical-align: sub;
+      display: inline-block;
+      width: auto; }
+      @media only screen and (max-width: 700px) {
+        footer .Topp span {
+          text-align: right; } }
   footer .Body div {
     transform: translate(0, -50%);
     display: inline-block;
