@@ -528,10 +528,8 @@ h2 {
       .GalleriPart .Body {
         width: 100%; } }
 
-#home .Background {
-  top: calc(100vh + 70px) !important; }
-
 .Background {
+  transition: all 0.2s ease;
   height: 100vw;
   width: 100vw;
   position: absolute;

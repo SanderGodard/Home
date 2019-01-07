@@ -22,8 +22,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <script type="text/javascript" src="../Scripts/ScrollTop.js"></script>
-  <script type="text/javascript" src="../Scripts/MobileMenu.js"></script>
+  <script defer type="text/javascript" src="../Scripts/ScrollTop.js"></script>
+  <script defer type="text/javascript" src="../Scripts/MobileMenu.js"></script>
+  <script defer type="text/javascript" src="../Scripts/SMS.js"></script>
 
 </head>
 
@@ -88,7 +89,7 @@
         <b>Hvis du vil ha raskere svar kan du trykke her</b>
         <a href="mailto:sander@godard.no"><span class="Material">mail</span> Send E-post</a>
 
-        <a href="javascript:void(0)" onclick="this.innerHTML = '+47 901 89 461'" id="RightBtn"><span class="Material">message</span> Send SMS</a><br>
+        <a href="javascript:void(0)" onclick="SMSfunc()" id="SMS"><span class="Material">message</span> Send SMS</a><br>
 
         <!--
           <a href="javascript:void(0)" onclick="document.getElementById('TelefonNr').style.display = 'Block'" id="RightBtn"><span class="Material">message</span> Send SMS</a><br>
