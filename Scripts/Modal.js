@@ -9,8 +9,8 @@ function ModalOn(project) {
   var itemInfo = item.getElementsByTagName("p")[0].innerHTML;
   var itemLink = item.getElementsByTagName("a")[0].href;
 
-  var indexdot = itemlink.indexOf(".");
-  console.log(indexdot);
+  //var indexdot = itemlink.indexOf(".");
+  //console.log(indexdot);
 
   document.getElementById('ModalImage').src = itemImage;
   document.getElementById('ModalTitle').innerHTML = itemTitle;
