@@ -252,19 +252,25 @@ header {
           position: absolute;
           font-size: 2.5em; } }
     header .HeaderContent #CTA {
-      display: block;
+      transition: all 0.1s ease;
+      display: flex;
       color: #6C1919;
       background-color: #FFF;
       text-align: center;
-      padding: 0.4em 0 0;
       border-radius: 1em;
       width: 102%;
+      min-height: 50px;
       height: 2em;
       position: relative;
       vertical-align: middle;
       bottom: 0;
       margin: 10vh -1% 0;
-      font-size: 2.5em; }
+      font-size: 2.5em;
+      justify-content: center;
+      align-items: center; }
+      header .HeaderContent #CTA:hover {
+        transition: all 0.1s ease;
+        background-color: #FBFBFB; }
       @media screen and (max-width: 1271px) {
         header .HeaderContent #CTA {
           font-size: 2.25em;
