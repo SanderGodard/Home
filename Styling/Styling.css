@@ -379,7 +379,6 @@ main {
   font-size: 2.5em;
   position: absolute;
   top: calc(70px + 3vh);
-  height: 1em;
   padding: 0 0 0 5px; }
   .Back:hover {
     transition: all 0.3s ease;
@@ -606,6 +605,30 @@ h2 {
   -moz-clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
   left: 0;
   margin-bottom: 350px; }
+
+#Om {
+  background-repeat: repeat;
+  background-image: url("../Images/OmMegBG.png");
+  margin-top: -20px;
+  padding-top: 20px;
+  background-size: 1920px 1080px;
+  background-origin: border-box;
+  z-index: -4; }
+  #Om .White {
+    background-color: #FFF;
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 20px; }
+  #Om h2 {
+    margin: 0 0 0 50%;
+    transform: translate(-50%, 0); }
+  #Om .Back {
+    float: left;
+    left: 5%;
+    top: calc(70px + 0vh); }
+    @media only screen and (max-width: 575px) {
+      #Om .Back {
+        left: 2vw; } }
 
 .modal {
   display: none;

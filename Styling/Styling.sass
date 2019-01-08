@@ -463,7 +463,7 @@ main
   font-size: 2.5em
   position: absolute
   top: calc(70px + 3vh)
-  height: 1em
+  //height: 1em
   padding: 0 0 0 5px
 
   &:hover
@@ -705,6 +705,7 @@ h2
     height: 100vh
     width: 100vh
 
+
 .Line
   clip-path: $LineClip
   -webkit-clip-path: $LineClip
@@ -729,6 +730,36 @@ h2
   left: 0
   margin-bottom: 350px
   //Edit to be the same as footer's height
+
+
+#Om
+  background-repeat: repeat
+  background-image: url("../Images/OmMegBG.png")
+  margin-top: -20px
+  padding-top: 20px
+  background-size: 1920px 1080px
+  background-origin: border-box
+  z-index: -4
+
+  .White
+    background-color: $White
+    display: inline-block
+    box-sizing: content-box
+    padding: 20px
+
+  h2
+    margin: 0 0 0 50%
+    transform: translate(-50%, 0)
+
+  .Back
+    float: left
+    left: 5%
+    top: calc(70px + 0vh)
+
+    @media #{$MobileXXL}
+      left: 2vw
+
+  @media #{$TabletL}
 
 
 //Modal Styling
