@@ -609,8 +609,8 @@ h2 {
 #Om {
   background-repeat: repeat;
   background-image: url("../Images/OmMegBG.png");
-  margin-top: -20px;
-  padding-top: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
   background-size: 1920px 1080px;
   background-origin: border-box;
   z-index: -4; }
