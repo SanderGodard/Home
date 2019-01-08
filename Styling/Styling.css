@@ -566,6 +566,79 @@ h2 {
       .GalleriPart .Body {
         width: 100%; } }
 
+#home .TableOfThings {
+  margin: 10vh auto 0; }
+  #home .TableOfThings h1 {
+    font-size: 2.5em;
+    transition: all 0.1s ease;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  #home .TableOfThings table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0px solid #6C1919; }
+    #home .TableOfThings table td {
+      width: calc(100% / 3);
+      padding: 2vw;
+      vertical-align: top;
+      display: inline-flex;
+      align-content: center;
+      align-items: center;
+      justify-content: space-between; }
+      @media only screen and (max-width: 1222px) {
+        #home .TableOfThings table td {
+          flex-direction: column; } }
+      @media only screen and (max-width: 700px) {
+        #home .TableOfThings table td {
+          width: calc(100% / 2); } }
+      @media only screen and (max-width: 575px) {
+        #home .TableOfThings table td {
+          width: calc(100%);
+          vertical-align: middle;
+          flex-direction: row; } }
+      #home .TableOfThings table td h5 {
+        font-family: "Material Icons", sans-serif;
+        font-size: 5em;
+        display: inline-block;
+        color: #7D7D7D;
+        text-align: left; }
+        @media only screen and (max-width: 1222px) {
+          #home .TableOfThings table td h5 {
+            width: 100%;
+            display: block;
+            text-align: center; } }
+        @media only screen and (max-width: 575px) {
+          #home .TableOfThings table td h5 {
+            display: inline-block;
+            text-align: left;
+            width: 1em;
+            line-height: 1; } }
+      #home .TableOfThings table td p {
+        display: inline-block;
+        width: calc(100% - 5.6em);
+        float: right; }
+        @media only screen and (max-width: 1222px) {
+          #home .TableOfThings table td p {
+            float: none;
+            width: 100%;
+            display: block; } }
+        @media only screen and (max-width: 575px) {
+          #home .TableOfThings table td p {
+            display: inline-block;
+            width: calc(100% - 5.4em);
+            float: right;
+            vertical-align: middle; } }
+#home .White {
+  background-color: #FFF;
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 20px;
+  box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3); }
+
 .Background {
   transition: all 0.3s ease;
   height: 100vw;
@@ -634,14 +707,21 @@ h2 {
         width: calc(100% / 3);
         padding: 2vw;
         vertical-align: top;
-        display: inline-block; }
+        display: inline-flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between; }
+        @media only screen and (max-width: 1222px) {
+          #Om .TableOfThings table td {
+            flex-direction: column; } }
         @media only screen and (max-width: 700px) {
           #Om .TableOfThings table td {
             width: calc(100% / 2); } }
         @media only screen and (max-width: 575px) {
           #Om .TableOfThings table td {
             width: calc(100%);
-            vertical-align: middle; } }
+            vertical-align: middle;
+            flex-direction: row; } }
         #Om .TableOfThings table td h5 {
           font-family: "Material Icons", sans-serif;
           font-size: 5em;

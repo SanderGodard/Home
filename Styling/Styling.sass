@@ -679,8 +679,85 @@ h2
       width: 100%
 
 #home
-  .Background
-    //top: calc(100vh + 70px)
+  .TableOfThings
+    margin: 10vh auto 0
+
+    h1
+      font-size: 2.5em
+      transition: all 0.1s ease
+      color: black
+      text-decoration: none
+      text-align: left
+      width: 100%
+      margin: 0
+      padding: 0
+
+    table
+      //table-layout: fixed
+      width: 100%
+      border-collapse: collapse
+      border: 0px solid $MainColor
+
+      td
+        width: calc(100% / 3)
+        padding: 2vw
+        vertical-align: top
+        display: inline-flex
+        align-content: center
+        align-items: center
+        justify-content: space-between
+
+        @media #{$Desktop}
+          flex-direction: column
+
+        @media #{$TabletM}
+          width: calc(100% / 2)
+
+        @media #{$MobileXXL}
+          width: calc(100%)
+          vertical-align: middle
+          flex-direction: row
+
+        h5
+          font-family: 'Material Icons', sans-serif
+          font-size: 5em
+          display: inline-block
+          color: $ThirdColor
+          text-align: left
+
+          @media #{$Desktop}
+            width: 100%
+            display: block
+            text-align: center
+
+          @media #{$MobileXXL}
+            display: inline-block
+            text-align: left
+            width: 1em
+            line-height: 1
+        p
+          display: inline-block
+          width: calc(100% - 5.6em)
+          float: right
+
+          @media #{$Desktop}
+            float: none
+            width: 100%
+            display: block
+
+          @media #{$MobileXXL}
+            display: inline-block
+            width: calc(100% - 5.4em)
+            float: right
+            vertical-align: middle
+
+  .White
+    background-color: $White
+    display: inline-block
+    box-sizing: content-box
+    padding: 20px
+    box-shadow: $BigShadow
+
 
 .Background
   transition: all .3s ease
@@ -766,7 +843,13 @@ h2
         width: calc(100% / 3)
         padding: 2vw
         vertical-align: top
-        display: inline-block
+        display: inline-flex
+        align-content: center
+        align-items: center
+        justify-content: space-between
+
+        @media #{$Desktop}
+          flex-direction: column
 
         @media #{$TabletM}
           width: calc(100% / 2)
@@ -774,6 +857,7 @@ h2
         @media #{$MobileXXL}
           width: calc(100%)
           vertical-align: middle
+          flex-direction: row
 
         h5
           font-family: 'Material Icons', sans-serif
