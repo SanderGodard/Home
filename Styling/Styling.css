@@ -566,7 +566,7 @@ h2 {
         width: 100%; } }
 
 .Background {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   height: 100vw;
   width: 100vw;
   position: absolute;
