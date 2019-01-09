@@ -681,9 +681,9 @@ h2
 #home
   .TableOfThings
     margin: 10vh auto 0
-    
+
     h1
-      font-size: 2.5em
+      font-size: 1.5em
       transition: all 0.1s ease
       color: black
       text-decoration: none
@@ -700,12 +700,13 @@ h2
 
       td
         width: calc(100% / 3)
-        padding: 2vw
         vertical-align: top
+        padding: 1vw
         display: inline-flex
         align-content: center
         align-items: center
         justify-content: space-between
+        flex-direction: column
 
         @media #{$Desktop}
           flex-direction: column
@@ -722,7 +723,7 @@ h2
           font-family: 'Material Icons', sans-serif
           font-size: 5em
           display: inline-block
-          color: $ThirdColor
+          color: $SecondaryColor
           text-align: left
 
           @media #{$Desktop}
@@ -860,11 +861,12 @@ h2
       letter-spacing: normal
 
   .TableOfThings
-    margin: 10vh auto 10vh
-
+    margin: 10vh auto 10vh 30%
+    width: 70%
+    box-sizing: border-box !important
 
     h1
-      font-size: 2.5em
+      font-size: 1.5em
       transition: all 0.1s ease
       color: black
       text-decoration: none
@@ -875,6 +877,7 @@ h2
 
     @media #{$TabletL}
       margin: 40vw auto 10vh
+      width: 100%
 
     @media #{$TabletM}
       margin: 40vh auto 10vh
@@ -888,15 +891,12 @@ h2
 
       td
         width: calc(100% / 3)
-        padding: 2vw
         vertical-align: top
         display: inline-flex
         align-content: center
         align-items: center
         justify-content: space-between
-
-        @media #{$Desktop}
-          flex-direction: column
+        flex-direction: column
 
         @media #{$TabletM}
           width: calc(100% / 2)
@@ -910,7 +910,7 @@ h2
           font-family: 'Material Icons', sans-serif
           font-size: 5em
           display: inline-block
-          color: $ThirdColor
+          color: $SecondaryColor
           text-align: left
 
           @media #{$Desktop}
@@ -925,7 +925,7 @@ h2
             line-height: 1
         p
           display: inline-block
-          width: calc(100% - 5.6em)
+          width: calc(100% - 3em)
           float: right
 
           @media #{$Desktop}
