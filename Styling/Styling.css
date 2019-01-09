@@ -1,13 +1,18 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000342}}
 html {
+  -webkit-transition: all 0s ease;
   transition: all 0s ease;
   scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
   -webkit-scroll-behaviour: smooth;
   -webkit-font-smoothing: antialiased;
   -webkit-locale: "nb" !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000352}}
 body {
+  -webkit-transition: all 0s ease;
   transition: all 0s ease;
   background-color: #FFF;
   font-family: "Roboto", sans-serif;
@@ -16,51 +21,83 @@ body {
   width: 100% !important;
   overflow-y: auto;
   overflow-x: hidden !important;
-  font-size: 20px; }
-  @media only screen and (max-width: 575px) {
-    body {
-      font-size: 18px; } }
-  @media only screen and (max-width: 395px) {
-    body {
-      font-size: 16px; } }
+  font-size: 20px;
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000352}}
+  body {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 395px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000352}}
+  body {
+    font-size: 16px;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000370}}
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   /*border: 1px solid blue */
-  border-collapse: collapse; }
-  *:focus {
-    outline: none; }
+  border-collapse: collapse;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000377}}
+*:focus {
+  outline: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000380}}
 a {
   text-decoration: none;
-  color: black; }
+  color: black;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000387}}
 ::-moz-selection {
   background: #6C1919;
   opacity: 0.7;
-  color: #FFF; }
+  color: #FFF;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000393}}
+::-moz-selection {
+  background: #6C1919;
+  color: #FFF;
+  opacity: 0.7;
+}
 ::selection {
   background: #6C1919;
   color: #FFF;
-  opacity: 0.7; }
+  opacity: 0.7;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000399}}
 ::-webkit-scrollbar {
   width: 5px;
   margin: 2px 2px 2px -7px;
   right: 0;
-  border-radius: 2.5px; }
+  border-radius: 2.5px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003106}}
 ::-webkit-scrollbar-thumb {
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: #999;
-  border-radius: 2.5px; }
-  ::-webkit-scrollbar-thumb:hover {
-    transition: all 0.3s ease-in-out;
-    background: #666; }
+  border-radius: 2.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003111}}
+::-webkit-scrollbar-thumb:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #666;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003115}}
 .Eller {
   text-align: center;
   width: 100%;
@@ -68,85 +105,131 @@ a {
   margin-top: 10vh;
   font-weight: 100;
   font-style: normal;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003124}}
 .Banner {
   color: white;
   display: block;
   background-color: #6C1919;
   width: 100%;
   margin: 5vh auto 8vh;
-  box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003132}}
+.Banner .Body {
+  width: 70%;
+}
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003132}}
   .Banner .Body {
-    width: 70%; }
-    @media only screen and (max-width: 1023px) {
-      .Banner .Body {
-        width: 90%; } }
-    .Banner .Body i {
-      transition: all 0.2s ease;
-      font-size: 2em;
-      text-align: center;
-      width: 100%;
-      display: block;
-      font-weight: 400;
-      margin-top: 2vh;
-      display: none;
-      font-style: normal; }
-      @media only screen and (max-width: 700px) {
-        .Banner .Body i {
-          margin-top: 0.5vh; } }
-    .Banner .Body b {
-      text-align: center;
-      width: 100%;
-      display: block;
-      font-weight: 400; }
-    .Banner .Body a {
-      transition: all 0.2s ease;
-      min-width: 330px;
-      text-align: center;
-      width: 40%;
-      height: 70px;
-      margin: 8vh auto;
-      background-color: #FFF;
-      color: #6C1919;
-      display: inline-block;
-      border-radius: 35px;
-      padding-top: 10px;
-      font-size: 2em;
-      border: 1px solid #FFF; }
-      .Banner .Body a:hover {
-        transition: all 0.2s ease;
-        opacity: 0.9; }
-      .Banner .Body a:focus {
-        transition: all 0.2s ease;
-        opacity: 0.9; }
-      @media only screen and (max-width: 800px) {
-        .Banner .Body a {
-          font-size: 1.7em;
-          padding-top: 13px;
-          min-width: 300px; } }
-      @media only screen and (max-width: 700px) {
-        .Banner .Body a {
-          font-size: 2em;
-          padding-top: 10px;
-          width: 100%;
-          display: block; } }
-      .Banner .Body a span {
-        font-size: 1em;
-        vertical-align: sub; }
-        @media only screen and (max-width: 800px) {
-          .Banner .Body a span {
-            font-size: 0.9em; } }
-        @media only screen and (max-width: 700px) {
-          .Banner .Body a span {
-            font-size: 1.1em; } }
-    .Banner .Body #SMS {
-      float: right; }
-      @media only screen and (max-width: 700px) {
-        .Banner .Body #SMS {
-          float: none;
-          margin: 0.5vh auto; } }
+    width: 90%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003138}}
+.Banner .Body i {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-weight: 400;
+  margin-top: 2vh;
+  display: none;
+  font-style: normal;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003138}}
+  .Banner .Body i {
+    margin-top: 0.5vh;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003152}}
+.Banner .Body b {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-weight: 400;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003158}}
+.Banner .Body a {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  min-width: 330px;
+  text-align: center;
+  width: 40%;
+  height: 70px;
+  margin: 8vh auto;
+  background-color: #FFF;
+  color: #6C1919;
+  display: inline-block;
+  border-radius: 35px;
+  padding-top: 10px;
+  font-size: 2em;
+  border: 1px solid #FFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003173}}
+.Banner .Body a:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003177}}
+.Banner .Body a:focus {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.9;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003158}}
+  .Banner .Body a {
+    font-size: 1.7em;
+    padding-top: 13px;
+    min-width: 300px;
+  }
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003158}}
+  .Banner .Body a {
+    font-size: 2em;
+    padding-top: 10px;
+    width: 100%;
+    display: block;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003192}}
+.Banner .Body a span {
+  font-size: 1em;
+  vertical-align: sub;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003192}}
+  .Banner .Body a span {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003192}}
+  .Banner .Body a span {
+    font-size: 1.1em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003202}}
+.Banner .Body #SMS {
+  float: right;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003202}}
+  .Banner .Body #SMS {
+    float: none;
+    margin: 0.5vh auto;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003210}}
 header {
   background-color: #6C1919;
   color: #FFF;
@@ -154,294 +237,449 @@ header {
   height: 100vh;
   z-index: 1;
   overflow: hidden;
-  display: block; }
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003219}}
+header #Path {
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  -moz-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  height: 100vh;
+  width: 20vw;
+  position: absolute;
+  left: calc(40vw + 1px);
+  top: 0;
+  z-index: 3;
+  background-color: #6C1919;
+  display: block;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003219}}
   header #Path {
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    -moz-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    height: 100vh;
-    width: 20vw;
-    position: absolute;
-    left: calc(40vw + 1px);
-    top: 0;
-    z-index: 3;
-    background-color: #6C1919;
-    display: block; }
-    @media only screen and (max-width: 800px) {
-      header #Path {
-        clip-path: polygon(-5% 100%, 100% 0, 100% 100%);
-        -webkit-clip-path: polygon(-5% 100%, 100% 0, 100% 100%);
-        -moz-clip-path: polygon(-5% 100%, 100% 0, 100% 100%);
-        height: 40px;
-        width: 100vw;
-        left: 0;
-        top: calc((100vw / 16 * 9) + 31px); } }
-  header #Path2 {
-    display: none;
-    position: absolute;
-    z-index: 3;
-    clip-path: polygon(-5% 100%, 0% 0%, 100% 0);
-    -webkit-clip-path: polygon(-5% 100%, 0% 0%, 100% 0);
-    -moz-clip-path: polygon(-5% 100%, 0% 0%, 100% 0);
+    clip-path: polygon(-5% 100%, 100% 0, 100% 100%);
+    -webkit-clip-path: polygon(-5% 100%, 100% 0, 100% 100%);
+    -moz-clip-path: polygon(-5% 100%, 100% 0, 100% 100%);
     height: 40px;
     width: 100vw;
     left: 0;
-    top: 69px;
-    background-color: #6C1919; }
-    @media only screen and (max-width: 800px) {
-      header #Path2 {
-        display: block; } }
+    top: calc((100vw / 16 * 9) + 31px);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003241}}
+header #Path2 {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  clip-path: polygon(-5% 100%, 0% 0%, 100% 0);
+  -webkit-clip-path: polygon(-5% 100%, 0% 0%, 100% 0);
+  -moz-clip-path: polygon(-5% 100%, 0% 0%, 100% 0);
+  height: 40px;
+  width: 100vw;
+  left: 0;
+  top: 69px;
+  background-color: #6C1919;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003241}}
+  header #Path2 {
+    display: block;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003258}}
+header #Next1 {
+  color: #FFF;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: calc(50vw - 75px);
+  text-align: center;
+  top: 100vh;
+  z-index: 6;
+  font-size: 8em;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+}
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003258}}
   header #Next1 {
-    color: #FFF;
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: calc(50vw - 75px);
-    text-align: center;
-    top: 100vh;
-    z-index: 6;
-    font-size: 8em;
-    transform: translate(0%, -100%); }
-    @media only screen and (max-width: 1023px) {
-      header #Next1 {
-        font-size: 7em; } }
+    font-size: 7em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003273}}
+header img {
+  height: 100vh;
+  width: 60vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003273}}
   header img {
-    height: 100vh;
-    width: 60vw;
-    object-fit: cover;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 2; }
-    @media only screen and (max-width: 800px) {
-      header img {
-        height: auto;
-        width: 100vw;
-        margin-top: 70px;
-        display: block; } }
+    height: auto;
+    width: 100vw;
+    margin-top: 70px;
+    display: block;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003289}}
+header .HeaderContent {
+  background-color: #6C1919;
+  width: 25vw;
+  height: 60vh;
+  position: absolute;
+  top: 20vh;
+  right: 12.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003289}}
   header .HeaderContent {
-    background-color: #6C1919;
-    width: 25vw;
-    height: 60vh;
+    background-color: rgba(0, 0, 0, 0);
+    width: 90vw;
+    height: 90vh;
+    top: calc(5vh + 110px);
+    right: 5vw;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003307}}
+header .HeaderContent h1 {
+  font-size: 2.7em;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1222px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003307}}
+  header .HeaderContent h1 {
+    font-size: 2.4em;
+  }
+}
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003307}}
+  header .HeaderContent h1 {
+    font-size: 1.9em;
+  }
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003307}}
+  header .HeaderContent h1 {
+    margin-top: calc(((100vw / 16 * 9) / 2) - 120px );
+    top: 0;
     position: absolute;
-    top: 20vh;
-    right: 12.5vw;
-    display: flex;
-    flex-direction: column;
-    z-index: 5; }
-    @media only screen and (max-width: 800px) {
-      header .HeaderContent {
-        background-color: rgba(0, 0, 0, 0);
-        width: 90vw;
-        height: 90vh;
-        top: calc(5vh + 110px);
-        right: 5vw; } }
-    header .HeaderContent h1 {
-      font-size: 2.7em;
-      font-weight: 400; }
-      @media only screen and (max-width: 1222px) {
-        header .HeaderContent h1 {
-          font-size: 2.4em; } }
-      @media only screen and (max-width: 1023px) {
-        header .HeaderContent h1 {
-          font-size: 1.9em; } }
-      @media only screen and (max-width: 800px) {
-        header .HeaderContent h1 {
-          margin-top: calc(((100vw / 16 * 9) / 2) - 120px );
-          top: 0;
-          position: absolute;
-          font-size: 2.5em; } }
-    header .HeaderContent #CTA {
-      transition: all 0.1s ease;
-      display: flex;
-      color: #6C1919;
-      background-color: #FFF;
-      text-align: center;
-      border-radius: 1em;
-      width: 102%;
-      min-height: 50px;
-      height: 2em;
-      position: relative;
-      vertical-align: middle;
-      bottom: 0;
-      margin: 10vh -1% 0;
-      font-size: 2.5em;
-      justify-content: center;
-      align-items: center; }
-      header .HeaderContent #CTA:hover {
-        transition: all 0.1s ease;
-        background-color: #FBFBFB; }
-      @media screen and (max-width: 1271px) {
-        header .HeaderContent #CTA {
-          font-size: 2.2em;
-          padding: 0.2em; } }
-      @media only screen and (max-width: 1222px) {
-        header .HeaderContent #CTA {
-          font-size: 2em; } }
-      @media only screen and (max-width: 1023px) {
-        header .HeaderContent #CTA {
-          font-size: 1.5em;
-          height: 1.7em; } }
-      @media only screen and (max-width: 800px) {
-        header .HeaderContent #CTA {
-          margin-top: calc((100vw / 16 * 9) + 7vh);
-          top: 0;
-          position: absolute; } }
-    header .HeaderContent p {
-      margin: 2.5em 0 0; }
-      @media only screen and (max-width: 800px) {
-        header .HeaderContent p {
-          margin-top: calc((100vw / 16 * 9) - 50px);
-          position: absolute; } }
-  header #MobileMenuHeader {
-    display: none;
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right: 2vw;
+    font-size: 2.5em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003325}}
+header .HeaderContent #CTA {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6C1919;
+  background-color: #FFF;
+  text-align: center;
+  border-radius: 1em;
+  width: 102%;
+  min-height: 50px;
+  height: 2em;
+  position: relative;
+  vertical-align: middle;
+  bottom: 0;
+  margin: 10vh -1% 0;
+  font-size: 2.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003344}}
+header .HeaderContent #CTA:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  background-color: #FBFBFB;
+}
+@media screen and (max-width: 1271px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003325}}
+  header .HeaderContent #CTA {
+    font-size: 2.2em;
+    padding: 0.2em;
+  }
+}
+@media only screen and (max-width: 1222px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003325}}
+  header .HeaderContent #CTA {
     font-size: 2em;
-    display: flex;
-    color: white;
-    z-index: 13;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH; }
+  }
+}
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003325}}
+  header .HeaderContent #CTA {
+    font-size: 1.5em;
+    height: 1.7em;
+  }
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003325}}
+  header .HeaderContent #CTA {
+    margin-top: calc((100vw / 16 * 9) + 7vh);
+    top: 0;
+    position: absolute;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003364}}
+header .HeaderContent p {
+  margin: 2.5em 0 0;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003364}}
+  header .HeaderContent p {
+    margin-top: calc((100vw / 16 * 9) - 50px);
+    position: absolute;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003371}}
+header #MobileMenuHeader {
+  display: none;
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 2vw;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  z-index: 13;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003388}}
 nav {
+  position: -webkit-sticky;
   position: sticky;
   background-color: #FFF;
   vertical-align: middle;
   display: block;
   height: 70px;
   width: 100vw;
-  box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
   top: 0;
-  z-index: 10; }
+  z-index: 10;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003399}}
+nav .NavBtn {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  padding: 0 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  height: 70px;
+  color: #6C1919;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003410}}
+nav .NavBtn:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  background-color: #FBFBFB;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003414}}
+nav .NavBtn:focus {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  background-color: #FBFBFB;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003399}}
   nav .NavBtn {
-    transition: all 0.1s ease;
-    padding: 0 1vw;
-    display: flex;
-    align-items: center;
-    float: right;
-    height: 70px;
-    color: #6C1919;
-    text-decoration: none;
-    font-size: 1.5em; }
-    nav .NavBtn:hover {
-      transition: all 0.1s ease;
-      background-color: #FBFBFB; }
-    nav .NavBtn:focus {
-      transition: all 0.1s ease;
-      background-color: #FBFBFB; }
-    @media only screen and (max-width: 800px) {
-      nav .NavBtn {
-        display: none; } }
-  nav #Navn {
-    float: left; }
-    @media only screen and (max-width: 800px) {
-      nav #Navn {
-        display: flex; } }
-  nav #MobileMenu {
     display: none;
-    width: calc(40px + 2vw);
-    font-size: 2em;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH; }
-    @media only screen and (max-width: 800px) {
-      nav #MobileMenu {
-        display: flex; } }
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003421}}
+nav #Navn {
+  float: left;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003421}}
+  nav #Navn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003427}}
+nav #MobileMenu {
+  display: none;
+  width: calc(40px + 2vw);
+  font-size: 2em;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003427}}
+  nav #MobileMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003440}}
+nav .Body {
+  width: calc(90% + 2vw);
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003440}}
   nav .Body {
-    width: calc(90% + 2vw); }
-    @media only screen and (max-width: 575px) {
-      nav .Body {
-        width: calc(100% - 4vw); } }
+    width: calc(100% - 4vw);
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003447}}
 main {
-  z-index: 2; }
+  z-index: 2;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003451}}
 .Body {
   margin: auto;
-  width: 90%; }
-  @media only screen and (max-width: 575px) {
-    .Body {
-      width: calc(100% - 4vw); } }
+  width: 90%;
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003451}}
+  .Body {
+    width: calc(100% - 4vw);
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003459}}
 .Back {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-family: "Material icons", sans-serif;
   color: #6C1919;
   font-size: 2.5em;
   position: absolute;
   top: calc(70px + 3vh);
-  padding: 0 0 0 5px; }
-  .Back:hover {
-    transition: all 0.3s ease;
-    padding: 0; }
+  padding: 0 0 0 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003469}}
+.Back:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003473}}
 .MobileNav {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: block;
   width: 100%;
   height: 197px;
+  position: -webkit-sticky;
   position: sticky;
   top: 70px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   background-color: #7D7D7D;
   overflow: hidden;
-  z-index: 9; }
-  .MobileNav a {
-    transition: all 0.3s ease;
-    height: 65px;
-    color: #6C1919;
-    width: 100%;
-    display: block;
-    background-color: #FFF;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 6px 0 0;
-    margin: 0 0 0.5px; }
-    .MobileNav a:hover {
-      transition: all 0.3s ease;
-      background: #fafafa;
-      font-size: 1.7em;
-      padding: 3px 0 0; }
-    .MobileNav a span {
-      vertical-align: middle;
-      margin: -3px 10px 0 0;
-      font-size: 1.5em; }
-  .MobileNav .Active {
-    border-bottom: 1px solid #6C1919; }
+  z-index: 9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003485}}
+.MobileNav a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 65px;
+  color: #6C1919;
+  width: 100%;
+  display: block;
+  background-color: #FFF;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 6px 0 0;
+  margin: 0 0 0.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003497}}
+.MobileNav a:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #fafafa;
+  font-size: 1.7em;
+  padding: 3px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003503}}
+.MobileNav a span {
+  vertical-align: middle;
+  margin: -3px 10px 0 0;
+  font-size: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003508}}
+.MobileNav .Active {
+  border-bottom: 1px solid #6C1919;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003512}}
 .GalleriInfo {
   text-align: right;
   width: 59%;
   display: block;
-  margin: 5vh 0 2vh 41%; }
-  @media only screen and (max-width: 800px) {
-    .GalleriInfo {
-      margin: 5vh 30% 2vh 0;
-      text-align: left;
-      width: 70%; } }
-  @media only screen and (max-width: 700px) {
-    .GalleriInfo {
-      margin: 5vh 20% 2vh 0;
-      text-align: left;
-      width: 80%; } }
-  @media only screen and (max-width: 575px) {
-    .GalleriInfo {
-      width: 90%;
-      margin: 5vh 5% 2vh 5%; } }
+  margin: 5vh 0 2vh 41%;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003512}}
+  .GalleriInfo {
+    margin: 5vh 30% 2vh 0;
+    text-align: left;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003512}}
+  .GalleriInfo {
+    margin: 5vh 20% 2vh 0;
+    text-align: left;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003512}}
+  .GalleriInfo {
+    width: 90%;
+    margin: 5vh 5% 2vh 5%;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003533}}
 input {
   background: url("../Images/Search.png") right no-repeat;
   background-size: 30px;
   background-origin: content-box;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background-color: #FFF;
   height: 50px;
@@ -453,222 +691,388 @@ input {
   min-width: 300px;
   border-radius: 25px;
   color: #6C1919;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   border: 0px solid #FFF;
   display: block;
-  font-size: 1em; }
-  input:hover {
-    transition: all 0.4s ease;
-    transform: scale(1.02); }
-  input:focus {
-    transition: all 0.3s ease;
-    transform: scale(1.03); }
-  input::placeholder {
-    color: #6C1919;
-    opacity: 1; }
+  font-size: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003553}}
+input:hover {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003557}}
+input:focus {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003561}}
+input::-webkit-input-placeholder {
+  color: #6C1919;
+  opacity: 1;
+}
+input:-ms-input-placeholder {
+  color: #6C1919;
+  opacity: 1;
+}
+input::-ms-input-placeholder {
+  color: #6C1919;
+  opacity: 1;
+}
+input::placeholder {
+  color: #6C1919;
+  opacity: 1;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003566}}
 .GalleriFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin: auto;
-  width: 90%; }
-  @media only screen and (max-width: 575px) {
-    .GalleriFlex {
-      width: calc(100% - 4vw); } }
+  width: 90%;
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003566}}
+  .GalleriFlex {
+    width: calc(100% - 4vw);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003579}}
+.GalleriFlex .Project {
+  white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: calc(100% / 4 - .8vw);
+  height: auto;
+  margin: 1vw 0.4vw;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: #FFF;
+}
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003579}}
   .GalleriFlex .Project {
-    white-space: nowrap;
-    transition: all 0.3s ease;
-    display: inline-block;
-    width: calc(100% / 4 - .8vw);
-    height: auto;
-    margin: 1vw 0.4vw;
-    text-decoration: none;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    background-color: #FFF; }
-    @media only screen and (max-width: 1023px) {
-      .GalleriFlex .Project {
-        width: calc(100% / 3 - .8vw); } }
-    @media only screen and (max-width: 800px) {
-      .GalleriFlex .Project {
-        width: calc(100% / 2 - .8vw); } }
-    @media only screen and (max-width: 575px) {
-      .GalleriFlex .Project {
-        width: calc(100% - .8vw); } }
+    width: calc(100% / 3 - .8vw);
+  }
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003579}}
+  .GalleriFlex .Project {
+    width: calc(100% / 2 - .8vw);
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003579}}
+  .GalleriFlex .Project {
+    width: calc(100% - .8vw);
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003602}}
 h2 {
   text-align: center;
   font-size: 2.5em;
   letter-spacing: 9px;
   margin: 3vh auto 1vh;
   color: black;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003614}}
 .NavActive {
   border-bottom: 1px solid #6C1919;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003619}}
 #MobileNav {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  height: 0px; }
+  height: 0px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003624}}
 .HeaderNav {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: block;
   width: 100%;
   height: 332.5px;
   position: absolute;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   background-color: #6C1919;
   overflow: hidden;
-  z-index: 10; }
-  .HeaderNav a {
-    transition: all 0.3s ease;
-    height: 65px;
-    color: #FFF;
-    border-top: 0.5px solid #FFF;
-    width: 100%;
-    display: block;
-    background-color: #6C1919;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 6px 0 0;
-    margin: 0 0 0.5px; }
-    .HeaderNav a:hover {
-      transition: all 0.3s ease;
-      background: #641717;
-      font-size: 1.7em;
-      padding: 3px 0 0; }
-    .HeaderNav a span {
-      vertical-align: middle;
-      margin: -3px 10px 0 0;
-      font-size: 1.5em; }
-  .HeaderNav .Active {
-    border-bottom: 1px solid #FFF; }
+  z-index: 10;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003635}}
+.HeaderNav a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 65px;
+  color: #FFF;
+  border-top: 0.5px solid #FFF;
+  width: 100%;
+  display: block;
+  background-color: #6C1919;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 6px 0 0;
+  margin: 0 0 0.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003648}}
+.HeaderNav a:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #641717;
+  font-size: 1.7em;
+  padding: 3px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003654}}
+.HeaderNav a span {
+  vertical-align: middle;
+  margin: -3px 10px 0 0;
+  font-size: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003660}}
+.HeaderNav .Active {
+  border-bottom: 1px solid #FFF;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003664}}
 #HeaderNav {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 0px;
-  padding-top: 0px; }
+  padding-top: 0px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003670}}
 .GalleriPart {
   width: 100%;
   display: block;
   margin: 5vh auto;
-  vertical-align: top; }
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003676}}
+.GalleriPart .Body {
+  width: calc(90% + 100px);
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003676}}
   .GalleriPart .Body {
-    width: calc(90% + 100px); }
-    @media only screen and (max-width: 575px) {
-      .GalleriPart .Body {
-        width: 100%; } }
+    width: 100%;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003682}}
 #home .TableOfThings {
-  margin: 10vh auto 0; }
-  #home .TableOfThings h1 {
-    font-size: 1.5em;
-    transition: all 0.1s ease;
-    color: black;
-    text-decoration: none;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-  #home .TableOfThings table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 0px solid #6C1919; }
-    #home .TableOfThings table td {
-      width: calc(100% / 3);
-      vertical-align: top;
-      padding: 1vw;
-      display: inline-flex;
+  margin: 10vh auto 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003685}}
+#home .TableOfThings h1 {
+  font-size: 1.5em;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003695}}
+#home .TableOfThings table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0px solid #6C1919;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003701}}
+#home .TableOfThings table td {
+  width: calc(100% / 3);
+  vertical-align: top;
+  padding: 1vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-line-pack: center;
       align-content: center;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column; }
-      @media only screen and (max-width: 1222px) {
-        #home .TableOfThings table td {
-          flex-direction: column; } }
-      @media only screen and (max-width: 700px) {
-        #home .TableOfThings table td {
-          width: calc(100% / 2); } }
-      @media only screen and (max-width: 575px) {
-        #home .TableOfThings table td {
-          width: calc(100%);
-          vertical-align: middle;
-          flex-direction: row; } }
-      #home .TableOfThings table td h5 {
-        font-weight: 400;
-        font-family: "Material Icons", sans-serif;
-        font-size: 5em;
-        display: inline-block;
-        color: #383838;
-        text-align: left; }
-        @media only screen and (max-width: 1222px) {
-          #home .TableOfThings table td h5 {
-            width: 100%;
-            display: block;
-            text-align: center; } }
-        @media only screen and (max-width: 575px) {
-          #home .TableOfThings table td h5 {
-            display: inline-block;
-            text-align: left;
-            width: 1em;
-            line-height: 1; } }
-      #home .TableOfThings table td p {
-        display: inline-block;
-        width: calc(100% - 5.6em);
-        float: right; }
-        @media only screen and (max-width: 1222px) {
-          #home .TableOfThings table td p {
-            float: none;
-            width: 100%;
-            display: block; } }
-        @media only screen and (max-width: 575px) {
-          #home .TableOfThings table td p {
-            display: inline-block;
-            width: calc(100% - 5.4em);
-            float: right;
-            vertical-align: middle; } }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (max-width: 1222px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003701}}
+  #home .TableOfThings table td {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003701}}
+  #home .TableOfThings table td {
+    width: calc(100% / 2);
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003701}}
+  #home .TableOfThings table td {
+    width: calc(100%);
+    vertical-align: middle;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003722}}
+#home .TableOfThings table td h5 {
+  font-weight: 400;
+  font-family: "Material Icons", sans-serif;
+  font-size: 5em;
+  display: inline-block;
+  color: #383838;
+  text-align: left;
+}
+@media only screen and (max-width: 1222px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003722}}
+  #home .TableOfThings table td h5 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003722}}
+  #home .TableOfThings table td h5 {
+    display: inline-block;
+    text-align: left;
+    width: 1em;
+    line-height: 1;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003740}}
+#home .TableOfThings table td p {
+  display: inline-block;
+  width: calc(100% - 5.6em);
+  float: right;
+}
+@media only screen and (max-width: 1222px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003740}}
+  #home .TableOfThings table td p {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003740}}
+  #home .TableOfThings table td p {
+    display: inline-block;
+    width: calc(100% - 5.4em);
+    float: right;
+    vertical-align: middle;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003756}}
 #home .White {
   background-color: #FFF;
   display: inline-block;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   padding: 20px;
-  box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003766}}
 .KontaktWidth .Medias {
-  justify-content: space-around;
-  margin: 7vh 0 0 !important; }
-  .KontaktWidth .Medias a img {
-    width: 2em !important;
-    border-radius: 1em; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 7vh 0 0 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003771}}
+.KontaktWidth .Medias a img {
+  width: 2em !important;
+  border-radius: 1em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003776}}
 .Medias {
   margin: 1em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between; }
-  @media only screen and (max-width: 800px) {
-    .Medias {
-      margin: 1em 0; } }
-  .Medias a img {
-    border-radius: calc(1.3em / 2);
-    filter: grayscale(0) !important;
-    transition: all 0.2s ease;
-    width: 1.3em !important;
-    opacity: 0.4; }
-    .Medias a img:hover {
-      transition: all 0.2s ease;
-      transform: scale(1.07);
-      opacity: 0.8; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003776}}
+  .Medias {
+    margin: 1em 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003787}}
+.Medias a img {
+  border-radius: calc(1.3em / 2);
+  -webkit-filter: grayscale(0) !important;
+          filter: grayscale(0) !important;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 1.3em !important;
+  opacity: 0.4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003794}}
+.Medias a img:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  opacity: 0.8;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003800}}
 .Background {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 100vw;
   width: 100vw;
@@ -677,37 +1081,54 @@ h2 {
   top: 70px;
   z-index: -1;
   background-color: #6C1919;
-  display: block; }
-  @media only screen and (max-width: 800px) {
-    .Background {
-      height: 200vh;
-      width: 200vh; } }
-  @media only screen and (max-width: 575px) {
-    .Background {
-      height: 150vh;
-      width: 150vh; } }
-  @media only screen and (max-width: 376px) {
-    .Background {
-      height: 100vh;
-      width: 100vh; } }
+  display: block;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003800}}
+  .Background {
+    height: 200vh;
+    width: 200vh;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003800}}
+  .Background {
+    height: 150vh;
+    width: 150vh;
+  }
+}
+@media only screen and (max-width: 376px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003800}}
+  .Background {
+    height: 100vh;
+    width: 100vh;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003824}}
 .Line {
   clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
   -webkit-clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
-  -moz-clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%); }
+  -moz-clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003830}}
 .Triangle {
   clip-path: polygon(0 29%, 0 72%, 21% 51%);
   -webkit-clip-path: polygon(0 29%, 0 72%, 21% 51%);
-  -moz-clip-path: polygon(0 29%, 0 72%, 21% 51%); }
+  -moz-clip-path: polygon(0 29%, 0 72%, 21% 51%);
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003841}}
 .TriangleBottom {
   clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
   -webkit-clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
   -moz-clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
   left: 0;
-  margin-bottom: 350px; }
+  margin-bottom: 350px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003850}}
 #Om {
   background-repeat: repeat;
   background-image: url("../Images/OmMegBG.png");
@@ -715,164 +1136,271 @@ h2 {
   padding-top: 0px;
   background-size: 1920px 1080px;
   background-origin: border-box;
-  z-index: -4; }
-  @media only screen and (max-width: 700px) {
-    #Om h2.White {
-      padding: 20px 10px;
-      letter-spacing: normal; } }
+  z-index: -4;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003859}}
+  #Om h2.White {
+    padding: 20px 10px;
+    letter-spacing: normal;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003864}}
+#Om .TableOfThings {
+  margin: 10vh auto 10vh 30%;
+  width: 70%;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003869}}
+#Om .TableOfThings h1 {
+  font-size: 1.5em;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003864}}
   #Om .TableOfThings {
-    margin: 10vh auto 10vh 30%;
-    width: 70%;
-    box-sizing: border-box !important; }
-    #Om .TableOfThings h1 {
-      font-size: 1.5em;
-      transition: all 0.1s ease;
-      color: black;
-      text-decoration: none;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 0; }
-    @media only screen and (max-width: 800px) {
-      #Om .TableOfThings {
-        margin: 40vw auto 10vh;
-        width: 100%; } }
-    @media only screen and (max-width: 700px) {
-      #Om .TableOfThings {
-        margin: 40vh auto 10vh; } }
-    #Om .TableOfThings table {
-      width: 100%;
-      border-collapse: collapse;
-      border: 0px solid #6C1919; }
-      #Om .TableOfThings table td {
-        width: calc(100% / 3);
-        vertical-align: top;
-        display: inline-flex;
-        align-content: center;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column; }
-        @media only screen and (max-width: 700px) {
-          #Om .TableOfThings table td {
-            width: calc(100% / 2); } }
-        @media only screen and (max-width: 575px) {
-          #Om .TableOfThings table td {
-            width: calc(100%);
-            vertical-align: middle;
-            flex-direction: row; } }
-        #Om .TableOfThings table td h5 {
-          font-weight: 400;
-          font-family: "Material Icons", sans-serif;
-          font-size: 5em;
-          display: inline-block;
-          color: #383838;
-          text-align: left; }
-          @media only screen and (max-width: 1222px) {
-            #Om .TableOfThings table td h5 {
-              width: 100%;
-              display: block;
-              text-align: center; } }
-          @media only screen and (max-width: 575px) {
-            #Om .TableOfThings table td h5 {
-              display: inline-block;
-              text-align: left;
-              width: 1em;
-              line-height: 1; } }
-        #Om .TableOfThings table td p {
-          display: inline-block;
-          width: calc(100% - 3em);
-          float: right; }
-          @media only screen and (max-width: 1222px) {
-            #Om .TableOfThings table td p {
-              float: none;
-              width: 100%;
-              display: block; } }
-          @media only screen and (max-width: 575px) {
-            #Om .TableOfThings table td p {
-              display: inline-block;
-              width: calc(100% - 5.4em);
-              float: right;
-              vertical-align: middle; } }
-  #Om .OmFlex {
-    width: 80%;
-    margin: auto;
-    display: flex; }
-    @media only screen and (max-width: 800px) {
-      #Om .OmFlex {
-        display: block; } }
-    @media only screen and (max-width: 575px) {
-      #Om .OmFlex {
-        width: 90%; } }
-    #Om .OmFlex img {
-      width: 70%;
-      height: auto;
-      filter: grayscale(1);
-      z-index: 2;
-      display: inline-block;
-      align-self: center;
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); }
-      @media only screen and (max-width: 800px) {
-        #Om .OmFlex img {
-          width: 100%;
-          display: block;
-          margin: 0 0 -3vh;
-          z-index: 2;
-          position: static; } }
-    #Om .OmFlex .White {
-      position: absolute;
-      right: calc(90vw / 100 * 15 + 8px);
-      width: 25%;
-      float: right;
-      z-index: 3;
-      align-self: center;
-      box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3) !important; }
-      @media only screen and (max-width: 800px) {
-        #Om .OmFlex .White {
-          float: right;
-          display: block;
-          right: calc(15% - 8px);
-          z-index: 5;
-          width: 50%; } }
-  @media only screen and (max-width: 800px) and (max-width: 700px) {
-    #Om .OmFlex .White {
-      float: none;
-      width: 70vw;
-      right: 15vw;
-      left: 15vw;
-      box-sizing: border-box; } }
-  @media only screen and (max-width: 800px) and (max-width: 575px) {
-    #Om .OmFlex .White {
-      width: 90vw;
-      right: 5vw;
-      left: 5vw; } }
-
-      #Om .OmFlex .White h1 {
-        text-align: left;
-        margin: 0;
-        padding: 0; }
-  #Om .OmContent {
-    width: 70%;
-    margin: 3vh auto 10vh; }
-    @media only screen and (max-width: 575px) {
-      #Om .OmContent {
-        width: 90%; } }
-  #Om .White {
-    background-color: #FFF;
+    margin: 40vw auto 10vh;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003864}}
+  #Om .TableOfThings {
+    margin: 40vh auto 10vh;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003887}}
+#Om .TableOfThings table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0px solid #6C1919;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003893}}
+#Om .TableOfThings table td {
+  width: calc(100% / 3);
+  vertical-align: top;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003893}}
+  #Om .TableOfThings table td {
+    width: calc(100% / 2);
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003893}}
+  #Om .TableOfThings table td {
+    width: calc(100%);
+    vertical-align: middle;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003910}}
+#Om .TableOfThings table td h5 {
+  font-weight: 400;
+  font-family: "Material Icons", sans-serif;
+  font-size: 5em;
+  display: inline-block;
+  color: #383838;
+  text-align: left;
+}
+@media only screen and (max-width: 1222px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003910}}
+  #Om .TableOfThings table td h5 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003910}}
+  #Om .TableOfThings table td h5 {
     display: inline-block;
-    box-sizing: content-box;
-    padding: 20px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); }
-  #Om h2 {
-    margin: 0 0 0 50%;
-    transform: translate(-50%, 0); }
-  #Om .Back {
-    float: left;
-    left: 5%;
-    top: calc(70px + 0vh); }
-    @media only screen and (max-width: 575px) {
-      #Om .Back {
-        left: 2vw; } }
+    text-align: left;
+    width: 1em;
+    line-height: 1;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003928}}
+#Om .TableOfThings table td p {
+  display: inline-block;
+  width: calc(100% - 3em);
+  float: right;
+}
+@media only screen and (max-width: 1222px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003928}}
+  #Om .TableOfThings table td p {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003928}}
+  #Om .TableOfThings table td p {
+    display: inline-block;
+    width: calc(100% - 5.4em);
+    float: right;
+    vertical-align: middle;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003945}}
+#Om .OmFlex {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003945}}
+  #Om .OmFlex {
+    display: block;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003945}}
+  #Om .OmFlex {
+    width: 90%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003958}}
+#Om .OmFlex img {
+  width: 70%;
+  height: auto;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  z-index: 2;
+  display: inline-block;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003958}}
+  #Om .OmFlex img {
+    width: 100%;
+    display: block;
+    margin: 0 0 -3vh;
+    z-index: 2;
+    position: static;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003974}}
+#Om .OmFlex .White {
+  position: absolute;
+  right: calc(90vw / 100 * 15 + 8px);
+  width: 25%;
+  float: right;
+  z-index: 3;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3) !important;
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3) !important;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003974}}
+  #Om .OmFlex .White {
+    float: right;
+    display: block;
+    right: calc(15% - 8px);
+    z-index: 5;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 800px) and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003974}}
+  #Om .OmFlex .White {
+    float: none;
+    width: 70vw;
+    right: 15vw;
+    left: 15vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 800px) and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003974}}
+  #Om .OmFlex .White {
+    width: 90vw;
+    right: 5vw;
+    left: 5vw;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031007}}
+#Om .OmFlex .White h1 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031012}}
+#Om .OmContent {
+  width: 70%;
+  margin: 3vh auto 10vh;
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031012}}
+  #Om .OmContent {
+    width: 90%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031020}}
+#Om .White {
+  background-color: #FFF;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 20px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031027}}
+#Om h2 {
+  margin: 0 0 0 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031031}}
+#Om .Back {
+  float: left;
+  left: 5%;
+  top: calc(70px + 0vh);
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031031}}
+  #Om .Back {
+    left: 2vw;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031043}}
 .modal {
   display: none;
   position: fixed;
@@ -884,102 +1412,159 @@ h2 {
   overflow: auto;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.5);
-  overflow-y: hidden; }
+  overflow-y: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031060}}
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 5vmax;
+  height: calc(100vh - 10vmax);
+  width: calc(100vw - 10vmax);
+  display: grid;
+  grid-template-areas: "image image image info info" "image image image info info" "title title title info info" "title title title button button";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 0px;
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  color: black;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031060}}
   .modal .modal-content {
-    background-color: #fefefe;
-    margin: 5vmax;
-    height: calc(100vh - 10vmax);
-    width: calc(100vw - 10vmax);
-    display: grid;
-    grid-template-areas: "image image image info info" "image image image info info" "title title title info info" "title title title button button";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 0px;
-    box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
-    overflow: auto;
-    color: black; }
-    @media only screen and (max-width: 700px) {
-      .modal .modal-content {
-        display: flex;
-        flex-direction: column;
-        overflow-y: scroll;
-        overflow-x: hidden; } }
-    .modal .modal-content div {
-      padding: 2vw !important;
-      width: 100%;
-      height: 100%; }
-  .modal .close {
-    color: #aaa;
-    margin: 2vw 2vw 0 0;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 5vmax;
-    right: 5vmax; }
-    .modal .close:hover, .modal .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031082}}
+.modal .modal-content div {
+  padding: 2vw !important;
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031087}}
+.modal .close {
+  color: #aaa;
+  margin: 2vw 2vw 0 0;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 5vmax;
+  right: 5vmax;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031096}}
+.modal .close:hover, .modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031101}}
+.modal img {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  -webkit-filter: none;
+          filter: none;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031101}}
   .modal img {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-    grid-area: image;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    filter: none; }
-    @media only screen and (max-width: 700px) {
-      .modal img {
-        margin: 2vh 0;
-        order: 3;
-        min-height: calc((100vw - 10vmin) / 16 * 9); } }
-  .modal .title {
-    grid-area: title;
-    top: 0; }
-    .modal .title h4 {
-      color: #6C1919;
-      font-size: 2.5em;
-      display: inline-block; }
-      @media only screen and (max-width: 700px) {
-        .modal .title h4 {
-          font-size: 2em;
-          text-align: center;
-          display: block; } }
-    .modal .title p {
-      font-size: 1.75em; }
-      @media only screen and (max-width: 700px) {
-        .modal .title p {
-          font-size: 1.5em; } }
-  .modal .info {
-    grid-area: info; }
-    .modal .info h5 {
-      color: #7D7D7D;
-      text-align: center;
-      display: run-in;
-      font-size: 1.75em; }
-    .modal .info p {
-      font-size: 1em; }
+    margin: 2vh 0;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    min-height: calc((100vw - 10vmin) / 16 * 9);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031119}}
+.modal .title {
+  grid-area: title;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031123}}
+.modal .title h4 {
+  color: #6C1919;
+  font-size: 2.5em;
+  display: inline-block;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031123}}
+  .modal .title h4 {
+    font-size: 2em;
+    text-align: center;
+    display: block;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031133}}
+.modal .title p {
+  font-size: 1.75em;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031133}}
+  .modal .title p {
+    font-size: 1.5em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031139}}
+.modal .info {
+  grid-area: info;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031142}}
+.modal .info h5 {
+  color: #7D7D7D;
+  text-align: center;
+  display: run-in;
+  font-size: 1.75em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031148}}
+.modal .info p {
+  font-size: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031151}}
+.modal .Button {
+  grid-area: button;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031151}}
   .modal .Button {
-    grid-area: button; }
-    @media only screen and (max-width: 700px) {
-      .modal .Button {
-        display: block;
-        order: 4; } }
-    .modal .Button .ModalButton {
-      background-color: #6C1919;
-      color: #FFF;
-      font-size: 2em;
-      width: 100%;
-      height: 80px;
-      padding: 15px 0;
-      display: block;
-      bottom: 0;
-      text-align: center;
-      border-radius: 4em; }
+    display: block;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031158}}
+.modal .Button .ModalButton {
+  background-color: #6C1919;
+  color: #FFF;
+  font-size: 2em;
+  width: 100%;
+  height: 80px;
+  padding: 15px 0;
+  display: block;
+  bottom: 0;
+  text-align: center;
+  border-radius: 4em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031172}}
 .ToBtn {
+  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   background-color: #7D7D7D;
   color: #FFF;
@@ -991,230 +1576,377 @@ h2 {
   margin-top: 5vh;
   border-radius: 26.5px;
   padding: 10px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); }
-  .ToBtn:hover {
-    transition: all 0.1s ease;
-    background-color: #666666; }
-  .ToBtn:active {
-    transition: all 0.1s ease;
-    box-shadow: 0;
-    margin-top: calc(5vh + 2px); }
-  @media only screen and (max-width: 575px) {
-    .ToBtn {
-      display: none; } }
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031186}}
+.ToBtn:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  background-color: #666666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031190}}
+.ToBtn:active {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  margin-top: calc(5vh + 2px);
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031172}}
+  .ToBtn {
+    display: none;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031199}}
 .OmMeg {
-  background-color: #FFF; }
+  background-color: #FFF;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031203}}
 main h1 {
   font-size: 2.5em;
   padding-left: calc(150px + 1vw);
-  font-weight: 400; }
-  @media only screen and (max-width: 700px) {
-    main h1 {
-      padding-left: calc(100px + 1vw); } }
-  @media only screen and (max-width: 575px) {
-    main h1 {
-      text-align: center;
-      padding-left: 0;
-      margin: 0 0 2vh; } }
-  main h1 a {
-    transition: all 0.1s ease;
-    color: black;
-    text-decoration: none;
+  font-weight: 400;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031203}}
+  main h1 {
+    padding-left: calc(100px + 1vw);
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031203}}
+  main h1 {
     text-align: center;
-    width: 100%; }
-    main h1 a:hover {
-      text-decoration: underline; }
-    @media only screen and (max-width: 575px) {
-      main h1 a {
-        transition: all 0.1s ease;
-        text-align: center;
-        padding: 4px 10vw;
-        background-color: #E4E4E4;
-        border-radius: 30px; }
-        main h1 a:hover {
-          transition: all 0.1s ease;
-          background-color: #D7D7D7; } }
+    padding-left: 0;
+    margin: 0 0 2vh;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031216}}
+main h1 a {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031223}}
+main h1 a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031216}}
+  main h1 a {
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    text-align: center;
+    padding: 4px 10vw;
+    background-color: #E4E4E4;
+    border-radius: 30px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031233}}
+  main h1 a:hover {
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    background-color: #D7D7D7;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031238}}
 .Material {
   font-family: "Material Icons", sans-serif;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031242}}
 .SideArrow {
+  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   font-weight: 100;
   font-size: 150px;
   color: #6C1919;
   display: inline;
-  z-index: 2; }
-  .SideArrow:hover {
-    transition: all 0.2s ease;
-    transform: scale(1.01);
-    cursor: pointer; }
-  .SideArrow:focus {
-    transition: all 0.3s ease;
-    transform: scale(1.03); }
-  @media only screen and (max-width: 700px) {
-    .SideArrow {
-      font-size: 100px; } }
-  @media only screen and (max-width: 575px) {
-    .SideArrow {
-      font-size: 80px;
-      position: absolute;
-      display: inline-block;
-      background-color: rgba(255, 255, 255, 0.4);
-      border-radius: 50px;
-      padding: 3px 10px;
-      height: 100px;
-      width: 100px;
-      margin: 50% -30px 0; } }
-  @media only screen and (max-width: 395px) {
-    .SideArrow {
-      font-size: 60px;
-      border-radius: 40px;
-      padding: 5px 10px;
-      height: 80px;
-      width: 80px; } }
-
-#RightArrow {
-  right: 0; }
-  @media only screen and (max-width: 575px) {
-    #RightArrow {
-      align-self: center;
-      vertical-align: middle;
-      margin-top: calc(-310px + 2.5em); } }
-  @media only screen and (max-width: 395px) {
-    #RightArrow {
-      margin-top: calc(-253px + 2.5em); } }
-
-.Slides {
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031250}}
+.SideArrow:hover {
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031255}}
+.SideArrow:focus {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031242}}
+  .SideArrow {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031242}}
+  .SideArrow {
+    font-size: 80px;
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    padding: 3px 10px;
+    height: 100px;
+    width: 100px;
+    margin: 50% -30px 0;
+  }
+}
+@media only screen and (max-width: 395px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031242}}
+  .SideArrow {
+    font-size: 60px;
+    border-radius: 40px;
+    padding: 5px 10px;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031283}}
+#RightArrow {
+  right: 0;
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031283}}
+  #RightArrow {
+    -ms-flex-item-align: center;
+        align-self: center;
+    vertical-align: middle;
+    margin-top: calc(-310px + 2.5em);
+  }
+}
+@media only screen and (max-width: 395px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031283}}
+  #RightArrow {
+    margin-top: calc(-253px + 2.5em);
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031295}}
+.Slides {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: calc(100% - 303px - 1vw);
-  align-content: center;
-  align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   overflow: hidden;
   z-index: 1;
   overflow-x: auto;
-  overflow-y: hidden; }
-  .Slides::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    display: none; }
-  .Slides::-webkit-scrollbar-thumb {
-    width: 0px;
-    height: 0px;
-    display: none; }
-  @media only screen and (max-width: 700px) {
-    .Slides {
-      width: calc(100% - 200px - 2vw) !important; } }
-  @media only screen and (max-width: 575px) {
-    .Slides {
-      width: calc(100% - 4vw) !important;
-      margin: 0 2vw; } }
+  overflow-y: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031307}}
+.Slides::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031313}}
+.Slides::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031295}}
+  .Slides {
+    width: calc(100% - 200px - 2vw) !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031295}}
+  .Slides {
+    width: calc(100% - 4vw) !important;
+    margin: 0 2vw;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031326}}
 .Project {
   white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: inline-block;
   width: calc(100% / 3 - .8vw);
   height: auto;
   margin: 1vw 0.4vw;
   text-decoration: none;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  background-color: #FFF; }
-  @media only screen and (max-width: 1222px) {
-    .Project {
-      width: calc(100% / 2 - .8vw); } }
-  @media only screen and (max-width: 1023px) {
-    .Project {
-      width: calc(100% - .8vw); } }
-  .Project:hover {
-    transition: all 0.3s ease;
-    transform: scale(1.03);
-    cursor: pointer; }
-  .Project:focus {
-    transition: all 0.3s ease;
-    transform: scale(1.03); }
-  .Project img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2); }
-  .Project div {
-    width: 100%;
-    padding: 10px;
-    overflow: hidden; }
-    .Project div h3 {
-      color: #6C1919;
-      font-size: 1.5em;
-      font-weight: 400;
-      margin: 0px 0px 10px; }
-    .Project div span {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 100%;
-      display: block;
-      color: black; }
-      .Project div span::after {
-        content: ".  .  ."; }
-  .Project p {
-    display: none; }
-  .Project a {
-    display: none !important; }
+  background-color: #FFF;
+}
+@media only screen and (max-width: 1222px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031326}}
+  .Project {
+    width: calc(100% / 2 - .8vw);
+  }
+}
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031326}}
+  .Project {
+    width: calc(100% - .8vw);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031345}}
+.Project:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031350}}
+.Project:focus {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031354}}
+.Project img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031360}}
+.Project div {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031365}}
+.Project div h3 {
+  color: #6C1919;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0px 0px 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031371}}
+.Project div span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+  color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031379}}
+.Project div span::after {
+  content: ".  .  .";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031382}}
+.Project p {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031385}}
+.Project a {
+  display: none !important;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031389}}
 .TekstLink {
   text-decoration: underline;
-  text-decoration-style: dotted;
-  color: #6C1919; }
-  .TekstLink:hover {
-    text-decoration-style: solid; }
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  color: #6C1919;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031394}}
+.TekstLink:hover {
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031398}}
 .KontaktWidth {
   width: calc(70% + 4vw);
-  margin: auto; }
-  @media only screen and (max-width: 1023px) {
-    .KontaktWidth {
-      width: calc(90% + 4vw); } }
+  margin: auto;
+}
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031398}}
+  .KontaktWidth {
+    width: calc(90% + 4vw);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031405}}
+.KontaktWidth table {
+  margin: 10vh auto 0;
+  table-layout: fixed;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031405}}
   .KontaktWidth table {
-    margin: 10vh auto 0;
-    table-layout: fixed;
-    width: 100%; }
-    @media only screen and (max-width: 800px) {
-      .KontaktWidth table {
-        margin: 0vh auto; } }
-    .KontaktWidth table td {
-      width: 50%;
-      padding: 0 2vw; }
-      @media only screen and (max-width: 800px) {
-        .KontaktWidth table td {
-          width: 100%;
-          display: block;
-          margin: 5vh auto 0; } }
-      .KontaktWidth table td div {
-        margin-left: 1vw;
-        width: calc(100% - 1vw - 175px);
-        display: inline-block;
-        vertical-align: middle; }
-        .KontaktWidth table td div h3 {
-          font-weight: 400;
-          font-size: 1.8em; }
-      .KontaktWidth table td img {
-        vertical-align: middle;
-        border-radius: 85px;
-        height: 170px;
-        width: 170px;
-        display: inline-block; }
-        @media only screen and (max-width: 575px) {
-          .KontaktWidth table td img {
-            border-radius: 70px;
-            height: 140px;
-            width: 140px; } }
+    margin: 0vh auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031413}}
+.KontaktWidth table td {
+  width: 50%;
+  padding: 0 2vw;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031413}}
+  .KontaktWidth table td {
+    width: 100%;
+    display: block;
+    margin: 5vh auto 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031422}}
+.KontaktWidth table td div {
+  margin-left: 1vw;
+  width: calc(100% - 1vw - 175px);
+  display: inline-block;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031428}}
+.KontaktWidth table td div h3 {
+  font-weight: 400;
+  font-size: 1.8em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031433}}
+.KontaktWidth table td img {
+  vertical-align: middle;
+  border-radius: 85px;
+  height: 170px;
+  width: 170px;
+  display: inline-block;
+}
+@media only screen and (max-width: 575px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031433}}
+  .KontaktWidth table td img {
+    border-radius: 70px;
+    height: 140px;
+    width: 140px;
+  }
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031445}}
 footer {
   background-color: #383838;
   border-top: 8px solid #6C1919;
@@ -1222,70 +1954,121 @@ footer {
   width: 100vw;
   height: 350px;
   display: block;
-  box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
   z-index: 3;
-  box-sizing: content-box; }
-  @media only screen and (max-width: 1023px) {
-    footer {
-      font-size: 16px; } }
-  footer a {
-    transition: all 0.1s ease;
-    color: #FFF; }
-    footer a:hover {
-      transition: all 0.1s ease;
-      text-decoration: underline; }
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031445}}
+  footer {
+    font-size: 16px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031459}}
+footer a {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: #FFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031463}}
+footer a:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031467}}
+footer span {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031467}}
   footer span {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-    @media only screen and (max-width: 700px) {
-      footer span {
-        margin: 1em 0 0; } }
+    margin: 1em 0 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031476}}
+footer .Topp {
+  margin-top: 0.5em;
+  font-size: 0.9;
+  width: 100%;
+  display: block;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031476}}
   footer .Topp {
-    margin-top: 0.5em;
-    font-size: 0.9;
-    width: 100%;
-    display: block; }
-    @media only screen and (max-width: 700px) {
-      footer .Topp {
-        text-align: right; } }
-    footer .Topp:hover {
-      cursor: pointer; }
-    footer .Topp span {
-      text-align: left;
-      vertical-align: sub;
-      display: inline-block;
-      width: auto; }
-      @media only screen and (max-width: 700px) {
-        footer .Topp span {
-          text-align: right; } }
-  footer .Body div {
-    transform: translate(0, -50%);
-    display: inline-block;
-    width: calc(50% - 2px);
-    margin-top: calc(290px / 2); }
-    @media only screen and (max-width: 700px) {
-      footer .Body div {
-        display: block;
-        transform: translate(0, 0);
-        display: block;
-        width: 100%;
-        margin-top: 4vh;
-        text-align: center;
-        float: none; } }
-  footer .LeftFooter {
-    font-size: 1.75em; }
-  footer .RightFooter {
     text-align: right;
-    float: right; }
-    footer .RightFooter h1 {
-      font-size: 2.75em; }
-    footer .RightFooter p {
-      font-size: 1.4em;
-      display: block; }
-      @media only screen and (max-width: 700px) {
-        footer .RightFooter p {
-          display: inline; } }
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031485}}
+footer .Topp:hover {
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031488}}
+footer .Topp span {
+  text-align: left;
+  vertical-align: sub;
+  display: inline-block;
+  width: auto;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031488}}
+  footer .Topp span {
+    text-align: right;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031498}}
+footer .Body div {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: inline-block;
+  width: calc(50% - 2px);
+  margin-top: calc(290px / 2);
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031498}}
+  footer .Body div {
+    display: block;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    display: block;
+    width: 100%;
+    margin-top: 4vh;
+    text-align: center;
+    float: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031513}}
+footer .LeftFooter {
+  font-size: 1.75em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031516}}
+footer .RightFooter {
+  text-align: right;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031520}}
+footer .RightFooter h1 {
+  font-size: 2.75em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031523}}
+footer .RightFooter p {
+  font-size: 1.4em;
+  display: block;
+}
+@media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031523}}
+  footer .RightFooter p {
+    display: inline;
+  }
+}
 
 /*# sourceMappingURL=Styling.css.map */
