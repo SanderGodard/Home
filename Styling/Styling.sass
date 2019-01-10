@@ -4,8 +4,8 @@
 $MainColor: #6C1919
 $SecondaryColor: #383838
 $ThirdColor: #7D7D7D
-$White: #FFF
-$WhiteHover : #FBFBFB
+$W: #FFF
+$WHover : #FBFBFB
 
 $amount: 2
 
@@ -51,7 +51,7 @@ html
 
 body
   transition: all 0s ease
-  background-color: $White
+  background-color: $W
   font-family: 'Roboto', sans-serif
   min-width: 310px !important
   line-height: 1.25
@@ -75,7 +75,7 @@ body
   border-collapse: collapse
 
   &:focus
-    outline: none
+    //outline: none
 
 a
   text-decoration: none
@@ -87,12 +87,12 @@ img
 ::-moz-selection
   background: $MainColor
   opacity: 0.7
-  color: $White
+  color: $W
 
 
 ::selection
   background: $MainColor
-  color: $White
+  color: $W
   opacity: 0.7
 
 
@@ -162,13 +162,13 @@ img
       width: 40%
       height: 70px
       margin: 8vh auto
-      background-color: $White
+      background-color: $W
       color: $MainColor
       display: inline-block
       border-radius: 35px
       padding-top: 10px
       font-size: 2em
-      border: 1px solid $White
+      border: 1px solid $W
 
       &:hover
         transition: all .2s ease
@@ -209,7 +209,7 @@ img
 
 header
   background-color: $MainColor
-  color: $White
+  color: $W
   width: 100vw
   height: 100vh
   z-index: 1
@@ -256,7 +256,7 @@ header
 
 
   #Next1
-    color: $White
+    color: $W
     position: absolute
     width: 150px
     height: 150px
@@ -326,7 +326,7 @@ header
       transition: all .1s ease
       display: flex
       color: $MainColor
-      background-color: $White
+      background-color: $W
       text-align: center
       //padding: .4em 0 0
       border-radius: 1em
@@ -343,7 +343,7 @@ header
 
       &:hover
         transition: all .1s ease
-        background-color: $WhiteHover
+        background-color: $WHover
 
       @media screen and (max-width: 1271px)
         font-size: 2.2em
@@ -387,7 +387,7 @@ header
 
 nav
   position: sticky
-  background-color: $White
+  background-color: $W
   vertical-align: middle
   display: block
   height: 70px
@@ -409,11 +409,11 @@ nav
 
     &:hover
       transition: all .1s ease
-      background-color: $WhiteHover
+      background-color: $WHover
 
     &:focus
       transition: all .1s ease
-      background-color: $WhiteHover
+      background-color: $WHover
 
     @media #{$TabletL}
       display: none
@@ -488,7 +488,7 @@ main
     color: $MainColor
     width: 100%
     display: block
-    background-color: $White
+    background-color: $W
     font-size: 1.5em
     text-align: center
     padding: 6px 0 0
@@ -496,7 +496,7 @@ main
 
     &:hover
       transition: all .3s ease
-      background: darken($White, $amount)
+      background: darken($W, $amount)
       font-size: 1.7em
       padding: 3px 0 0
 
@@ -535,7 +535,7 @@ input
   background-size: 30px
   background-origin: content-box
   transition: all .2s ease
-  background-color: $White
+  background-color: $W
   height: 50px
   position: relative
   padding: 12.5px 20px
@@ -546,7 +546,7 @@ input
   border-radius: 25px
   color: $MainColor
   box-shadow: $Shadow
-  border: 0px solid $White
+  border: 0px solid $W
   display: block
   font-size: 1em
 
@@ -557,6 +557,7 @@ input
   &:focus
     transition: all .3s ease
     transform: scale(1.03)
+    outline: none
 
   &::placeholder
     color: $MainColor
@@ -587,7 +588,7 @@ input
     text-decoration: none
     box-shadow: $Shadow
     border-radius: 15px
-    background-color: $White
+    background-color: $W
 
     @media #{$Laptop}
       width: calc(100% / 3 - .8vw)
@@ -635,8 +636,8 @@ h2
   a
     transition: all .3s ease
     height: 65px
-    color: $White
-    border-top: .5px solid $White
+    color: $W
+    border-top: .5px solid $W
     width: 100%
     display: block
     background-color: $MainColor
@@ -658,7 +659,7 @@ h2
 
 
   .Active
-    border-bottom: 1px solid $White
+    border-bottom: 1px solid $W
 
 
 #HeaderNav
@@ -754,7 +755,7 @@ h2
             vertical-align: middle
 
   .White
-    background-color: $White
+    background-color: $W
     display: inline-block
     box-sizing: content-box
     padding: 20px
@@ -1018,7 +1019,7 @@ h2
 
 
   .White
-    background-color: $White
+    background-color: $W
     display: inline-block
     box-sizing: content-box
     padding: 20px
@@ -1058,34 +1059,174 @@ h2
   overflow-y: hidden
 
   .modal-content
-    background-color: #fefefe
+    background-color: $W
     margin: 5vmax
     height: calc(100vh - 10vmax)
     width: calc(100vw - 10vmax)
-    display: grid
-    grid-template-areas: 'image image image info info''image image image info info''title title title info info''title title title button button'
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    //display: grid
+    //grid-template-areas: 'image image image info info''image image image info info''title title title info info''title title title button button'
+    //grid-template-columns: 1fr 1fr 1fr 1fr 1fr
     //grid-template-rows: 1fr 1fr 1fr 1fr
     padding: 0px
     box-shadow: $BigShadow
     overflow: auto
     color: black
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-content: stretch
+    align-items: stretch
 
-    @media #{$TabletM}
-      display: flex
-      flex-direction: column
+    @media #{$TabletL}
+      //flex-direction: column
       overflow-y: scroll
       overflow-x: hidden
+      align-content: flex-start
+      align-items: flex-start
       //grid-template-areas: 'title''info''info''image''button'
       //grid-template-columns: 1fr
 
-    div
-      padding: 2vw !important
-      width: 100%
-      height: 100%
+    .LeftSide
+      display: inline-flex
+      width: 60%
+      flex-direction: column
+      flex-wrap: nowrap
+      align-content: stretch
+      align-items: flex-start
+
+      @media #{$TabletL}
+        display: flex
+        width: 100%
+        flex-direction: column
+        flex-wrap: nowrap
+        align-content: flex-start
+        align-items: flex-start
+
+      img
+        order: 1
+        box-shadow: $Shadow
+        //grid-area: image
+        //flex-grow: 3
+        width: 100%
+        //height: auto
+        object-fit: cover
+        bottom: 0
+        left: 0
+        right: 0
+        overflow: hidden
+        filter: none
+        flex-shrink: .5
+
+        @media #{$TabletL}
+          margin: 2vh 0
+          //display: none
+          order: 2
+          //min-height: calc((100vw - 10vmin) / 16 * 9)
+
+      .title
+        //grid-area: title
+        top: 0
+        order: 2
+        width: 100%
+        padding: 2vw 2vw
+        display: flex
+        flex-grow: 1 0
+        flex-direction: column
+        flex-wrap: nowrap
+        align-content: stretch
+        justify-content: space-between
+
+        @media #{$TabletL}
+          order: 1
+          align-content: flex-start
+          justify-content: flex-start
+
+        h4
+          color: $MainColor
+          font-size: 2.5em
+          display: block
+          margin: 0
+          margin-block-start: 0
+          margin-block-end: 1px
+
+          @media #{$TabletL}
+            font-size: 2em
+            text-align: center
+            display: block
+
+        p
+          line-height: 1
+          font-size: 1.7em
+
+          @media #{$TabletL}
+            font-size: 1.5em
+
+
+    .RightSide
+      padding: 2vw
+      display: inline-flex
+      width: 40%
+      flex-direction: column
+      flex-wrap: nowrap
+      align-content: stretch
+      justify-content: space-between
+      //align-items: flex-start
+
+      @media #{$TabletL}
+        display: flex
+        width: 100%
+        align-content: flex-start
+        align-items: flex-start
+
+      .info
+        //grid-area: info
+        order: 1
+        width: 100%
+
+        @media #{$TabletL}
+          order: 2
+
+        h5
+          color: $SecondaryColor
+          text-align: center
+          display: run-in
+          font-size: 1.75em
+
+        p
+          font-size: 1em
+
+      .Button
+        order: 2
+        bottom: 0
+        align-items: stretch
+        //align-content: flex-end
+        width: 100%
+        //grid-area: button
+
+        @media #{$TabletL}
+          order: 1
+
+        .ModalButton
+          align-self: flex-end
+          background-color: $MainColor
+          color: $W
+          font-size: 2em
+          width: 100%
+          height: 80px
+          padding: 15px 0
+          display: block
+          bottom: 0
+          text-align: center
+          border-radius: 4em
+
+          @media #{$TabletL}
+            padding-top: 12px
+            margin-bottom: 1em
+            height: 60px
+
 
   .close
-    color: #aaa
+    color: $SecondaryColor
     margin: 2vw 2vw 0 0
     font-size: 28px
     font-weight: bold
@@ -1098,81 +1239,12 @@ h2
       text-decoration: none
       cursor: pointer
 
-  img
-    box-shadow: $Shadow
-    grid-area: image
-    width: 100%
-    height: auto
-    object-fit: cover
-    bottom: 0
-    left: 0
-    right: 0
-    overflow: hidden
-    filter: none
-
-    @media #{$TabletM}
-      margin: 2vh 0
-      //display: none
-      order: 3
-      min-height: calc((100vw - 10vmin) / 16 * 9)
-
-  .title
-    grid-area: title
-    top: 0
-
-    h4
-      color: $MainColor
-      font-size: 2.5em
-      display: inline-block
-
-      @media #{$TabletM}
-        font-size: 2em
-        text-align: center
-        display: block
-
-    p
-      font-size: 1.75em
-
-      @media #{$TabletM}
-        font-size: 1.5em
-
-  .info
-    grid-area: info
-
-    h5
-      color: $ThirdColor
-      text-align: center
-      display: run-in
-      font-size: 1.75em
-
-    p
-      font-size: 1em
-
-  .Button
-    grid-area: button
-
-    @media #{$TabletM}
-      display: block
-      order: 4
-
-    .ModalButton
-      background-color: $MainColor
-      color: $White
-      font-size: 2em
-      width: 100%
-      height: 80px
-      padding: 15px 0
-      display: block
-      bottom: 0
-      text-align: center
-      border-radius: 4em
-
 
 
 .ToBtn
   transition: all .1s ease
   background-color: $ButtonColor
-  color: $White
+  color: $W
   font-size: 1.25em
   display: block
   width: 250px
@@ -1197,7 +1269,7 @@ h2
 
 
 .OmMeg
-  background-color: $White
+  background-color: $W
 
 
 main h1
@@ -1333,7 +1405,7 @@ main h1
   text-decoration: none
   box-shadow: $Shadow
   border-radius: 15px
-  background-color: $White
+  background-color: $W
   //background-color: rgba(255,255,255,0.9)
 
   @media #{$Desktop}
@@ -1445,7 +1517,7 @@ main h1
 footer
   background-color: $SecondaryColor
   border-top: 8px solid $MainColor
-  color: $White !important
+  color: $W !important
   width: 100vw
   height: 350px
   display: block
@@ -1458,7 +1530,7 @@ footer
 
   a
     transition: all .1s ease
-    color: $White
+    color: $W
 
     &:hover
       transition: all .1s ease

@@ -45,10 +45,6 @@ body {
   /*border: 1px solid blue */
   border-collapse: collapse;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000377}}
-*:focus {
-  outline: none;
-}
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\0000380}}
 a {
@@ -710,8 +706,9 @@ input:focus {
   transition: all 0.3s ease;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+  outline: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003561}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003562}}
 input::-webkit-input-placeholder {
   color: #6C1919;
   opacity: 1;
@@ -729,7 +726,7 @@ input::placeholder {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003567}}
 .GalleriFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,12 +749,12 @@ input::placeholder {
   width: 90%;
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003567}}
   .GalleriFlex {
     width: calc(100% - 4vw);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003580}}
 .GalleriFlex .Project {
   white-space: nowrap;
   -webkit-transition: all 0.3s ease;
@@ -773,25 +770,25 @@ input::placeholder {
   background-color: #FFF;
 }
 @media only screen and (max-width: 1023px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003580}}
   .GalleriFlex .Project {
     width: calc(100% / 3 - .8vw);
   }
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003580}}
   .GalleriFlex .Project {
     width: calc(100% / 2 - .8vw);
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003580}}
   .GalleriFlex .Project {
     width: calc(100% - .8vw);
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003602}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003603}}
 h2 {
   text-align: center;
   font-size: 2.5em;
@@ -801,20 +798,20 @@ h2 {
   font-weight: 400;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003614}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003615}}
 .NavActive {
   border-bottom: 1px solid #6C1919;
   padding-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003619}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003620}}
 #MobileNav {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003624}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003625}}
 .HeaderNav {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -828,7 +825,7 @@ h2 {
   overflow: hidden;
   z-index: 10;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003635}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003636}}
 .HeaderNav a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -843,7 +840,7 @@ h2 {
   padding: 6px 0 0;
   margin: 0 0 0.5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003648}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003649}}
 .HeaderNav a:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -851,18 +848,18 @@ h2 {
   font-size: 1.7em;
   padding: 3px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003654}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003655}}
 .HeaderNav a span {
   vertical-align: middle;
   margin: -3px 10px 0 0;
   font-size: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003660}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003661}}
 .HeaderNav .Active {
   border-bottom: 1px solid #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003664}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003665}}
 #HeaderNav {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -870,29 +867,29 @@ h2 {
   padding-top: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003670}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003671}}
 .GalleriPart {
   width: 100%;
   display: block;
   margin: 5vh auto;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003676}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003677}}
 .GalleriPart .Body {
   width: calc(90% + 100px);
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003676}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003677}}
   .GalleriPart .Body {
     width: 100%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003682}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003683}}
 #home .TableOfThings {
   margin: 10vh auto 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003685}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003686}}
 #home .TableOfThings h1 {
   font-size: 1.5em;
   -webkit-transition: all 0.1s ease;
@@ -904,13 +901,13 @@ h2 {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003695}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003696}}
 #home .TableOfThings table {
   width: 100%;
   border-collapse: collapse;
   border: 0px solid #6C1919;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003701}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003702}}
 #home .TableOfThings table td {
   width: calc(100% / 3);
   vertical-align: top;
@@ -932,7 +929,7 @@ h2 {
           flex-direction: column;
 }
 @media only screen and (max-width: 1222px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003701}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003702}}
   #home .TableOfThings table td {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -941,13 +938,13 @@ h2 {
   }
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003701}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003702}}
   #home .TableOfThings table td {
     width: calc(100% / 2);
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003701}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003702}}
   #home .TableOfThings table td {
     width: calc(100%);
     vertical-align: middle;
@@ -957,7 +954,7 @@ h2 {
             flex-direction: row;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003722}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003723}}
 #home .TableOfThings table td h5 {
   font-weight: 400;
   font-family: "Material Icons", sans-serif;
@@ -967,7 +964,7 @@ h2 {
   text-align: left;
 }
 @media only screen and (max-width: 1222px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003722}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003723}}
   #home .TableOfThings table td h5 {
     width: 100%;
     display: block;
@@ -975,7 +972,7 @@ h2 {
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003722}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003723}}
   #home .TableOfThings table td h5 {
     display: inline-block;
     text-align: left;
@@ -983,14 +980,14 @@ h2 {
     line-height: 1;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003740}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003741}}
 #home .TableOfThings table td p {
   display: inline-block;
   width: calc(100% - 5.6em);
   float: right;
 }
 @media only screen and (max-width: 1222px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003740}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003741}}
   #home .TableOfThings table td p {
     float: none;
     width: 100%;
@@ -998,7 +995,7 @@ h2 {
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003740}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003741}}
   #home .TableOfThings table td p {
     display: inline-block;
     width: calc(100% - 5.4em);
@@ -1006,7 +1003,7 @@ h2 {
     vertical-align: middle;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003756}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003757}}
 #home .White {
   background-color: #FFF;
   display: inline-block;
@@ -1017,19 +1014,19 @@ h2 {
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003766}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003767}}
 .KontaktWidth .Medias {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 7vh 0 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003771}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003772}}
 .KontaktWidth .Medias a img {
   width: 2em !important;
   border-radius: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003776}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003777}}
 .Medias {
   margin: 1em 0 0;
   display: -webkit-box;
@@ -1046,12 +1043,12 @@ h2 {
           justify-content: space-between;
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003776}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003777}}
   .Medias {
     margin: 1em 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003787}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003788}}
 .Medias a img {
   border-radius: calc(1.3em / 2);
   -webkit-filter: grayscale(0) !important;
@@ -1061,7 +1058,7 @@ h2 {
   width: 1.3em !important;
   opacity: 0.4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003794}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003795}}
 .Medias a img:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1070,7 +1067,7 @@ h2 {
   opacity: 0.8;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003800}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003801}}
 .Background {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1084,42 +1081,42 @@ h2 {
   display: block;
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003800}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003801}}
   .Background {
     height: 200vh;
     width: 200vh;
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003800}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003801}}
   .Background {
     height: 150vh;
     width: 150vh;
   }
 }
 @media only screen and (max-width: 376px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003800}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003801}}
   .Background {
     height: 100vh;
     width: 100vh;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003825}}
 .Line {
   clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
   -webkit-clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
   -moz-clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003830}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003831}}
 .Triangle {
   clip-path: polygon(0 29%, 0 72%, 21% 51%);
   -webkit-clip-path: polygon(0 29%, 0 72%, 21% 51%);
   -moz-clip-path: polygon(0 29%, 0 72%, 21% 51%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003841}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003842}}
 .TriangleBottom {
   clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
   -webkit-clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
@@ -1128,7 +1125,7 @@ h2 {
   margin-bottom: 350px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003850}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003851}}
 #Om {
   background-repeat: repeat;
   background-image: url("../Images/OmMegBG.png");
@@ -1139,20 +1136,20 @@ h2 {
   z-index: -4;
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003859}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003860}}
   #Om h2.White {
     padding: 20px 10px;
     letter-spacing: normal;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003864}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003865}}
 #Om .TableOfThings {
   margin: 10vh auto 10vh 30%;
   width: 70%;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003869}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003870}}
 #Om .TableOfThings h1 {
   font-size: 1.5em;
   -webkit-transition: all 0.1s ease;
@@ -1165,25 +1162,25 @@ h2 {
   padding: 0;
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003864}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003865}}
   #Om .TableOfThings {
     margin: 40vw auto 10vh;
     width: 100%;
   }
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003864}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003865}}
   #Om .TableOfThings {
     margin: 40vh auto 10vh;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003887}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003888}}
 #Om .TableOfThings table {
   width: 100%;
   border-collapse: collapse;
   border: 0px solid #6C1919;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003893}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003894}}
 #Om .TableOfThings table td {
   width: calc(100% / 3);
   vertical-align: top;
@@ -1204,13 +1201,13 @@ h2 {
           flex-direction: column;
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003893}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003894}}
   #Om .TableOfThings table td {
     width: calc(100% / 2);
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003893}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003894}}
   #Om .TableOfThings table td {
     width: calc(100%);
     vertical-align: middle;
@@ -1220,7 +1217,7 @@ h2 {
             flex-direction: row;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003910}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003911}}
 #Om .TableOfThings table td h5 {
   font-weight: 400;
   font-family: "Material Icons", sans-serif;
@@ -1230,7 +1227,7 @@ h2 {
   text-align: left;
 }
 @media only screen and (max-width: 1222px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003910}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003911}}
   #Om .TableOfThings table td h5 {
     width: 100%;
     display: block;
@@ -1238,7 +1235,7 @@ h2 {
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003910}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003911}}
   #Om .TableOfThings table td h5 {
     display: inline-block;
     text-align: left;
@@ -1246,14 +1243,14 @@ h2 {
     line-height: 1;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003929}}
 #Om .TableOfThings table td p {
   display: inline-block;
   width: calc(100% - 3em);
   float: right;
 }
 @media only screen and (max-width: 1222px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003929}}
   #Om .TableOfThings table td p {
     float: none;
     width: 100%;
@@ -1261,7 +1258,7 @@ h2 {
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003929}}
   #Om .TableOfThings table td p {
     display: inline-block;
     width: calc(100% - 5.4em);
@@ -1269,7 +1266,7 @@ h2 {
     vertical-align: middle;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003945}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003946}}
 #Om .OmFlex {
   width: 80%;
   margin: auto;
@@ -1278,18 +1275,18 @@ h2 {
   display: flex;
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003945}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003946}}
   #Om .OmFlex {
     display: block;
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003945}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003946}}
   #Om .OmFlex {
     width: 90%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003958}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003959}}
 #Om .OmFlex img {
   width: 70%;
   height: auto;
@@ -1303,7 +1300,7 @@ h2 {
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003958}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003959}}
   #Om .OmFlex img {
     width: 100%;
     display: block;
@@ -1312,7 +1309,7 @@ h2 {
     position: static;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003974}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003975}}
 #Om .OmFlex .White {
   position: absolute;
   right: calc(90vw / 100 * 15 + 8px);
@@ -1325,7 +1322,7 @@ h2 {
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3) !important;
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003974}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003975}}
   #Om .OmFlex .White {
     float: right;
     display: block;
@@ -1335,7 +1332,7 @@ h2 {
   }
 }
 @media only screen and (max-width: 800px) and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003974}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003975}}
   #Om .OmFlex .White {
     float: none;
     width: 70vw;
@@ -1346,7 +1343,7 @@ h2 {
   }
 }
 @media only screen and (max-width: 800px) and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003974}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003975}}
   #Om .OmFlex .White {
     width: 90vw;
     right: 5vw;
@@ -1354,24 +1351,24 @@ h2 {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031007}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031008}}
 #Om .OmFlex .White h1 {
   text-align: left;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031012}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031013}}
 #Om .OmContent {
   width: 70%;
   margin: 3vh auto 10vh;
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031012}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031013}}
   #Om .OmContent {
     width: 90%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031020}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031021}}
 #Om .White {
   background-color: #FFF;
   display: inline-block;
@@ -1381,26 +1378,26 @@ h2 {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031027}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031028}}
 #Om h2 {
   margin: 0 0 0 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031032}}
 #Om .Back {
   float: left;
   left: 5%;
   top: calc(70px + 0vh);
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031032}}
   #Om .Back {
     left: 2vw;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031043}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031044}}
 .modal {
   display: none;
   position: fixed;
@@ -1414,64 +1411,90 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   overflow-y: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031060}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031061}}
 .modal .modal-content {
-  background-color: #fefefe;
+  background-color: #FFF;
   margin: 5vmax;
   height: calc(100vh - 10vmax);
   width: calc(100vw - 10vmax);
-  display: grid;
-  grid-template-areas: "image image image info info" "image image image info info" "title title title info info" "title title title button button";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 0px;
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
   overflow: auto;
   color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
-@media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031060}}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031061}}
   .modal .modal-content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031089}}
+.modal .modal-content .LeftSide {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031089}}
+  .modal .modal-content .LeftSide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031082}}
-.modal .modal-content div {
-  padding: 2vw !important;
-  width: 100%;
-  height: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031087}}
-.modal .close {
-  color: #aaa;
-  margin: 2vw 2vw 0 0;
-  font-size: 28px;
-  font-weight: bold;
-  position: absolute;
-  top: 5vmax;
-  right: 5vmax;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031096}}
-.modal .close:hover, .modal .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031101}}
-.modal img {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031105}}
+.modal .modal-content .LeftSide img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-  grid-area: image;
   width: 100%;
-  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   bottom: 0;
@@ -1480,76 +1503,169 @@ h2 {
   overflow: hidden;
   -webkit-filter: none;
           filter: none;
+  -ms-flex-negative: 0.5;
+      flex-shrink: 0.5;
 }
-@media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031101}}
-  .modal img {
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031105}}
+  .modal .modal-content .LeftSide img {
     margin: 2vh 0;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    min-height: calc((100vw - 10vmin) / 16 * 9);
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031119}}
-.modal .title {
-  grid-area: title;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031126}}
+.modal .modal-content .LeftSide .title {
   top: 0;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 100%;
+  padding: 2vw 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1 0;
+      -ms-flex-positive: 1 0;
+          flex-grow: 1 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031123}}
-.modal .title h4 {
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031126}}
+  .modal .modal-content .LeftSide .title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031144}}
+.modal .modal-content .LeftSide .title h4 {
   color: #6C1919;
   font-size: 2.5em;
-  display: inline-block;
+  display: block;
+  margin: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 1px;
+          margin-block-end: 1px;
 }
-@media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031123}}
-  .modal .title h4 {
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031144}}
+  .modal .modal-content .LeftSide .title h4 {
     font-size: 2em;
     text-align: center;
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031133}}
-.modal .title p {
-  font-size: 1.75em;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031157}}
+.modal .modal-content .LeftSide .title p {
+  line-height: 1;
+  font-size: 1.7em;
 }
-@media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031133}}
-  .modal .title p {
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031157}}
+  .modal .modal-content .LeftSide .title p {
     font-size: 1.5em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031139}}
-.modal .info {
-  grid-area: info;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031165}}
+.modal .modal-content .RightSide {
+  padding: 2vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031142}}
-.modal .info h5 {
-  color: #7D7D7D;
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031165}}
+  .modal .modal-content .RightSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031181}}
+.modal .modal-content .RightSide .info {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031181}}
+  .modal .modal-content .RightSide .info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031189}}
+.modal .modal-content .RightSide .info h5 {
+  color: #383838;
   text-align: center;
   display: run-in;
   font-size: 1.75em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031148}}
-.modal .info p {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031195}}
+.modal .modal-content .RightSide .info p {
   font-size: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031151}}
-.modal .Button {
-  grid-area: button;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031198}}
+.modal .modal-content .RightSide .Button {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  bottom: 0;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
 }
-@media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031151}}
-  .modal .Button {
-    display: block;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031198}}
+  .modal .modal-content .RightSide .Button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031158}}
-.modal .Button .ModalButton {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031209}}
+.modal .modal-content .RightSide .Button .ModalButton {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   background-color: #6C1919;
   color: #FFF;
   font-size: 2em;
@@ -1561,8 +1677,32 @@ h2 {
   text-align: center;
   border-radius: 4em;
 }
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031209}}
+  .modal .modal-content .RightSide .Button .ModalButton {
+    padding-top: 12px;
+    margin-bottom: 1em;
+    height: 60px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031228}}
+.modal .close {
+  color: #383838;
+  margin: 2vw 2vw 0 0;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 5vmax;
+  right: 5vmax;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031237}}
+.modal .close:hover, .modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031244}}
 .ToBtn {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -1579,13 +1719,13 @@ h2 {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031258}}
 .ToBtn:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   background-color: #666666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031262}}
 .ToBtn:active {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -1594,38 +1734,38 @@ h2 {
   margin-top: calc(5vh + 2px);
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031244}}
   .ToBtn {
     display: none;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031271}}
 .OmMeg {
   background-color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031275}}
 main h1 {
   font-size: 2.5em;
   padding-left: calc(150px + 1vw);
   font-weight: 400;
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031275}}
   main h1 {
     padding-left: calc(100px + 1vw);
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031275}}
   main h1 {
     text-align: center;
     padding-left: 0;
     margin: 0 0 2vh;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031288}}
 main h1 a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -1634,12 +1774,12 @@ main h1 a {
   text-align: center;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031223}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031295}}
 main h1 a:hover {
   text-decoration: underline;
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031288}}
   main h1 a {
     -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
@@ -1648,7 +1788,7 @@ main h1 a:hover {
     background-color: #E4E4E4;
     border-radius: 30px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031305}}
   main h1 a:hover {
     -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
@@ -1656,13 +1796,13 @@ main h1 a:hover {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031310}}
 .Material {
   font-family: "Material Icons", sans-serif;
   font-size: 1.1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031314}}
 .SideArrow {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -1672,7 +1812,7 @@ main h1 a:hover {
   display: inline;
   z-index: 2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031250}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031322}}
 .SideArrow:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1680,7 +1820,7 @@ main h1 a:hover {
           transform: scale(1.01);
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031327}}
 .SideArrow:focus {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1688,13 +1828,13 @@ main h1 a:hover {
           transform: scale(1.03);
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031314}}
   .SideArrow {
     font-size: 100px;
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031314}}
   .SideArrow {
     font-size: 80px;
     position: absolute;
@@ -1708,7 +1848,7 @@ main h1 a:hover {
   }
 }
 @media only screen and (max-width: 395px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031314}}
   .SideArrow {
     font-size: 60px;
     border-radius: 40px;
@@ -1718,12 +1858,12 @@ main h1 a:hover {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031355}}
 #RightArrow {
   right: 0;
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031355}}
   #RightArrow {
     -ms-flex-item-align: center;
         align-self: center;
@@ -1732,13 +1872,13 @@ main h1 a:hover {
   }
 }
 @media only screen and (max-width: 395px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031355}}
   #RightArrow {
     margin-top: calc(-253px + 2.5em);
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031367}}
 .Slides {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1757,33 +1897,33 @@ main h1 a:hover {
   overflow-x: auto;
   overflow-y: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031379}}
 .Slides::-webkit-scrollbar {
   width: 0px;
   height: 0px;
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031385}}
 .Slides::-webkit-scrollbar-thumb {
   width: 0px;
   height: 0px;
   display: none;
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031367}}
   .Slides {
     width: calc(100% - 200px - 2vw) !important;
   }
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031367}}
   .Slides {
     width: calc(100% - 4vw) !important;
     margin: 0 2vw;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031398}}
 .Project {
   white-space: nowrap;
   -webkit-transition: all 0.3s ease;
@@ -1799,18 +1939,18 @@ main h1 a:hover {
   background-color: #FFF;
 }
 @media only screen and (max-width: 1222px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031398}}
   .Project {
     width: calc(100% / 2 - .8vw);
   }
 }
 @media only screen and (max-width: 1023px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031398}}
   .Project {
     width: calc(100% - .8vw);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031417}}
 .Project:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1818,14 +1958,14 @@ main h1 a:hover {
           transform: scale(1.03);
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031422}}
 .Project:focus {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031426}}
 .Project img {
   width: 100%;
   height: auto;
@@ -1833,20 +1973,20 @@ main h1 a:hover {
   -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031432}}
 .Project div {
   width: 100%;
   padding: 10px;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031437}}
 .Project div h3 {
   color: #6C1919;
   font-size: 1.5em;
   font-weight: 400;
   margin: 0px 0px 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031443}}
 .Project div span {
   white-space: nowrap;
   overflow: hidden;
@@ -1855,81 +1995,81 @@ main h1 a:hover {
   display: block;
   color: black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031451}}
 .Project div span::after {
   content: ".  .  .";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031454}}
 .Project p {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031457}}
 .Project a {
   display: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031461}}
 .TekstLink {
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
   color: #6C1919;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031466}}
 .TekstLink:hover {
   -webkit-text-decoration-style: solid;
           text-decoration-style: solid;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031470}}
 .KontaktWidth {
   width: calc(70% + 4vw);
   margin: auto;
 }
 @media only screen and (max-width: 1023px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031470}}
   .KontaktWidth {
     width: calc(90% + 4vw);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031477}}
 .KontaktWidth table {
   margin: 10vh auto 0;
   table-layout: fixed;
   width: 100%;
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031477}}
   .KontaktWidth table {
     margin: 0vh auto;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031413}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031485}}
 .KontaktWidth table td {
   width: 50%;
   padding: 0 2vw;
 }
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031413}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031485}}
   .KontaktWidth table td {
     width: 100%;
     display: block;
     margin: 5vh auto 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031494}}
 .KontaktWidth table td div {
   margin-left: 1vw;
   width: calc(100% - 1vw - 175px);
   display: inline-block;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031428}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031500}}
 .KontaktWidth table td div h3 {
   font-weight: 400;
   font-size: 1.8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031433}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031505}}
 .KontaktWidth table td img {
   vertical-align: middle;
   border-radius: 85px;
@@ -1938,7 +2078,7 @@ main h1 a:hover {
   display: inline-block;
 }
 @media only screen and (max-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031433}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031505}}
   .KontaktWidth table td img {
     border-radius: 70px;
     height: 140px;
@@ -1946,7 +2086,7 @@ main h1 a:hover {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031445}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031517}}
 footer {
   background-color: #383838;
   border-top: 8px solid #6C1919;
@@ -1961,24 +2101,24 @@ footer {
           box-sizing: content-box;
 }
 @media only screen and (max-width: 1023px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031445}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031517}}
   footer {
     font-size: 16px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031459}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031531}}
 footer a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   color: #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031463}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031535}}
 footer a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031467}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031539}}
 footer span {
   text-align: center;
   width: 100%;
@@ -1990,12 +2130,12 @@ footer span {
           justify-content: center;
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031467}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031539}}
   footer span {
     margin: 1em 0 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031476}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031548}}
 footer .Topp {
   margin-top: 0.5em;
   font-size: 0.9;
@@ -2003,16 +2143,16 @@ footer .Topp {
   display: block;
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031476}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031548}}
   footer .Topp {
     text-align: right;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031485}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031557}}
 footer .Topp:hover {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031488}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031560}}
 footer .Topp span {
   text-align: left;
   vertical-align: sub;
@@ -2020,12 +2160,12 @@ footer .Topp span {
   width: auto;
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031488}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031560}}
   footer .Topp span {
     text-align: right;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031498}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031570}}
 footer .Body div {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -2034,7 +2174,7 @@ footer .Body div {
   margin-top: calc(290px / 2);
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031498}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031570}}
   footer .Body div {
     display: block;
     -webkit-transform: translate(0, 0);
@@ -2046,26 +2186,26 @@ footer .Body div {
     float: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031513}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031585}}
 footer .LeftFooter {
   font-size: 1.75em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031516}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031588}}
 footer .RightFooter {
   text-align: right;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031520}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031592}}
 footer .RightFooter h1 {
   font-size: 2.75em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031523}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031595}}
 footer .RightFooter p {
   font-size: 1.4em;
   display: block;
 }
 @media only screen and (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031523}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\000031595}}
   footer .RightFooter p {
     display: inline;
   }
