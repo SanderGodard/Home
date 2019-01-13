@@ -617,7 +617,7 @@ main {
   background-color: #FFF;
   font-size: 1.5em;
   text-align: center;
-  padding: 6px 0 0;
+  padding: 16px 0 0;
   margin: 0 0 0.5px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003497}}
@@ -837,7 +837,7 @@ h2 {
   background-color: #6C1919;
   font-size: 1.5em;
   text-align: center;
-  padding: 6px 0 0;
+  padding: 16px 0 0;
   margin: 0 0 0.5px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003649}}
