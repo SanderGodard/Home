@@ -853,6 +853,7 @@ h2 {
   vertical-align: middle;
   margin: -3px 10px 0 0;
   font-size: 1.5em;
+  font-weight: lighter;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Home\/Styling\/Styling\.sass}line{font-family:\00003661}}
 .HeaderNav .Active {
