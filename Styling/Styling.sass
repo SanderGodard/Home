@@ -7,7 +7,7 @@ $ThirdColor: #7D7D7D
 $W: #FFF
 $WHover : #FBFBFB
 
-$amount: 2
+$amount: 3
 
 $ButtonColor: #7D7D7D
 $ButtonHover: #666666
@@ -409,11 +409,11 @@ nav
 
     &:hover
       transition: all .1s ease
-      filter: darken($W, $amount)
+      background: darken($W, $amount)
 
     &:focus
       transition: all .1s ease
-      filter: darken($W, $amount)
+      background: darken($W, $amount)
 
     @media #{$TabletL}
       display: none
@@ -650,7 +650,7 @@ h2
       transition: all .3s ease
       background: darken($MainColor, $amount)
       font-size: 1.7em
-      padding: 3px 0 0
+      padding: 13px 0 0
 
     span
       vertical-align: middle

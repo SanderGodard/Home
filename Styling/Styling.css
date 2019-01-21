@@ -500,15 +500,13 @@ nav .NavBtn {
 nav .NavBtn:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  -webkit-filter: #fafafa;
-          filter: #fafafa;
+  background: #f7f7f7;
 }
 /* line 414, Styling.sass */
 nav .NavBtn:focus {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  -webkit-filter: #fafafa;
-          filter: #fafafa;
+  background: #f7f7f7;
 }
 @media only screen and (max-width: 800px) {
   /* line 399, Styling.sass */
@@ -626,7 +624,7 @@ main {
 .MobileNav a:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: #fafafa;
+  background: #f7f7f7;
   font-size: 1.7em;
   padding: 13px 0 0;
 }
@@ -846,9 +844,9 @@ h2 {
 .HeaderNav a:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: #641717;
+  background: #601616;
   font-size: 1.7em;
-  padding: 3px 0 0;
+  padding: 13px 0 0;
 }
 /* line 655, Styling.sass */
 .HeaderNav a span {
