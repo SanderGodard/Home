@@ -800,6 +800,7 @@ h2
 .Background
   transition: all .3s ease
   height: 100vw
+  //160vh
   width: 100vw
   position: absolute
   left: 0
@@ -843,7 +844,10 @@ h2
   -webkit-clip-path: polygon(50% 50%, 0% 100%, 100% 100%)
   -moz-clip-path: polygon(50% 50%, 0% 100%, 100% 100%)
   left: 0
-  margin-bottom: 350px
+  bottom: 0
+  //margin-bottom: 350px
+  //height: 60vw
+  display: none
   //Edit to be the same as footer's height
 
 
@@ -1443,11 +1447,11 @@ main h1
       white-space: nowrap
       overflow: hidden
       text-overflow: ellipsis
-      max-width: 100%
+      width: 100%
       display: block
       color: black
 
-      &::after
+      //&::after
         content: ".  .  ."
 
   p
