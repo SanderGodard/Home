@@ -690,6 +690,7 @@ input::placeholder {
   }
 }
 .GalleriFlex .Project {
+  outline: none;
   white-space: nowrap;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1697,7 +1698,7 @@ main h1 a:hover {
 .Project p {
   display: none;
 }
-.Project a {
+.Project i {
   display: none !important;
 }
 

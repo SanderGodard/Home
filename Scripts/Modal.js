@@ -7,7 +7,7 @@ function ModalOn(project) {
   var itemTitle = item.getElementsByTagName("h3")[0].innerHTML;
   var itemSub = item.getElementsByTagName("span")[0].innerHTML;
   var itemInfo = item.getElementsByTagName("p")[0].innerHTML;
-  var itemLink = item.getElementsByTagName("a")[0].href;
+  var itemLink = item.getElementsByTagName("i")[0].href;
 
   //var indexdot = itemlink.indexOf(".");
   //console.log(indexdot);
