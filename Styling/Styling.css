@@ -106,7 +106,7 @@ img {
 .Banner .Body {
   width: 70%;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   .Banner .Body {
     width: 90%;
   }
@@ -271,7 +271,7 @@ header #Next1 {
   -webkit-transform: translate(0%, -100%);
           transform: translate(0%, -100%);
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   header #Next1 {
     font-size: 7em;
   }
@@ -329,7 +329,7 @@ header .HeaderContent h1 {
     font-size: 2.4em;
   }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   header .HeaderContent h1 {
     font-size: 1.9em;
   }
@@ -383,7 +383,7 @@ header .HeaderContent #CTA:hover {
     font-size: 2em;
   }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   header .HeaderContent #CTA {
     font-size: 1.5em;
     height: 1.7em;
@@ -703,7 +703,7 @@ input::placeholder {
   border-radius: 15px;
   background-color: #FFF;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   .GalleriFlex .Project {
     width: calc(100% / 3 - .8vw);
   }
@@ -1650,7 +1650,7 @@ main h1 a:hover {
     width: calc(100% / 2 - .8vw);
   }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   .Project {
     width: calc(100% - .8vw);
   }
@@ -1716,7 +1716,7 @@ main h1 a:hover {
   width: calc(70% + 4vw);
   margin: auto;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   .KontaktWidth {
     width: calc(90% + 4vw);
   }
@@ -1780,7 +1780,7 @@ footer {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   footer {
     font-size: 16px;
   }
