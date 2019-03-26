@@ -81,6 +81,7 @@ a
   color: black
 
 img
+  user-select: none
   //filter: grayscale(1)
 
 ::-moz-selection
@@ -216,6 +217,7 @@ header
   display: block
 
   #Path
+    user-select: none
     clip-path: polygon(100% 0, 0% 100%, 100% 100%)
     -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%)
     -moz-clip-path: polygon(100% 0, 0% 100%, 100% 100%)
@@ -238,6 +240,7 @@ header
       top: calc((100vw / 16 * 9) + 31px)
 
   #Path2
+    user-select: none
     display: none
     position: absolute
     z-index: 3
@@ -263,7 +266,7 @@ header
     text-align: center
     top: 100vh
     z-index: 6
-    font-size: 8em
+    font-size: 7em
     transform: translate(0%, -100%)
 
     @media #{$Laptop}
@@ -385,6 +388,7 @@ header
 
 
 nav
+  user-select: none
   position: sticky
   background-color: $W
   vertical-align: middle
@@ -458,6 +462,7 @@ main
 .Back
   transition: all .3s ease
   font-family: 'Material icons', sans-serif
+  user-select: none
   color: $MainColor
   font-size: 2.5em
   position: absolute
@@ -723,6 +728,7 @@ h2
           font-weight: 400
           font-family: 'Material Icons', sans-serif
           font-size: 5em
+          user-select: none
           display: inline-block
           color: $SecondaryColor
           text-align: left
@@ -823,12 +829,14 @@ h2
 
 
 .Line
+  user-select: none
   clip-path: $LineClip
   -webkit-clip-path: $LineClip
   -moz-clip-path: $LineClip
 
 
 .Triangle
+  user-select: none
   //width: 0
   //height: 0
   //border-top: 50px solid transparent
@@ -840,6 +848,7 @@ h2
 
 
 .TriangleBottom
+  user-select: none
   clip-path: polygon(50% 50%, 0% 100%, 100% 100%)
   -webkit-clip-path: polygon(50% 50%, 0% 100%, 100% 100%)
   -moz-clip-path: polygon(50% 50%, 0% 100%, 100% 100%)
@@ -915,6 +924,7 @@ h2
           font-weight: 400
           font-family: 'Material Icons', sans-serif
           font-size: 5em
+          user-select: none
           display: inline-block
           color: $SecondaryColor
           text-align: left
@@ -1298,14 +1308,14 @@ main h1
     &:hover
       text-decoration: underline
 
-    @media #{$MobileXXL}
+    //@media #{$MobileXXL}
       transition: all .1s ease
       text-align: center
       padding: 4px 10vw
       background-color: #E4E4E4
       border-radius: 30px
 
-      &:hover
+      //&:hover
         transition: all .1s ease
         background-color: #D7D7D7
 
@@ -1313,6 +1323,7 @@ main h1
 .Material
   font-family: 'Material Icons', sans-serif
   font-size: 1.1em
+  user-select: none
 
 .SideArrow
   transition: all .1s ease

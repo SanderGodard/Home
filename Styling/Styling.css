@@ -46,6 +46,13 @@ a {
   color: black;
 }
 
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 ::-moz-selection {
   background: #6C1919;
   opacity: 0.7;
@@ -202,6 +209,10 @@ header {
   display: block;
 }
 header #Path {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   -moz-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
@@ -226,6 +237,10 @@ header #Path {
   }
 }
 header #Path2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: none;
   position: absolute;
   z-index: 3;
@@ -252,7 +267,7 @@ header #Next1 {
   text-align: center;
   top: 100vh;
   z-index: 6;
-  font-size: 8em;
+  font-size: 7em;
   -webkit-transform: translate(0%, -100%);
           transform: translate(0%, -100%);
 }
@@ -409,6 +424,10 @@ header #MobileMenuHeader {
 }
 
 nav {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: -webkit-sticky;
   position: sticky;
   background-color: #FFF;
@@ -505,6 +524,10 @@ main {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-family: "Material icons", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #6C1919;
   font-size: 2.5em;
   position: absolute;
@@ -848,6 +871,10 @@ h2 {
   font-weight: 400;
   font-family: "Material Icons", sans-serif;
   font-size: 5em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: inline-block;
   color: #383838;
   text-align: left;
@@ -976,18 +1003,30 @@ h2 {
 }
 
 .Line {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
   -webkit-clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
   -moz-clip-path: polygon(25% 0, 34% 0, 100% 70%, 100% 79%);
 }
 
 .Triangle {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   clip-path: polygon(0 29%, 0 72%, 21% 51%);
   -webkit-clip-path: polygon(0 29%, 0 72%, 21% 51%);
   -moz-clip-path: polygon(0 29%, 0 72%, 21% 51%);
 }
 
 .TriangleBottom {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
   -webkit-clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
   -moz-clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
@@ -1082,6 +1121,10 @@ h2 {
   font-weight: 400;
   font-family: "Material Icons", sans-serif;
   font-size: 5em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: inline-block;
   color: #383838;
   text-align: left;
@@ -1582,25 +1625,14 @@ main h1 a {
 main h1 a:hover {
   text-decoration: underline;
 }
-@media only screen and (max-width: 575px) {
-  main h1 a {
-    -webkit-transition: all 0.1s ease;
-    transition: all 0.1s ease;
-    text-align: center;
-    padding: 4px 10vw;
-    background-color: #E4E4E4;
-    border-radius: 30px;
-  }
-  main h1 a:hover {
-    -webkit-transition: all 0.1s ease;
-    transition: all 0.1s ease;
-    background-color: #D7D7D7;
-  }
-}
 
 .Material {
   font-family: "Material Icons", sans-serif;
   font-size: 1.1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .SideArrow {
