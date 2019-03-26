@@ -7,9 +7,9 @@ function offsetAnchor() {
 
     window.scrollTo(0, (ting.offsetTop - 130));
 
-    window.onload = function() {
+    setTimeout(function() {
       ting.focus();
-    };
+    }, 1000);
     //ting.focus();
     //ting.setAttribute('name', '" autofocus "');
 
