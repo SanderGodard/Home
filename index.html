@@ -49,7 +49,7 @@
 
 </head>
 
-<body id="indexBody">
+<body id="indexBody" onload="fixWidth()">
   <header>
     <div class="Body">
       <a href="javascript:void(0)" onclick="HeaderMenuToggle()" class="NavBtn Material" id="MobileMenuHeader">notes</a>
@@ -59,7 +59,7 @@
       <a href="Om-meg">Om meg</a>
       <a href="Kontakt">Kontakt</a>
     </div>
-    <img src="Images/Placeholder.png" alt="This is me">
+    <img src="Images/Sander8.jpg" alt="This is me">
     <div id=Path2></div>
     <div id=Path></div>
     <div class="HeaderContent">
@@ -99,7 +99,7 @@
 
         <div class="sliderattempt2">
 
-          <span class="SideArrow Material" id="LeftArrow" onclick="ScrollLeft()">keyboard_arrow_left</span>
+          <span class="SideArrow Material" id="LeftArrow" onclick="Scroll('-')">keyboard_arrow_left</span>
           <div class="Slides" id="Slider">
 
             <a class="Project" id="Mosala" href="Galleri#Mosala">
@@ -143,7 +143,7 @@
             </a>
 
             <a class="Project" id="nLose" href="Galleri#nLose">
-              <img src="Images/nLose.png" alt="nLose">
+              <img src="Images/nLose.png" alt="Project 6">
               <div>
                 <h3>nLose</h3>
                 <span>En veldig liten og rask nettside om et produkt vi måtte finne på selv i skolen.</span>
@@ -151,7 +151,7 @@
             </a>
 
             <a class="Project" id="DigitaleMedier" href="Galleri#DigitaleMedier">
-              <img src="Images/DigitaleMedier.png" alt="Digitale Medier">
+              <img src="Images/DigitaleMedier.png" alt="Project 7">
               <div>
                 <h3>Digitale Medier</h3>
                 <span>Enda en mindre og raskere nettside jeg lagde for å vise frem en reklamevideo i skolen.</span>
@@ -160,9 +160,12 @@
 
 
 
+
+            <div class="" id="CarouselSpacer">.</div>
+
           </div>
 
-          <span class="SideArrow Material" id="RightArrow" onclick="Scroll()">keyboard_arrow_right</span>
+          <span class="SideArrow Material" id="RightArrow" onclick="Scroll('+')">keyboard_arrow_right</span>
 
 
         </div>

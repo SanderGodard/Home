@@ -291,7 +291,7 @@ header img {
 }
 @media only screen and (max-width: 800px) {
   header img {
-    height: auto;
+    height: calc(100vw / 16 * 9);
     width: 100vw;
     margin-top: 70px;
     display: block;
@@ -1186,23 +1186,29 @@ h2 {
 }
 #Om .OmFlex img {
   width: 70%;
-  height: auto;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+  height: calc((90vw*0.8*0.7)/16*9);
   z-index: 2;
   display: inline-block;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media only screen and (max-width: 800px) {
   #Om .OmFlex img {
     width: 100%;
+    height: calc((90vw*0.8)/16*9);
     display: block;
     margin: 0 0 -3vh;
     z-index: 2;
     position: static;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #Om .OmFlex img {
+    height: calc((90vw*0.9)/16*9);
   }
 }
 #Om .OmFlex .White {
@@ -1215,6 +1221,9 @@ h2 {
       align-self: center;
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3) !important;
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3) !important;
+}
+#Om .OmFlex .White img {
+  height: auto;
 }
 @media only screen and (max-width: 800px) {
   #Om .OmFlex .White {
@@ -1639,9 +1648,9 @@ main h1 a:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: inline-block;
-  width: calc(100% / 3 - .8vw);
+  width: calc(100% / 3 - 1vw);
   height: auto;
-  margin: 1vw 0.4vw;
+  margin: 1vw 0.5vw;
   text-decoration: none;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
@@ -1650,26 +1659,26 @@ main h1 a:hover {
 }
 @media only screen and (max-width: 1222px) {
   .Project {
-    width: calc(100% / 2 - .8vw);
+    width: calc(100% / 2 - 1vw);
   }
 }
 @media only screen and (max-width: 1025px) {
   .Project {
-    width: calc(100% - .8vw);
+    width: calc(100% - 1vw);
   }
 }
 .Project:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   cursor: pointer;
 }
 .Project:focus {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 .Project img {
   width: 100%;
@@ -1682,26 +1691,63 @@ main h1 a:hover {
   width: 100%;
   padding: 10px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .Project div h3 {
   color: #6C1919;
   font-size: 1.5em;
   font-weight: 400;
   margin: 0px 0px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .Project div span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
+  width: calc(100% - 0px);
   display: block;
   color: black;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .Project p {
   display: none;
 }
 .Project i {
   display: none !important;
+}
+
+#CarouselSpacer {
+  height: 100px;
+  display: inline-block;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: white;
+  color: rgba(0, 0, 0, 0);
+  font-size: 1px;
+  margin: 0;
 }
 
 .TekstLink {

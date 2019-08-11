@@ -284,7 +284,7 @@ header
     z-index: 2
 
     @media #{$TabletL}
-      height: auto
+      height: calc(100vw / 16 * 9)
       width: 100vw
       margin-top: 70px
       display: block
@@ -604,6 +604,7 @@ input
 
     @media #{$MobileXXL}
       width: calc(100% - .8vw)
+
 
 
 h2
@@ -974,19 +975,24 @@ h2
 
     img
       width: 70%
-      height: auto
-      filter: grayscale(1)
+      height: calc((90vw*0.8*0.7)/16*9)
+      //filter: grayscale(1)
       z-index: 2
       display: inline-block
       align-self: center
       box-shadow: $Shadow
+      object-fit: cover
 
       @media #{$TabletL}
         width: 100%
+        height: calc((90vw*0.8)/16*9)
         display: block
         margin: 0 0 -3vh
         z-index: 2
         position: static
+
+      @media #{$MobileXXL}
+        height: calc((90vw*0.9)/16*9)
 
     .White
       position: absolute
@@ -998,6 +1004,9 @@ h2
       align-self: center
       box-shadow: $BigShadow !important
       //transform: translate(0%, -50%)
+
+      img
+        height: auto
 
       @media #{$TabletL}
         float: right
@@ -1334,29 +1343,30 @@ main h1
   white-space: nowrap
   transition: all .3s ease
   display: inline-block
-  width: calc(100% / 3 - .8vw)
+  width: calc(100% / 3 - 1vw)
   height: auto
-  margin: 1vw .4vw
+  margin: 1vw .5vw
   text-decoration: none
   box-shadow: $Shadow
   border-radius: 15px
   background-color: $W
   //background-color: rgba(255,255,255,0.9)
+  // Disse får ikke alle samme størrelse pga mengden tekst i span. ha minimum x antall tegn...
 
   @media #{$Desktop}
-    width: calc(100% / 2 - .8vw)
+    width: calc(100% / 2 - 1vw)
 
   @media #{$Laptop}
-    width: calc(100% - .8vw)
+    width: calc(100% - 1vw)
 
   &:hover
     transition: all .3s ease
-    transform: scale(1.03)
+    transform: scale(1.01)
     cursor: pointer
 
   &:focus
     transition: all .3s ease
-    transform: scale(1.03)
+    transform: scale(1.01)
 
   img
     width: 100%
@@ -1368,20 +1378,28 @@ main h1
     width: 100%
     padding: 10px
     overflow: hidden
+    display: flex
+    flex-flow: column nowrap
+    flex-basis: 100%
+    align-content: flex-start
+    align-items: flex-start
+    justify-content: flex-start
 
     h3
       color: $MainColor
       font-size: 1.5em
       font-weight: 400
       margin: 0px 0px 10px
+      flex-grow: 1
 
     span
       white-space: nowrap
       overflow: hidden
       text-overflow: ellipsis
-      width: 100%
+      width: calc(100% - 0px)
       display: block
       color: black
+      flex-grow: 1
 
       //&::after
         content: ".  .  ."
@@ -1391,6 +1409,20 @@ main h1
 
   i
     display: none !important
+
+
+#CarouselSpacer
+  height: 100px
+  display: inline-block
+  pointer-events: none
+  background-color: rgba(0,0,0,0)
+  flex-grow: 1
+  color: white
+  color: rgba(0,0,0,0)
+  font-size: 1px
+  margin: 0
+  //0 0 0 0.5vw
+
 
 
 .TekstLink
