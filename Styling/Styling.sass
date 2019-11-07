@@ -24,6 +24,10 @@ $MobileL: "only screen and (max-width : 426px)"
 $MobileXL: "only screen and (max-width : 500px)"
 $MobileXXL: "only screen and (max-width : 575px)"
 
+// ============ Transitions
+$Fast: all 0.1s ease-in-out
+$Medium: all 0.25s ease-in-out
+$Slow: all 0.4s ease-in-out
 
 // ============ Tablet
 $TabletS: "only screen and (max-width : 650px)"
@@ -282,6 +286,7 @@ header
     right: 0
     left: 0
     z-index: 2
+    background-color: $SecondaryColor
 
     @media #{$TabletL}
       height: calc(100vw / 16 * 9)
