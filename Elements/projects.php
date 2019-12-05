@@ -36,7 +36,7 @@
   $Short = "Et skoleprosjekt hvor vi skulle lage en nettside som var koblet til en database. ";
   $Long = "Her var oppgaven å lage en database med datamodell, så koble databasen til en nettside, og bruke databasen til å hente informasjonen vi trengte til nettsiden. Dette prosjektet krevde mye mer avansert PHP og litt SQL, samt selvfølgelig
   Sass, litt JS, og HTML.";
-  $Tbane = ["name" => "T-bane", "link" => "http://sandergodard.com/www.klasserom/prosjekter/T-banestasjoner/", "short" => $Short, "long" => $Long];
+  $Tbane = ["name" => "T-bane", "link" => "http://sandergodard.com/www.klasserom/Prosjekter/T-banestasjoner/", "short" => $Short, "long" => $Long];
 
   // nLose
   $Short = "En veldig liten og rask nettside om et produkt vi måtte finne på selv i skolen.";
