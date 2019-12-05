@@ -1,70 +1,17 @@
-<!Doctype html>
-<html lang="nb">
+<?php
+  $title = "Sander Godard | Kontakt meg";
+  include "../Elements/head.php";
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" href="../Images/Favicon.ico">
-  <link rel="stylesheet" href="../Styling/Styling.css">
-  <title>Sander Godard | Kontakt meg</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-  <meta name="keywords" content="Sander Godard, portfolio, Web utvikler, Sander Maurice Godard">
-
-  <meta name="author" content="Sander Godard">
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#6C1919">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#6C1919">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#6C1919">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,500,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-  <script defer type="text/javascript" src="../Scripts/ScrollTop.js"></script>
-  <script defer type="text/javascript" src="../Scripts/MobileMenu.js"></script>
-  <script defer type="text/javascript" src="../Scripts/SMS.js"></script>
-  <script defer async type="text/javascript" src="../Scripts/HashLink.js"></script>
-
-
-  <!-- Hotjar Tracking Code for https://sandergodard.github.io/home/ -->
-  <script>
-    (function(h, o, t, j, a, r) {
-      h.hj = h.hj || function() {
-        (h.hj.q = h.hj.q || []).push(arguments)
-      };
-      h._hjSettings = {
-        hjid: 1153572,
-        hjsv: 6
-      };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script');
-      r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-
-</head>
+?>
 
 <body>
-  <nav id="Next">
-    <div class="Body">
-      <a href="/Home#Next" class="NavBtn" id="Navn">Sander Godard</a>
 
-      <a href="../Kontakt" class="NavBtn NavActive">Kontakt</a>
-      <a href="../Om-meg" class="NavBtn">Om meg</a>
-      <a href="../Galleri" class="NavBtn">Galleri</a>
+  <?php
+    $active = "Kontakt";
+    include "../Elements/nav.php";
+    include "../Elements/mobilenav.php";
+  ?>
 
-      <a href="javascript:void(0)" onclick="MenuToggle()" class="NavBtn Material" id="MobileMenu">notes</a>
-    </div>
-  </nav>
-  <div class="MobileNav" id="MobileNav">
-    <a href="../Galleri">Galleri</a>
-    <a href="../Om-meg">Om meg</a>
-    <a href="../Kontakt" class="Active">Kontakt</a>
-  </div>
   <main>
     <div class="Body">
 
