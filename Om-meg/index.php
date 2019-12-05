@@ -4,8 +4,8 @@
 
 ?>
 
-<body>
-  
+<body class="stripes">
+
   <?php
     $active = "OmMeg";
     include "../Elements/nav.php";
@@ -16,7 +16,7 @@
 
     <div class="Body">
       <h2 class="White">Om meg</h2>
-      <a href="../#Next">
+      <a href="./#Next">
         <b class="Back White" title="Gå tilbake">keyboard_backspace</b>
       </a>
 
@@ -30,7 +30,7 @@
       </div>
 
       <div class="OmFlex">
-        <img src="../Images/Sander5.jpg" alt="Placeholder">
+        <img src="./Images/Sander5.jpg" alt="Placeholder">
         <div class="White">
           <h1>Bakgrunn</h1>
           Siden jeg gikk på barneskole har jeg alltid visst at jeg ville jobbe med PC, teknologi, og gjerne noe UI liknende, som folk kan se.<br>
@@ -39,19 +39,19 @@
           <div class="Medias">
 
             <a title="Gå til Facebook" href="https://www.facebook.com/profile.php?id=100009451169486">
-              <img src="../Images/Facebook.png" alt="Facebook">
+              <img src="./Images/Facebook.png" alt="Facebook">
             </a>
 
             <a title="Gå til Instagram" href="https://www.instagram.com/sandergodard/">
-              <img src="../Images/Instagram.png" alt="Insta">
+              <img src="./Images/Instagram.png" alt="Insta">
             </a>
 
             <a title="Gå til GitHub" href="https://github.com/SanderGodard">
-              <img src="../Images/GitHubAlt.png" alt="GitHub">
+              <img src="./Images/GitHubAlt.png" alt="GitHub">
             </a>
 
             <a title="Gå til LinkedIn" href="https://www.linkedin.com/in/sander-godard-0631bb174/">
-              <img src="../Images/LinkedInAlt.png" alt="LinkedIn">
+              <img src="./Images/LinkedInAlt.png" alt="LinkedIn">
             </a>
 
           </div>
@@ -115,26 +115,9 @@
 
     </div>
   </main>
-  <footer>
-    <div class="Body">
-      <a onclick="topFunction()" title="Gå øverst på siden" class="Topp"><span class="Material">keyboard_arrow_up</span>Tilbake til toppen</a>
-      <div class="RightFooter">
-        <h1>Sander Godard</h1>
-        <p>Aspirerende Front-end</p>
-        <p>Webutvikler</p>
-      </div>
-      <div class="LeftFooter">
-        Kontaktinformasjon:<br>
-        <a href="callto:90189461">+47 901 89 461</a><br>
-        <a href="mailto:sander@godard.no">sander@godard.no</a>
-      </div>
-      <!--
-        <span>
-          &copy; 2018 - 2019 Sander Godard
-        </span>
-      -->
-    </div>
-  </footer>
+  <?php
+    include "../Elements/footer.php";
+  ?>
 </body>
 
 </html>

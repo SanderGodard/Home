@@ -24,7 +24,7 @@ if (document.getElementById('indexBody') !== false) {
       };
     }
     var a = document.getElementById("MobileMenu");
-    a.preventDefault();
+    //a.preventDefault();
     if (a.innerHTML === "notes") {
       a.innerHTML = "clear";
     } else {

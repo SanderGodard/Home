@@ -16,7 +16,7 @@
       Her kan du se litt om meg, og om prosjekter jeg har
       jobbet med før.
     </p>
-    <a href="Gallier" id="CTA">Se galleri</a>
+    <a href="Galleri" id="CTA">Se galleri</a>
   </div>
-  <a href="javascript:void(0)" onclick="document.getElementById('Next').scrollIntoView();" class="Material" id="Next1">keyboard_arrow_down</a>
+  <a href="javascript:void(0)" onclick="scrollToSite()" class="Material" id="Next1">keyboard_arrow_down</a>
 </header>

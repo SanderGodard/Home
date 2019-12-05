@@ -1,5 +1,10 @@
 <?php
 
+  // MereteGodardFoto
+  $Short = "Dette er portfolio nettsiden til moren min, Merete, hvor hun viser frem bilder hun tar.";
+  $Long = "Dette er portfolio nettsiden til moren min, Merete, hvor hun viser frem bilder hun tar. Det vanskeligste med denne nettsiden er det kreative designet, og hvordan selve collagen inne på galleriet er laget. Dette er et lite prosjekt som er skrevet i bare HTML, CSS og JS.";
+  $MereteGodardFoto = ["name" => "Merete Godard Foto", "link" => "/MereteGodardFoto/", "short" => $Short, "long" => $Long];
+
   // Mosala
   $Short = "En nettservice hvor startup bedrifter lett kan møte folk som er interresserte i å jobbe";
   $Long = "En nettservice hvor startup bedrifter lett kan møte folk som er interresserte i å jobbe<br><br>
@@ -46,7 +51,13 @@
   På denne siden brukte jeg bare HTML og CSS.";
   $DigitaleMedier = ["name" => "Digitale Medier", "link" => "/www.klasserom/Eget%20arbeid/Digitale%20medier/", "short" => $Short, "long" => $Long];
 
+  // RNG
+  $Short = "RNG Classroom er et lite verktøy for læreren så de kan lettere engasjere elevene i timen.";
+  $Long = "RNG Classroom er et lite verktøy for læreren så de kan lettere engasjere elevene i timen, den kan velge ut tilfeldig elev til å svare på spørsmålet, fikse tilfeldig plassering, tar hensyn til fravær og mer.
+  Den er laget for å fungere spesielt med klassen min sitt oppsett, og det er to lister i filene som må endres for at den skal kunne brukes av andre klasser.";
+  $RNG = ["name" => "RNG Classroom", "link" => "/RNG/", "short" => $Short, "long" => $Long];
 
-  $projects = array($Mosala, $Skole, $NewYork, $HypeIT, $Tbane, $nLose, $DigitaleMedier);
+
+  $projects = array($MereteGodardFoto, $Mosala, $Skole, $NewYork, $HypeIT, $Tbane, $nLose, $DigitaleMedier, $RNG);
 
 ?>

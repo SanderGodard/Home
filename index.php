@@ -4,7 +4,7 @@
   include "Elements/head.php";
 ?>
 
-<body id="indexBody" onload="fixWidth()">
+<body id="indexBody" class="triangle" onload="fixWidth()">
 
   <?php
     $navclass = "";
@@ -39,7 +39,7 @@
                 // $partName = explode(" ", $name);
                 // $partName = $partName[0];
 
-                echo "<a class='Project' href='Galleri$partName' id='$partName'>
+                echo "<a class='Project' href='Galleri/#$partName' id='$partName'>
                   <img src='Images/$partName.png' alt='$name'>
                   <div>
                     <h3>$name</h3>
@@ -63,7 +63,7 @@
       <a href="Galleri" class="ToBtn">Til galleri</a>
     </div>
 
-    <div class="Body">
+    <div class="Body" style="margin-bottom: 30vh">
 
 
       <div class="TableOfThings White">
@@ -124,49 +124,14 @@
     </div>
 
 
-    <div class="Banner" style="margin: 30vh 0 0">
-      <div class="Body">
-        <br>
-        <b>Hvis du vil ta kontakt kan du trykke her</b>
-        <a target="_blank" href="mailto:sander@godard.no"><span class="Material">mail</span> Send E-post</a>
+    <?php
+      include "Elements/banner.php";
+    ?>
 
-        <a href="javascript:void(0)" onclick="SMSfunc()" id="SMS"><span class="Material">message</span> Send SMS</a><br>
-
-        <!--
-          <a href="javascript:void(0)" onclick="document.getElementById('TelefonNr').style.display = 'Block'" id="RightBtn"><span class="Material">message</span> Send SMS</a><br>
-
-          <i id="TelefonNr">+47 901 89 461</i>
-        -->
-      </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
   </main>
-  <footer>
-    <div class="Body">
-      <a onclick="topFunction()" title="Gå øverst på siden" class="Topp"><span class="Material">keyboard_arrow_up</span>Tilbake til toppen</a>
-      <div class="RightFooter">
-        <h1>Sander Godard</h1>
-        <p>Aspirerende Front-end</p>
-        <p>Webutvikler</p>
-      </div>
-      <div class="LeftFooter">
-        Kontaktinformasjon:<br>
-        <a href="callto:90189461">+47 901 89 461</a><br>
-        <a href="mailto:sander@godard.no">sander@godard.no</a>
-      </div>
-      <!--
-        <span>
-          &copy; 2018 - 2019 Sander Godard
-        </span>
-      -->
-    </div>
-  </footer>
+  <?php
+  include "Elements/footer.php";
+  ?>
 </body>
 
 </html>

@@ -216,9 +216,10 @@ header
   background-color: $MainColor
   color: $W
   width: 100vw
-  height: 100vh
+  height: 95vh
   z-index: 1
   overflow: hidden
+
   display: block
 
   #Path
@@ -226,7 +227,7 @@ header
     clip-path: polygon(100% 0, 0% 100%, 100% 100%)
     -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%)
     -moz-clip-path: polygon(100% 0, 0% 100%, 100% 100%)
-    height: 100vh
+    height: 95vh
     width: 20vw
     position: absolute
     left: calc(40vw + 1px)
@@ -269,7 +270,7 @@ header
     height: 150px
     left: calc(50vw - 75px)
     text-align: center
-    top: 100vh
+    top: 95vh
     z-index: 6
     font-size: 7em
     transform: translate(0%, -100%)
@@ -308,7 +309,7 @@ header
     @media #{$TabletL}
       background-color: rgba(0,0,0,0)
       width: 90vw
-      height: 90vh
+      height: 95vh
       top: calc(5vh + 110px)
       right: 5vw
 
@@ -324,6 +325,7 @@ header
         font-size: 1.9em
 
       @media #{$TabletL}
+        text-shadow: $Shadow
         margin-top: calc(((100vw / 16 * 9) / 2) - 120px )
         top: 0
         position: absolute
@@ -395,15 +397,21 @@ header
     filter: FlipH
 
 
+#indexBody nav
+  height: 0px
+
+
 nav
+  transition: $Medium
   user-select: none
-  position: sticky
+  //position: sticky
   background-color: $W
   vertical-align: middle
   display: block
+  overflow: hidden
   height: 70px
   width: 100vw
-  box-shadow: $BigShadow
+  box-shadow: $Shadow
   top: 0
   z-index: 10
 
@@ -504,7 +512,7 @@ main
     font-size: 1.5em
     text-align: center
     padding: 16px 0 0
-    margin: 0 0 .5px
+    margin: 0 0 1px
 
     &:hover
       transition: all .3s ease
@@ -694,6 +702,57 @@ h2
     @media #{$MobileXXL}
       width: 100%
 
+
+.air
+  margin: 20vh 0
+
+
+// Background images
+.diamond main
+  background-image: url(../Images/DiamondBG.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-clip: border-box
+
+  @media #{$TabletM}
+    background-image: url(../Images/DiamondBGMobile.png)
+
+.square main
+  background-image: url(../Images/SquareBG.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-clip: border-box
+
+  @media #{$TabletM}
+    background-image: url(../Images/SquareBGMobile.png)
+
+
+.stripes main
+  background-image: url(../Images/StripesBG.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-clip: border-box
+
+  @media #{$TabletM}
+    background-image: url(../Images/StripesBGMobile.png)
+
+
+.triangle main
+  background-image: url(../Images/TriangleBG.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-clip: border-box
+
+  @media #{$TabletM}
+    background-image: url(../Images/TriangleBGMobile.png)
+
+
+
+
 #home
   .TableOfThings
     margin: 10vh auto 0
@@ -715,14 +774,28 @@ h2
       border: 0px solid $MainColor
 
       td
+        transition: $Fast
         width: calc(100% / 3)
         vertical-align: top
         padding: 1vw
         display: inline-flex
         align-content: center
+        height: 100%
         align-items: center
         justify-content: space-between
         flex-direction: column
+        border: 3px solid $W
+        //border-radius: 15px
+
+        &:hover
+          //border-top: 3px solid darken($SecondaryColor, 9)
+          transition: $Fast
+          color: darken($SecondaryColor, 9)
+
+          h5
+            transition: $Medium
+            transform: scale(1.07)
+
 
         @media #{$Desktop}
           flex-direction: column
@@ -736,6 +809,7 @@ h2
           flex-direction: row
 
         h5
+          transition: $Medium
           font-weight: 400
           font-family: 'Material Icons', sans-serif
           font-size: 5em
@@ -872,13 +946,9 @@ h2
 
 
 #Om
-  background-repeat: repeat
-  background-image: url("../Images/OmMegBG.png")
   margin-top: 0px
   padding-top: 0px
-  background-size: 1920px 1080px
-  background-origin: border-box
-  z-index: -4
+
 
   h2.White
     @media #{$TabletM}
@@ -915,6 +985,7 @@ h2
       border: 0px solid $MainColor
 
       td
+        transition: $Fast
         width: calc(100% / 3)
         vertical-align: top
         display: inline-flex
@@ -922,6 +993,15 @@ h2
         align-items: center
         justify-content: space-between
         flex-direction: column
+
+        &:hover
+          //border-top: 3px solid darken($SecondaryColor, 9)
+          transition: $Fast
+          color: darken($SecondaryColor, 9)
+
+          h5
+            transition: $Medium
+            transform: scale(1.07)
 
         @media #{$TabletM}
           width: calc(100% / 2)
@@ -1043,6 +1123,7 @@ h2
         padding: 0
 
   .OmContent
+    z-index: 99999999999999
     width: 70%
     margin: 3vh auto 10vh
 
@@ -1093,7 +1174,7 @@ h2
   .modal-content
     background-color: $W
     margin: 5vmax
-    height: calc(100vh - 10vmax)
+    //height: calc(100vh - 10vmax)
     width: calc(100vw - 10vmax)
     //display: grid
     //grid-template-areas: 'image image image info info''image image image info info''title title title info info''title title title button button'
@@ -1111,8 +1192,9 @@ h2
 
     @media #{$TabletL}
       //flex-direction: column
-      overflow-y: scroll
-      overflow-x: hidden
+      // overflow-y: scroll
+      // overflow-x: hidden
+      height: calc(100vh - 10vmax)
       align-content: flex-start
       align-items: flex-start
       //grid-template-areas: 'title''info''info''image''button'
@@ -1670,7 +1752,9 @@ footer
       width: calc(100% - 4vw) !important
       margin: 0 2vw
 
-
+main
+  padding-top: 20px
+  padding-bottom: 33px
 
 main h1
   font-size: 2.5em

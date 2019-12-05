@@ -4,7 +4,7 @@
   <base href="<?php
     $d = str_replace("\\", "/", __DIR__); $root = str_replace($_SERVER['DOCUMENT_ROOT'], "", $d); $root = str_replace("Elements", "", $root);
     echo $root; global $root;
-  ?>" target="_blank">
+  ?>">
 
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="Images/Favicon.ico">
