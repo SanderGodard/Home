@@ -17,7 +17,7 @@
   $Long = "Her er alt fra arbeidsoppgaver til skoleprosjekter i IT1 faget.
   Dette er den første nettsiden jeg har laget, og jeg holder ofte på med å legge til/ endre ting på siden.
   Her kan du også lese mer om hva jeg jobber meg, og hvilke verktøy jeg bruker. Siden har jeg skrevet i vanlig CSS og PHP.";
-  $Skole = ["name" => "Skole side", "link" => "/www.klasserom/", "short" => $Short, "long" => $Long];
+  $Skole = ["name" => "Skole Side", "link" => "/www.klasserom/", "short" => $Short, "long" => $Long];
 
   // NewYork
   $Short = "Utforsk New York, her kan du se en ungdomsklubb sin tur til byen. Dette var også et skoleprosjekt.";

@@ -1,24 +1,27 @@
-var a = document.getElementById("SMS");
-var current = a.innerHTML;
+if (document.getElementById("SMS") !== false) {
 
-function SMSfunc() {
-  if (a.innerHTML == current) {
-    a.style.width = "0px";
-    //a.style.minWidth = "0px";
-    setTimeout(function() {
-      a.innerHTML = '+47 901 89 461';
-    }, 500);
-    a.style.width = "";
-    //a.style.minWidth = "";
+  var a = document.getElementById("SMS");
+  var current = a.innerHTML;
 
-  } else {
-    a.style.width = "0px";
-    //a.style.minWidth = "0px";
-    setTimeout(function() {
-      a.innerHTML = current;
-    }, 500);
+  function SMSfunc() {
+    if (a.innerHTML == current) {
+      a.style.width = "0px";
+      //a.style.minWidth = "0px";
+      setTimeout(function() {
+        a.innerHTML = '+47 901 89 461';
+      }, 500);
+      a.style.width = "";
+      //a.style.minWidth = "";
 
-    a.style.width = "";
-    //a.style.minWidth = "";
+    } else {
+      a.style.width = "0px";
+      //a.style.minWidth = "0px";
+      setTimeout(function() {
+        a.innerHTML = current;
+      }, 500);
+
+      a.style.width = "";
+      //a.style.minWidth = "";
+    }
   }
 }

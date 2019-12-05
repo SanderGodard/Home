@@ -19,7 +19,7 @@
         <span class="close" onclick="ModalOff()">&times;</span>
         <div class="LeftSide">
 
-          <img src="../Images/Placeholder.png" alt="Modal Image" id="ModalImage">
+          <img src="./Images/Placeholder.png" alt="Modal Image" id="ModalImage">
           <div class="title">
             <h4 id="ModalTitle">Title</h4>
             <p id="ModalSubheader">put span here</p>
@@ -45,7 +45,7 @@
     <div class="Body">
 
       <h2>Galleri</h2>
-      <a href="../#Next">
+      <a href="./#Next">
         <b class="Back" title="Gå tilbake">keyboard_backspace</b>
       </a>
 
