@@ -39,13 +39,15 @@
                 // $partName = explode(" ", $name);
                 // $partName = $partName[0];
 
-                echo "<a class='Project' href='Galleri/#$partName' id='$partName'>
-                  <img src='Images/$partName.png' alt='$name'>
-                  <div>
-                    <h3>$name</h3>
-                    <span>$short</span>
-                  </div>
-                </a>";
+                echo "
+                  <div class='Divider' id='CarouselSpacer'>.</div>
+                  <a class='Project' href='Galleri/#$partName' id='$partName'>
+                    <img src='Images/$partName.png' alt='$name'>
+                    <div>
+                      <h3>$name</h3>
+                      <span>$short</span>
+                    </div>
+                  </a>";
               }
             ?>
 

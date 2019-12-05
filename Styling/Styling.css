@@ -2115,6 +2115,18 @@ footer .RightFooter p {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 0 2vw;
+  -webkit-scroll-snap-type: x;
+      -ms-scroll-snap-type: x;
+          scroll-snap-type: x;
+  -webkit-scroll-snap-points-x: repeat(calc(100% / 4 - .8vw));
+      -ms-scroll-snap-points-x: repeat(calc(100% / 4 - .8vw));
+          scroll-snap-points-x: repeat(calc(100% / 4 - .8vw));
+  -webkit-scroll-snap-type: x mandatory;
+      -ms-scroll-snap-type: x mandatory;
+          scroll-snap-type: x mandatory;
+}
+.sliderattempt2 .Slides > * {
+  margin: 1vw 0.5vw;
 }
 .sliderattempt2 .Slides::-webkit-scrollbar {
   width: 0px;

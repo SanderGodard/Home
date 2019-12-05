@@ -35,5 +35,6 @@
   <script defer type="text/javascript" src="Scripts/Search.js"></script>
   <script defer type="text/javascript" src="Scripts/Modal.js"></script>
   <script defer type="text/javascript" src="Scripts/HashLink.js"></script>
+  <script defer type="text/javascript" src="Scripts/ScrollSnap.js"></script>
 
 </head>

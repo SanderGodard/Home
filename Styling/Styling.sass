@@ -594,6 +594,7 @@ input
   margin: auto
   width: 90%
 
+
   @media #{$MobileXXL}
     width: calc(100% - 4vw)
 
@@ -610,6 +611,7 @@ input
     box-shadow: $Shadow
     border-radius: 15px
     background-color: $W
+
 
     @media #{$Laptop}
       width: calc(100% / 3 - .8vw)
@@ -1734,6 +1736,14 @@ footer
     width: 100%
     flex-grow: 1
     margin: 0 2vw
+    scroll-snap-type: x
+    scroll-snap-points-x: repeat(calc(100% / 4 - .8vw))
+    scroll-snap-type: x mandatory
+
+    & > *
+      margin: 1vw .5vw
+
+
 
     &::-webkit-scrollbar
       width: 0px
