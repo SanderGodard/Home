@@ -1,4 +1,15 @@
 //Function that opens modal, fetches info from the galleri item I clicked on and puts it in the modal.
+
+link = window.location.href;
+if (link.indexOf("Galleri") > -1) {
+  idStart = link.indexOf("#");
+  idStart++;
+  id = link.substr(idStart);
+  if (id.length > 0) {
+    ModalOn(id);
+  }
+}
+
 function ModalOn(project) {
 
   var item = document.getElementById(project);

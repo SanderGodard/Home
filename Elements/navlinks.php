@@ -5,21 +5,21 @@
     }
     switch ($active) {
       case 'Galleri':
-        $gclass = "class='$navclass active'";
+        $gclass = "class='$navclass NavActive'";
         $oclass = "class='$navclass'";
         $kclass = "class='$navclass'";
         break;
 
       case 'OmMeg':
         $gclass = "class='$navclass'";
-        $oclass = "class='$navclass active'";
+        $oclass = "class='$navclass NavActive'";
         $kclass = "class='$navclass'";
         break;
 
-        case 'Kontakt':
+      case 'Kontakt':
         $gclass = "class='$navclass'";
         $oclass = "class='$navclass'";
-        $kclass = "class='$navclass active'";
+        $kclass = "class='$navclass NavActive'";
         break;
 
       default:

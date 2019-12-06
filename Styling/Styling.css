@@ -518,6 +518,7 @@ nav .Body {
 
 main {
   z-index: 2;
+  min-height: calc(100vh - 70px);
 }
 
 .Body {
@@ -531,8 +532,8 @@ main {
 }
 
 .Back {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   font-family: "Material icons", sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -542,12 +543,17 @@ main {
   font-size: 2.5em;
   position: absolute;
   top: calc(70px + 3vh);
-  padding: 0 0 0 5px;
 }
 .Back:hover {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  padding: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+}
+.Back.White {
+  padding: 0 10px !important;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .MobileNav {
@@ -998,7 +1004,8 @@ h2 {
     vertical-align: middle;
   }
 }
-#home .White {
+
+.White {
   background-color: #FFF;
   display: inline-block;
   -webkit-box-sizing: content-box;
@@ -1119,16 +1126,6 @@ h2 {
   display: none;
 }
 
-#Om {
-  margin-top: 0px;
-  padding-top: 0px;
-}
-@media only screen and (max-width: 700px) {
-  #Om h2.White {
-    padding: 20px 10px;
-    letter-spacing: normal;
-  }
-}
 #Om .TableOfThings {
   margin: 10vh auto 10vh 30%;
   width: 70%;
@@ -1362,23 +1359,8 @@ h2 {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 20px;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-}
-#Om h2 {
-  margin: 0 0 0 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-#Om .Back {
-  float: left;
-  left: 5%;
-  top: calc(70px + 0vh);
-}
-@media only screen and (max-width: 575px) {
-  #Om .Back {
-    left: 2vw;
-  }
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
 }
 
 .modal {

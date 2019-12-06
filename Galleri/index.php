@@ -45,9 +45,9 @@
     <div class="Body">
 
       <h2>Galleri</h2>
-      <a href="./#Next">
-        <b class="Back" title="Gå tilbake">keyboard_backspace</b>
-      </a>
+      <?php
+        include "../Elements/next.php";
+      ?>
 
       <p class="GalleriInfo">
         Her kan du se på prosjektene jeg har jobbet med før. Jeg liker å jobbe med alt fra enkle nettsider til webapplikasjoner.<br>

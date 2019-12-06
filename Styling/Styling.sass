@@ -465,6 +465,7 @@ nav
 
 main
   z-index: 2
+  min-height: calc(100vh - 70px)
 
 
 .Body
@@ -476,19 +477,21 @@ main
 
 
 .Back
-  transition: all .3s ease
+  transition: $Medium
   font-family: 'Material icons', sans-serif
   user-select: none
   color: $MainColor
   font-size: 2.5em
   position: absolute
   top: calc(70px + 3vh)
-  //height: 1em
-  padding: 0 0 0 5px
 
   &:hover
-    transition: all .3s ease
-    padding: 0
+    transition: $Medium
+    transform: translateX(-5%)
+
+  &.White
+    padding: 0 10px !important
+    box-shadow: $Shadow
 
 .MobileNav
   transition: all .3s ease
@@ -846,12 +849,13 @@ h2
             float: right
             vertical-align: middle
 
-  .White
-    background-color: $W
-    display: inline-block
-    box-sizing: content-box
-    padding: 20px
-    box-shadow: $BigShadow
+
+.White
+  background-color: $W
+  display: inline-block
+  box-sizing: content-box
+  padding: 20px
+  box-shadow: $BigShadow
 
 
 
@@ -948,11 +952,11 @@ h2
 
 
 #Om
-  margin-top: 0px
-  padding-top: 0px
+  //margin-top: 0px
+  //padding-top: 0px
 
 
-  h2.White
+  //h2.White
     @media #{$TabletM}
       padding: 20px 10px
       letter-spacing: normal
@@ -1138,21 +1142,21 @@ h2
     display: inline-block
     box-sizing: content-box
     padding: 20px
-    box-shadow: $Shadow
+    box-shadow: $BigShadow
 
-  h2
+  //h2
     margin: 0 0 0 50%
     transform: translate(-50%, 0)
 
-  .Back
+  //.Back
     float: left
     left: 5%
     top: calc(70px + 0vh)
 
-    @media #{$MobileXXL}
+    //@media #{$MobileXXL}
       left: 2vw
 
-  @media #{$TabletL}
+  //@media #{$TabletL}
 
 
 //Modal Styling
