@@ -605,6 +605,7 @@ main {
   width: 59%;
   display: block;
   margin: 5vh 0 2vh 41%;
+  text-shadow: 2px 2px 4px rgba(255, 255, 225, 0.2);
 }
 @media only screen and (max-width: 800px) {
   .GalleriInfo {
@@ -878,10 +879,20 @@ h2 {
   }
 }
 
-#home .TableOfThings {
+#Om .TableOfThings {
+  width: 70%;
+  margin: 10vh auto 10vh 30%;
+}
+@media only screen and (max-width: 800px) {
+  #Om .TableOfThings {
+    width: 100%;
+  }
+}
+
+.TableOfThings {
   margin: 10vh auto 0;
 }
-#home .TableOfThings h1 {
+.TableOfThings h1 {
   font-size: 1.5em;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -892,15 +903,33 @@ h2 {
   margin: 0;
   padding: 0;
 }
-#home .TableOfThings table {
+.TableOfThings table {
   width: 100%;
   border-collapse: collapse;
   border: 0px solid #6C1919;
 }
-#home .TableOfThings table td {
+.TableOfThings table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.TableOfThings table tr td {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  width: calc(100% / 3);
+  width: calc((100% / 3) - 5%);
   vertical-align: top;
   padding: 1vw;
   display: -webkit-inline-box;
@@ -921,33 +950,25 @@ h2 {
           flex-direction: column;
   border: 3px solid #FFF;
 }
-#home .TableOfThings table td:hover {
+.TableOfThings table tr td:hover {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   color: #212121;
 }
-#home .TableOfThings table td:hover h5 {
+.TableOfThings table tr td:hover h5 {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
 }
-@media only screen and (max-width: 1222px) {
-  #home .TableOfThings table td {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 @media only screen and (max-width: 700px) {
-  #home .TableOfThings table td {
-    width: calc(100% / 2);
+  .TableOfThings table tr td {
+    width: calc((100% / 2) - 5%);
   }
 }
 @media only screen and (max-width: 575px) {
-  #home .TableOfThings table td {
-    width: calc(100%);
+  .TableOfThings table tr td {
+    width: calc(100% - 5%);
     vertical-align: middle;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -955,7 +976,7 @@ h2 {
             flex-direction: row;
   }
 }
-#home .TableOfThings table td h5 {
+.TableOfThings table tr td h5 {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   font-weight: 400;
@@ -967,42 +988,19 @@ h2 {
           user-select: none;
   display: inline-block;
   color: #383838;
-  text-align: left;
-}
-@media only screen and (max-width: 1222px) {
-  #home .TableOfThings table td h5 {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
+  width: 100%;
+  text-align: center;
 }
 @media only screen and (max-width: 575px) {
-  #home .TableOfThings table td h5 {
-    display: inline-block;
-    text-align: left;
+  .TableOfThings table tr td h5 {
     width: 1em;
     line-height: 1;
   }
 }
-#home .TableOfThings table td p {
-  display: inline-block;
-  width: calc(100% - 5.6em);
-  float: right;
-}
-@media only screen and (max-width: 1222px) {
-  #home .TableOfThings table td p {
-    float: none;
-    width: 100%;
-    display: block;
-  }
-}
-@media only screen and (max-width: 575px) {
-  #home .TableOfThings table td p {
-    display: inline-block;
-    width: calc(100% - 5.4em);
-    float: right;
-    vertical-align: middle;
-  }
+.TableOfThings table tr td p {
+  display: block;
+  margin: 5%;
+  max-width: 400px;
 }
 
 .White {
@@ -1126,133 +1124,6 @@ h2 {
   display: none;
 }
 
-#Om .TableOfThings {
-  margin: 10vh auto 10vh 30%;
-  width: 70%;
-  -webkit-box-sizing: border-box !important;
-          box-sizing: border-box !important;
-}
-#Om .TableOfThings h1 {
-  font-size: 1.5em;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-  color: black;
-  text-decoration: none;
-  text-align: left;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-@media only screen and (max-width: 800px) {
-  #Om .TableOfThings {
-    margin: 40vw auto 10vh;
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  #Om .TableOfThings {
-    margin: 40vh auto 10vh;
-  }
-}
-#Om .TableOfThings table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 0px solid #6C1919;
-}
-#Om .TableOfThings table td {
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-  width: calc(100% / 3);
-  vertical-align: top;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#Om .TableOfThings table td:hover {
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-  color: #212121;
-}
-#Om .TableOfThings table td:hover h5 {
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-}
-@media only screen and (max-width: 700px) {
-  #Om .TableOfThings table td {
-    width: calc(100% / 2);
-  }
-}
-@media only screen and (max-width: 575px) {
-  #Om .TableOfThings table td {
-    width: calc(100%);
-    vertical-align: middle;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-#Om .TableOfThings table td h5 {
-  font-weight: 400;
-  font-family: "Material Icons", sans-serif;
-  font-size: 5em;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  display: inline-block;
-  color: #383838;
-  text-align: left;
-}
-@media only screen and (max-width: 1222px) {
-  #Om .TableOfThings table td h5 {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 575px) {
-  #Om .TableOfThings table td h5 {
-    display: inline-block;
-    text-align: left;
-    width: 1em;
-    line-height: 1;
-  }
-}
-#Om .TableOfThings table td p {
-  display: inline-block;
-  width: calc(100% - 3em);
-  float: right;
-}
-@media only screen and (max-width: 1222px) {
-  #Om .TableOfThings table td p {
-    float: none;
-    width: 100%;
-    display: block;
-  }
-}
-@media only screen and (max-width: 575px) {
-  #Om .TableOfThings table td p {
-    display: inline-block;
-    width: calc(100% - 5.4em);
-    float: right;
-    vertical-align: middle;
-  }
-}
 #Om .OmFlex {
   width: 80%;
   margin: auto;
@@ -1298,10 +1169,8 @@ h2 {
   }
 }
 #Om .OmFlex .White {
-  position: absolute;
+  position: relative;
   right: calc(90vw / 100 * 15 + 8px);
-  width: 25%;
-  float: right;
   z-index: 3;
   -ms-flex-item-align: center;
       align-self: center;
@@ -1313,18 +1182,9 @@ h2 {
 }
 @media only screen and (max-width: 800px) {
   #Om .OmFlex .White {
-    float: right;
-    display: block;
-    right: calc(15% - 8px);
+    right: 0;
     z-index: 5;
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 800px) and (max-width: 700px) {
-  #Om .OmFlex .White {
-    float: none;
-    width: 70vw;
-    right: 15vw;
+    width: 100%;
     left: 15vw;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1332,9 +1192,7 @@ h2 {
 }
 @media only screen and (max-width: 800px) and (max-width: 575px) {
   #Om .OmFlex .White {
-    width: 90vw;
-    right: 5vw;
-    left: 5vw;
+    left: 7vw;
   }
 }
 
@@ -2008,6 +1866,7 @@ footer .RightFooter p {
   width: 100%;
 }
 .sliderattempt2 .SideArrow {
+  text-shadow: 2px 2px 4px rgba(255, 255, 225, 0.2);
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   font-weight: 100;
