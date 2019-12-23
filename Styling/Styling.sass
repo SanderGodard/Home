@@ -1624,9 +1624,20 @@ footer
     scroll-snap-type: x
     scroll-snap-points-x: repeat(calc(100% / 4 - .8vw))
     scroll-snap-type: x mandatory
+    position: relative
+    user-select: none
+    cursor: pointer
 
     & > *
       margin: 1vw .5vw
+
+    &.drar
+      //background: rgba(255,255,255,0.3)
+      cursor: grabbing
+      cursor: -webkit-grabbing
+      scroll-snap-type: none
+      scroll-snap-points-x: none
+      scroll-snap-type: none
 
 
 

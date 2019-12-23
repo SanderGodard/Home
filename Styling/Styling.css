@@ -1965,9 +1965,26 @@ footer .RightFooter p {
   -webkit-scroll-snap-type: x mandatory;
       -ms-scroll-snap-type: x mandatory;
           scroll-snap-type: x mandatory;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 .sliderattempt2 .Slides > * {
   margin: 1vw 0.5vw;
+}
+.sliderattempt2 .Slides.drar {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  -webkit-scroll-snap-type: none;
+      -ms-scroll-snap-type: none;
+          scroll-snap-type: none;
+  -webkit-scroll-snap-points-x: none;
+      -ms-scroll-snap-points-x: none;
+          scroll-snap-points-x: none;
+  scroll-snap-type: none;
 }
 .sliderattempt2 .Slides::-webkit-scrollbar {
   width: 0px;
