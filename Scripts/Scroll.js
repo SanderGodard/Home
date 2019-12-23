@@ -34,7 +34,7 @@ function Scroll(dirr) {
   }
 }
 
-// copy past
+// copy past        credit:https://codepen.io/thenutz/pen/VwYeYEE
 let isDown = false;
 let startX;
 let scrollLeft;
